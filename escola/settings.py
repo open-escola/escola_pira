@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-ac9e4580ozw+mz^1+u$%wd%$v%7nv+3vlqooj9^*5=ymjz6zrd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['openescola.herokuapp.com/']
 
 # Application definition
 INSTALLED_APPS = [
