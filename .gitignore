@@ -1,6 +1,5 @@
-
 .idea/
-staticfiles/
+# staticfiles/
 
 
 # Byte-compiled / optimized / DLL files
