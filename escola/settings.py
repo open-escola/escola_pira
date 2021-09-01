@@ -139,4 +139,5 @@ AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
 django_heroku.settings(locals())
 
 # Desabilitei o Collect Static
-# heroku config:set DISABLE_COLLECTSTATIC=0 -yyya openescola
+# heroku config:set DISABLE_COLLECTSTATIC=0 -a openescola
+
