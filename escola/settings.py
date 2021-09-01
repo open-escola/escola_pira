@@ -74,8 +74,6 @@ WSGI_APPLICATION = 'escola.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_escola',
         'USER': 'michel',
@@ -126,21 +124,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_URL = '/static/'
 
 # Name of dir that will be create
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles2')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 # Authentications
 AUTH_USER_MODEL = 'core.CustomUser'
 AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
-
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
 # Desabilitei o Collect Static
-#heroku config:set DISABLE_COLLECTSTATIC=0 -a openescola
+# heroku config:set DISABLE_COLLECTSTATIC=0 -yyya openescola
