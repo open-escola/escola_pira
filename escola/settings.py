@@ -133,11 +133,14 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+# Authentications
 AUTH_USER_MODEL = 'core.CustomUser'
 AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
+
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
 # Desabilitei o Collect Static
-# heroku config:set DISABLE_COLLECTSTATIC=1 -a openescola
+heroku config:set DISABLE_COLLECTSTATIC=0 -a openescola
