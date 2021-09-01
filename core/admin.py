@@ -5,8 +5,6 @@ from core.models import CustomUser
 
 # Register your models here.
 class UserModel(UserAdmin):
-    # list_display = ('data', 'descricao', 'pu_compra')
-    # list_filter = ('descricao',)
     pass
 
 

@@ -3,12 +3,6 @@
 import os
 import sys
 
-# Programming with Singhateh
-# https://www.youtube.com/watch?v=1A4tyUQTizM
-# https://www.youtube.com/watch?v=TYrXsAGNVrY
-
-# Python Django Student Management System (estou seguindo)
-# https://www.youtube.com/watch?v=y3llbdTtam4&list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH
 
 def main():
     """Run administrative tasks."""
