@@ -2,19 +2,38 @@ from django.contrib.auth import login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
-
 from core.email_backend import EmailBackend
 
 
 # Create your views here.
 
 
-def show_demo_page(request):
-    return render(request, 'demo.html')
+def go_index(request):
+    return render(request, 'index.html')
+
+def go_index2(request):
+    return render(request, 'index2.html')
+
+def go_index3(request):
+    return render(request, 'index3.html')
 
 
-def show_login_page(request):
-    return render(request, 'login_page.html')
+
+def go_login_page(request):
+    return render(request, 'login/login.html')
+
+
+def go_login_forgot(request):
+    return render(request, 'login/forgot-password.html')
+
+
+def go_register(request):
+    return render(request, 'login/register.html')
+
+
+def go_recovery(request):
+    return render(request, 'login/recovery-password.html')
+
 
 
 def do_login(request):
@@ -46,6 +65,6 @@ def get_user_detail(request):
         return HttpResponse('<h2>por favor, faça login </h2>')
 
 
-def logout_user(request):
+def do_logout_user(request):
     logout(request)
     return HttpResponseRedirect('/')
