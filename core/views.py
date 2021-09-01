@@ -37,7 +37,7 @@ def go_recovery(request):
 
 def do_login(request):
     if request.method != 'POST':
-        return HttpResponse('<h2>Method Not Allowed</h2>')
+        return HttpResponse('<h2>Método não Permitido</h2>')
     else:
         user = EmailBackend.authenticate(
             request,
@@ -53,10 +53,11 @@ def do_login(request):
             elif user.user_type == '3':
                 return HttpResponseRedirect(reverse('student_home'))
             else:
-                return HttpResponse('<h2>Deu ruim no login</h2>')
+                return HttpResponse('<h2>Deu ruim no login 1</h2>')
         else:
             # messages.error(request, "Invalid Login Details")
-            return HttpResponseRedirect('/')
+            # return HttpResponseRedirect('/')
+            return HttpResponse('<h2>Deu ruim no login 2</h2>')
 
 
 def get_user_detail(request):
