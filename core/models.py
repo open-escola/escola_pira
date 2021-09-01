@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, User
 from django.db import models
 
 # Create your models here.
@@ -167,3 +167,5 @@ def save_user_profile(sender, instance, **kargs):
         instance.staffs.save()
     if instance.user_type == 3:
         instance.students.save()
+
+

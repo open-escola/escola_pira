@@ -14,6 +14,7 @@ import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -138,6 +139,7 @@ AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
-# Desabilitei o Collect Static
-# heroku config:set DISABLE_COLLECTSTATIC=0 -a openescola
 
+# Criando Usuários
+# echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@myproject.com', 'password')" | python manage.py shell
+# https://stackoverflow.com/questions/6244382/how-to-automate-createsuperuser-on-django
