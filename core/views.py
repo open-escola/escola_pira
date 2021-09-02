@@ -1,4 +1,5 @@
 from django.contrib.auth import login, logout
+from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
@@ -47,7 +48,8 @@ def do_login(request):
         if user is not None:
             login(request, user)
             if user.user_type == '1':
-                return HttpResponseRedirect('/')
+                #return HttpResponseRedirect('/')
+                return HttpResponseRedirect('/admin_home')
             elif user.user_type == '2':
                 return HttpResponseRedirect(reverse('staff_home'))
             elif user.user_type == '3':
@@ -55,9 +57,9 @@ def do_login(request):
             else:
                 return HttpResponse('<h2>Deu ruim no login 1</h2>')
         else:
-            # messages.error(request, "Invalid Login Details")
-            # return HttpResponseRedirect('/')
-            return HttpResponse('<h2>Deu ruim no login 2</h2>')
+            messages.error(request, 'Invalid Login Details')
+            return HttpResponseRedirect('/')
+            #return HttpResponse('<h2>Deu ruim no login 2</h2>')
 
 
 def get_user_detail(request):
@@ -67,6 +69,6 @@ def get_user_detail(request):
         return HttpResponse('<h2>Por favor, faça login!</h2>')
 
 
-def do_logout_user(request):
+def do_logout(request):
     logout(request)
     return HttpResponseRedirect('/')

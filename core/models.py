@@ -3,9 +3,8 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+
 # Create your models here.
-
-
 class CustomUser(AbstractUser):
     user_type_data = ((1, 'HOD'), (2, 'Staff'), (3, 'Student'))
     user_type = models.CharField(default=1, choices=user_type_data, max_length=10)
@@ -14,9 +13,6 @@ class CustomUser(AbstractUser):
 class AdminHOD(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    # name = models.CharField(max_length=255)
-    # email = models.CharField(max_length=255)
-    # password = models.CharField(max_length=255)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now_add=True)
     objects = models.Manager()
@@ -25,9 +21,6 @@ class AdminHOD(models.Model):
 class Staffs(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    # name = models.CharField(max_length=255)
-    # email = models.CharField(max_length=255)
-    # password = models.CharField(max_length=255)
     address = models.TextField()
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now_add=True)
@@ -55,9 +48,6 @@ class Subject(models.Model):
 class Students(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    # name = models.CharField(max_length=255)
-    # email = models.CharField(max_length=255)
-    # password = models.CharField(max_length=255)
     gender = models.CharField(max_length=255)
     profile_pic = models.FileField()
     address = models.TextField()
@@ -167,5 +157,3 @@ def save_user_profile(sender, instance, **kwargs):
         instance.staffs.save()
     if instance.user_type == 3:
         instance.students.save()
-
-
