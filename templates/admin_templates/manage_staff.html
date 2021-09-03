@@ -1,4 +1,4 @@
-{% extends 'admin_templates/base_template.html' %}
+{% extends 'admin_templates/_base.html' %}
 {% block page_title %}Manejar Staff{% endblock page_title %}
 {% load static %}
 
@@ -44,17 +44,18 @@
                                 </thead>
                                 <tbody>
                                 {% for staff in staffs %}
-                                <tr>
-                                    <td>{{ staff.admin.id }}</td>
-                                    <td>{{ staff.admin.first_name }}</td>
-                                    <td>{{ staff.admin.last_name }}</td>
-                                    <td>{{ staff.admin.username }}</td>
-                                    <td>{{ staff.admin.email }}</td>
-                                    <td>{{ staff.address }}</td>
-                                    <td>{{ staff.admin.date_joined }}</td>
-                                    <td>{{ staff.admin.last_login }}</td>
-                                    <td><a href="/staff_edit/{{ staff.admin.id }}" class="btn btn-success">Editar</td>
-                                </tr>
+                                    <tr>
+                                        <td>{{ staff.admin.id }}</td>
+                                        <td>{{ staff.admin.first_name }}</td>
+                                        <td>{{ staff.admin.last_name }}</td>
+                                        <td>{{ staff.admin.username }}</td>
+                                        <td>{{ staff.admin.email }}</td>
+                                        <td>{{ staff.address }}</td>
+                                        <td>{{ staff.admin.date_joined }}</td>
+                                        <td>{{ staff.admin.last_login }}</td>
+                                        <td><a href="/edit_staff/{{ staff.admin.id }}" class="btn btn-success">Editar
+                                        </td>
+                                    </tr>
                                 {% endfor %}
                                 </tbody>
                             </table>

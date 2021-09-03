@@ -1,4 +1,4 @@
-{% extends 'admin_templates/base_template.html' %}
+{% extends 'admin_templates/_base.html' %}
 {% block page_title %}Manejar Alunos{% endblock page_title %}
 {% load static %}
 
@@ -64,7 +64,8 @@
 
                                     <td>{{ student.admin.date_joined }}</td>
                                     <td>{{ student.admin.last_login }}</td>
-                                    <td><a href="/student_edit/{{ student.admin.id }}" class="btn btn-success">Editar</td>
+                                    <td><a href="/edit_student/{{ student.admin.id }}" class="btn btn-success">Editar
+                                    </td>
                                 </tr>
                                 {% endfor %}
                                 </tbody>

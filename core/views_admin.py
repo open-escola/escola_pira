@@ -1,7 +1,7 @@
-import datetime
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+
 from core.models import CustomUser, Courses, Staffs, Subject, Students
 
 
@@ -188,3 +188,56 @@ def manage_subject(request):
         'admin_templates/manage_subject.html',
         {'subjects': subjects},
     )
+
+
+def edit_staff(request, staff_id):
+    staff = Staffs.objects.get(admin=staff_id)
+    return render(
+        request,
+        'admin_templates/edit_staff_template.html',
+        {'staff': staff}
+    )
+
+
+def edit_staff_save(request):
+    if request.method != 'POST':
+        return HttpResponse('<h2>Método não Permitido</h2>')
+    else:
+        staff_id = request.POST.get('staff_id')
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        email = request.POST.get('email')
+        username = request.POST.get('username')
+        address = request.POST.get('address')
+
+        try:
+            user = CustomUser.objects.get(id=staff_id)
+            user.first_name = first_name
+            user.last_name = last_name
+            user.email = email
+            user.username = username
+            user.save()
+
+            staff_model = Staffs.objects.get(admin=staff_id)
+            staff_model.address = address
+            staff_model.save()
+
+            messages.success(request, 'Funcionário alterado com Sucesso!')
+            return HttpResponseRedirect(f'/edit_staff/{staff_id}')
+        except Exception as e:
+            print(e)
+            messages.error(request, 'Falha ao adicionar Disciplina')
+            return HttpResponseRedirect(f'/edit_staff/{staff_id}')
+
+
+def edit_student(request, student_id):
+    student = Students.objects.get(admin=student_id)
+    return render(
+        request,
+        'admin_templates/edit_student_template.html',
+        {'student': student}
+    )
+
+
+def edit_student_save(request):
+    pass

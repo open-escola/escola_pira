@@ -1,5 +1,5 @@
 {% extends 'admin_templates/_base.html' %}
-{% block page_title %}Adicionar Disciplina{% endblock page_title %}
+{% block page_title %}Editar Funcionário {{ staff.admin.username }}{% endblock page_title %}
 {% load static %}
 
 
@@ -11,39 +11,44 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- general form elements -->
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Cursos</h3>
+                                    <h3 class="card-title">Funcionário</h3>
                                 </div>
-                                <!-- /.card-header -->
-                                <!-- form start -->
-                                <form role="form" action="/add_subject_save" method="post">
+                                <form role="form" action="/edit_staff_save" method="post">
                                     {% csrf_token %}
                                     <div class="card-body">
+                                        <input type="hidden" class="form-control" name="staff_id"
+                                               placeholder="ID" value="{{ staff.admin.id }}">
 
                                         <div class="form-group">
-                                            <label>Nome da Disciplina</label>
-                                            <input type="text" class="form-control" name="subject"
-                                                   placeholder="Nome da Disciplina">
+                                            <label>Primeiro Nome</label>
+                                            <input type="text" class="form-control" name="first_name"
+                                                   placeholder="Primeiro Nome" value="{{ staff.admin.first_name }}">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Curso</label>
-                                            <select class="form-control" name="course">
-                                                {% for course in courses %}
-                                                    <option value="{{ course.id }}">{{ course.course_name }}</option>
-                                                {% endfor %}
-                                            </select>
+                                            <label>Sobrenome</label>
+                                            <input type="text" class="form-control" name="last_name"
+                                                   placeholder="Sobrenome" value="{{ staff.admin.last_name }}">
                                         </div>
 
                                         <div class="form-group">
-                                            <label>Staff</label>
-                                            <select class="form-control" name="staff">
-                                                {% for staff in staffs %}
-                                                    <option value="{{ staff.id }}">{{ staff.first_name }} {{ staff.last_name }}</option>
-                                                {% endfor %}
-                                            </select>
+                                            <label>Nome do Usuário / <i>username</i></label>
+                                            <input type="text" class="form-control" name="username"
+                                                   placeholder="Nome do Usuário" value="{{ staff.admin.username }}">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Email address</label>
+                                            <input type="email" class="form-control" name="email"
+                                                   placeholder="Enter email" value="{{ staff.admin.email }}">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Endereço</label>
+                                            <input type="text" class="form-control" name="address"
+                                                   placeholder="Endereço">
                                         </div>
 
                                         <!-- Mensagens -->
@@ -62,10 +67,9 @@
                                             {% endif %}
 
                                         </div>
-
                                     </div>
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary btn-block">Adicionar Disciplina
+                                        <button type="submit" class="btn btn-primary btn-block">Salvar Alterações
                                         </button>
                                     </div>
                                 </form>

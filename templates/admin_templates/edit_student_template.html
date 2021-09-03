@@ -1,5 +1,7 @@
 {% extends 'admin_templates/_base.html' %}
-{% block page_title %}Adicionar Aluno{% endblock page_title %}
+{% block page_title %}
+    Editar Aluno {{ student.admin.username }}
+{% endblock page_title %}
 {% load static %}
 
 
@@ -15,14 +17,14 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Alunos</h3>
                                 </div>
-                                <form role="form" action="/add_student_save" method="post">
+                                <form role="form" action="/edit_student_save" method="post">
                                     {% csrf_token %}
                                     <div class="card-body">
 
                                         <div class="form-group">
                                             <label>Primeiro Nome</label>
                                             <input type="text" class="form-control" name="first_name"
-                                                   placeholder="Primeiro Nome">
+                                                   placeholder="Primeiro Nome" value="{{ student.admin.first_name }}">
                                         </div>
 
                                         <div class="form-group">
@@ -102,7 +104,7 @@
                                         </div>
                                     </div>
                                     <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary btn-block">Adicionar Aluno
+                                        <button type="submit" class="btn btn-primary btn-block">Salvar Alterações
                                         </button>
                                     </div>
                                 </form>
@@ -111,7 +113,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </section>
 
