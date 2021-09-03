@@ -21,6 +21,8 @@
                                     {% csrf_token %}
                                     <div class="card-body">
 
+                                        <input type="hidden" name="student_id" value="{{ student.admin.id }}">
+
                                         <div class="form-group">
                                             <label>Primeiro Nome</label>
                                             <input type="text" class="form-control" name="first_name"
@@ -30,38 +32,35 @@
                                         <div class="form-group">
                                             <label>Sobrenome</label>
                                             <input type="text" class="form-control" name="last_name"
-                                                   placeholder="Sobrenome">
+                                                   placeholder="Sobrenome" value="{{ student.admin.last_name }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label>Nome do Usuário / <i>username</i></label>
                                             <input type="text" class="form-control" name="username"
-                                                   placeholder="Nome do Usuário">
+                                                   placeholder="Nome do Usuário" value="{{ student.admin.username }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label>E-mail</label>
                                             <input type="email" class="form-control" name="email"
-                                                   placeholder="Inserir e-mail">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Senha</label>
-                                            <input type="password" class="form-control" name="password"
-                                                   placeholder="Senha">
+                                                   placeholder="Inserir e-mail" value="{{ student.admin.email }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label>Endereço</label>
                                             <input type="text" class="form-control" name="address"
-                                                   placeholder="Endereço">
+                                                   placeholder="Endereço" value="{{ student.address }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label>Curso</label>
                                             <select class="form-control" name="course">
                                                 {% for course in courses %}
-                                                    <option value="{{ course.id }}">{{ course.course_name }}</option>
+                                                    <option value="{{ course.id }}"
+                                                            {% if course.id == student.course_id.id %}
+                                                            selected {% endif %}>
+                                                        {{ course.course_name }}</option>
                                                 {% endfor %}
                                             </select>
                                         </div>
@@ -69,21 +68,27 @@
                                         <div class="form-group">
                                             <label>Gênero</label>
                                             <select class="form-control" name="gender">
-                                                <option>Masculino</option>
-                                                <option>Feminino</option>
+                                                <option {% if student.gender == 'Masculino' %} selected {% endif %}>
+                                                    Masculino
+                                                </option>
+                                                <option {% if student.gender == 'Feminino' %} selected {% endif %}>
+                                                    Feminino
+                                                </option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Data que Começou</label>
                                             <input type="date" class="form-control" name="session_start"
-                                                   placeholder="Data que iniciou o curso">
+                                                   placeholder="Data que iniciou o curso"
+                                                   value="{{ student.session_start_year|date:'Y-m-d' }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label>Data que Encerrou o Curso</label>
                                             <input type="date" class="form-control" name="session_end"
-                                                   placeholder="Data que Encerrou o curso">
+                                                   placeholder="Data que Encerrou o curso"
+                                                   value="{{ student.session_end_year|date:'Y-m-d' }}">
                                         </div>
 
                                         <!-- Mensagens -->

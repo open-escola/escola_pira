@@ -232,12 +232,51 @@ def edit_staff_save(request):
 
 def edit_student(request, student_id):
     student = Students.objects.get(admin=student_id)
+    courses = Courses.objects.all()  # Preciso enviar a informação dos cursos para que seja possível alterar o aluno
+    # de classe
+    print(student.session_end_year)
     return render(
         request,
         'admin_templates/edit_student_template.html',
-        {'student': student}
+        {'student': student, 'courses': courses}
     )
 
 
 def edit_student_save(request):
-    pass
+    if request.method != 'POST':
+        return HttpResponse('<h2>Método não Permitido</h2>')
+    else:
+        student_id = request.POST.get('student_id')
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        email = request.POST.get('email')
+        username = request.POST.get('username')
+        address = request.POST.get('address')
+        course_id = request.POST.get('course')
+        gender = request.POST.get('gender')
+        session_start = request.POST.get('session_start')
+        session_end = request.POST.get('session_end')
+
+        try:
+            user = CustomUser.objects.get(id=student_id)
+            user.first_name = first_name
+            user.last_name = last_name
+            user.email = email
+            user.username = username
+            user.save()
+
+            student_model = Students.objects.get(admin=student_id)
+            student_model.address = address
+            student_model.gender = gender
+            student_model.session_start = session_start
+            student_model.session_end = session_end
+            course = Courses.objects.get(id=course_id)
+            student_model.course_id = course
+            student_model.save()
+
+            messages.success(request, 'Aluno alterado com Sucesso!')
+            return HttpResponseRedirect(f'/edit_student/{student_id}')
+        except Exception as e:
+            print(e)
+            messages.error(request, 'Falha ao alterar Aluno')
+            return HttpResponseRedirect(f'/edit_student/{student_id}')

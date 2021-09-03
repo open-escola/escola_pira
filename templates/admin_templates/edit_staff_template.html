@@ -18,8 +18,8 @@
                                 <form role="form" action="/edit_staff_save" method="post">
                                     {% csrf_token %}
                                     <div class="card-body">
-                                        <input type="hidden" class="form-control" name="staff_id"
-                                               placeholder="ID" value="{{ staff.admin.id }}">
+
+                                        <input type="hidden" name="staff_id" value="{{ staff.admin.id }}">
 
                                         <div class="form-group">
                                             <label>Primeiro Nome</label>

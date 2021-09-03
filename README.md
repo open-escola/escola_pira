@@ -29,6 +29,7 @@ Há um projeto que parece interessante e pode ser explorado, que é a adaptaçã
 **Python Django Student Management System (estou seguindo)**
 - https://www.youtube.com/watch?v=y3llbdTtam4&list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH
 
+*(Em 03.09.2021 parei na parte 8. Retomar!)*
 
 -----
 
