@@ -1,0 +1,71 @@
+{% extends 'admin_templates/base_template.html' %}
+{% block page_title %}Manejar Staff{% endblock page_title %}
+{% load static %}
+
+
+{% block main_content %}
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Detalhes dos Funcionários</h3>
+
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control float-right"
+                                           placeholder="Search">
+
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Primeiro Nome</th>
+                                    <th>Sobrenome</th>
+                                    <th>Username</th>
+                                    <th>E-mail</th>
+                                    <th>Endereço</th>
+                                    <th>Último Login</th>
+                                    <th>Data Joined</th>
+                                    <th>Ações</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for staff in staffs %}
+                                <tr>
+                                    <td>{{ staff.admin.id }}</td>
+                                    <td>{{ staff.admin.first_name }}</td>
+                                    <td>{{ staff.admin.last_name }}</td>
+                                    <td>{{ staff.admin.username }}</td>
+                                    <td>{{ staff.admin.email }}</td>
+                                    <td>{{ staff.address }}</td>
+                                    <td>{{ staff.admin.date_joined }}</td>
+                                    <td>{{ staff.admin.last_login }}</td>
+                                    <td><a href="/staff_edit/{{ staff.admin.id }}" class="btn btn-success">Editar</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock main_content %}

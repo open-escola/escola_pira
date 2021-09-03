@@ -5,12 +5,22 @@ from django.dispatch import receiver
 
 
 # Create your models here.
+
+
+class Courses(models.Model):
+    id = models.AutoField(primary_key=True)
+    course_name = models.CharField(max_length=255)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now_add=True)
+    objects = models.Manager()
+
+
 class CustomUser(AbstractUser):
     user_type_data = ((1, 'HOD'), (2, 'Staff'), (3, 'Student'))
     user_type = models.CharField(default=1, choices=user_type_data, max_length=10)
 
 
-class AdminHOD(models.Model):
+class Admin(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -27,24 +37,6 @@ class Staffs(models.Model):
     objects = models.Manager()
 
 
-class Courses(models.Model):
-    id = models.AutoField(primary_key=True)
-    course_name = models.CharField(max_length=255)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
-    objects = models.Manager()
-
-
-class Subject(models.Model):
-    id = models.AutoField(primary_key=True)
-    subject_name = models.CharField(max_length=255)
-    course_id = models.ForeignKey(Courses, on_delete=models.CASCADE)
-    staff_id = models.ForeignKey(Staffs, on_delete=models.CASCADE)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
-    objects = models.Manager()
-
-
 class Students(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
@@ -54,6 +46,16 @@ class Students(models.Model):
     course_id = models.ForeignKey(Courses, on_delete=models.DO_NOTHING)
     session_start_year = models.DateTimeField()
     session_end_year = models.DateTimeField()
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now_add=True)
+    objects = models.Manager()
+
+
+class Subject(models.Model):
+    id = models.AutoField(primary_key=True)
+    subject_name = models.CharField(max_length=255)
+    course_id = models.ForeignKey(Courses, on_delete=models.CASCADE, default=1)
+    staff_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now_add=True)
     objects = models.Manager()
@@ -142,17 +144,24 @@ class NotificationsStaffs(models.Model):
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         if instance.user_type == 1:
-            AdminHOD.objects.create(admin=instance)
+            Admin.objects.create(admin=instance)
         if instance.user_type == 2:
             Staffs.objects.create(admin=instance)
         if instance.user_type == 3:
-            Students.objects.create(admin=instance)
+            Students.objects.create(
+                admin=instance,
+                course_id=Courses.objects.get(id=1),
+                session_start_year='2020-01-01',
+                session_end_year='2020-12-31',
+                profile_pic='',
+                #gender='Masculino',
+            )
 
 
 @receiver(post_save, sender=CustomUser)
 def save_user_profile(sender, instance, **kwargs):
     if instance.user_type == 1:
-        instance.adminhod.save()
+        instance.admin.save()
     if instance.user_type == 2:
         instance.staffs.save()
     if instance.user_type == 3:

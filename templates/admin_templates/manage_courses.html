@@ -1,0 +1,52 @@
+{% extends 'admin_templates/base_template.html' %}
+{% block page_title %}Manejar Curso{% endblock page_title %}
+{% load static %}
+
+
+{% block main_content %}
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Detalhes dos Cursos/Classes</h3>
+                            <div class="card-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control float-right"
+                                           placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-default"><i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Curso/Classe</th>
+                                    <th>Ações</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for course in courses %}
+                                    <tr>
+                                        <td>{{ course.id }}</td>
+                                        <td>{{ course.course_name }}</td>
+                                        <td><a href="/edit_course/{{ course.id }}" class="btn btn-success">Editar</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock main_content %}

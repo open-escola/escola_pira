@@ -17,8 +17,23 @@ urlpatterns = [
     path('logout_user', views.do_logout),
     path('get_user_detail', views.get_user_detail),
 
-
     path('admin_home', views_admin.admin_home),
+
     path('add_staff', views_admin.add_staff),
     path('add_staff_save', views_admin.add_staff_save),
+
+    path('add_course', views_admin.add_course),
+    path('add_course_save', views_admin.add_course_save),
+
+    path('add_student', views_admin.add_student),
+    path('add_student_save', views_admin.add_student_save),
+
+    path('add_subject', views_admin.add_subject),
+    path('add_subject_save', views_admin.add_subject_save),
+
+    path('manage_staff', views_admin.manage_staff),
+    path('manage_student', views_admin.manage_student),
+    path('manage_course', views_admin.manage_course),
+    path('manage_subject', views_admin.manage_subject),
+
 ]

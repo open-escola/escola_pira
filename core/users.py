@@ -1,14 +1,10 @@
-from django.contrib.auth.models import User
+"""
+Preciso fazer um script que adicione usuários!
+Os SuperUsuários conseguem acessar o sistema
+python manage.py createsuperuser --email michelmetran@gmail.com --username michelmetran
+"""
 
 from core.models import CustomUser
-
-# u = CustomUser(username='unique_fellow')
-# u.set_password('12345')
-# u.is_superuser = True
-# u.is_staff = True
-# u.is_active = True
-# u.user_type = 1
-# u.save()
 
 user = CustomUser.objects.create_user(
     username='sseber',
@@ -20,3 +16,5 @@ user = CustomUser.objects.create_user(
 )
 
 user.save()
+
+

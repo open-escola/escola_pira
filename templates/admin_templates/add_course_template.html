@@ -1,0 +1,63 @@
+{% extends 'admin_templates/base_template.html' %}
+{% block page_title %}Adicionar Curso{% endblock page_title %}
+{% load static %}
+
+
+{% block main_content %}
+
+    <section class="content">
+        <div class="container-fluid">
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- general form elements -->
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Cursos</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form role="form" action="/add_course_save" method="post">
+                                    {% csrf_token %}
+                                    <div class="card-body">
+
+                                        <div class="form-group">
+                                            <label>Nome do Curso</label>
+                                            <input type="text" class="form-control" name="course"
+                                                   placeholder="Nome do Curso">
+                                        </div>
+
+                                        <!-- Mensagens -->
+                                        <div class="form-group">
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    {% if message.tags == 'error' %}
+                                                        <div class="alert alert-danger"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                    {% if message.tags == 'success' %}
+                                                        <div class="alert alert-success"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+
+                                        </div>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary btn-block">Adicionar Curso
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+{% endblock main_content %}
