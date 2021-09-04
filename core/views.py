@@ -1,8 +1,9 @@
-from django.contrib.auth import login, logout
 from django.contrib import messages
+from django.contrib.auth import login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+
 from core.email_backend import EmailBackend
 
 
@@ -45,8 +46,8 @@ def do_login(request):
             username=request.POST.get('email'),
             password=request.POST.get('password')
         )
+
         if user is not None:
-            print(user)
             login(request, user)
             if user.user_type == '1':
                 return HttpResponseRedirect('/admin_home')

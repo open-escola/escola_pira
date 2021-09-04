@@ -2,16 +2,15 @@ from django.contrib.auth.models import AbstractUser, User
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from django.utils import timezone
 
 
 # Create your models here.
-
-
 class Courses(models.Model):
     id = models.AutoField(primary_key=True)
     course_name = models.CharField(max_length=255)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -23,8 +22,8 @@ class CustomUser(AbstractUser):
 class Admin(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -32,8 +31,8 @@ class Staffs(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     address = models.TextField()
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -46,8 +45,8 @@ class Students(models.Model):
     course_id = models.ForeignKey(Courses, on_delete=models.DO_NOTHING)
     session_start_year = models.DateTimeField()
     session_end_year = models.DateTimeField()
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -56,17 +55,19 @@ class Subject(models.Model):
     subject_name = models.CharField(max_length=255)
     course_id = models.ForeignKey(Courses, on_delete=models.CASCADE, default=1)
     staff_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
+    # auto_now_add = True
+    # https://stackoverflow.com/questions/56546124/django-fixtures-and-auto-now-add-date-time-field
 
 
 class Attendance(models.Model):
     id = models.AutoField(primary_key=True)
     subject_id = models.ForeignKey(Subject, on_delete=models.DO_NOTHING)
     attendance_date = models.DateTimeField(auto_now_add=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -75,8 +76,8 @@ class AttendanceReport(models.Model):
     subject_id = models.ForeignKey(Subject, on_delete=models.DO_NOTHING)
     attendance_id = models.ForeignKey(Attendance, on_delete=models.CASCADE)
     status = models.BooleanField(default=False)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -86,8 +87,8 @@ class LeaveReportStudent(models.Model):
     leave_date = models.CharField(max_length=255)
     leave_message = models.TextField()
     leave_status = models.BooleanField(default=False)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -97,8 +98,8 @@ class LeaveReportStaff(models.Model):
     leave_date = models.CharField(max_length=255)
     leave_message = models.TextField()
     leave_status = models.BooleanField(default=False)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -107,8 +108,8 @@ class FeedBackStudent(models.Model):
     student_id = models.ForeignKey(Students, on_delete=models.CASCADE)
     feedback = models.TextField()
     feedback_reply = models.TextField()
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 
@@ -117,8 +118,8 @@ class FeedBackStaffs(models.Model):
     staffs_id = models.ForeignKey(Staffs, on_delete=models.CASCADE)
     feedback = models.TextField()
     feedback_reply = models.TextField()
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now_add=True)
+    create_at = models.DateTimeField(default=timezone.now, editable=False)
+    update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
 
 

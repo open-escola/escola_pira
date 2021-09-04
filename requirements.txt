@@ -6,3 +6,4 @@ pymysql==1.0.2
 pytz==2021.1
 requests==2.25.1
 whitenoise>=5.3.0
+PyYAML==5.4.1

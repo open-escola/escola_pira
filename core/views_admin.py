@@ -1,18 +1,23 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 from core.models import CustomUser, Courses, Staffs, Subject, Students
 
 
+@login_required
 def admin_home(request):
     return render(request, 'admin_templates/home_content.html')
 
 
+@login_required
 def add_staff(request):
     return render(request, 'admin_templates/add_staff_template.html')
 
 
+@login_required
 def add_staff_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
@@ -43,27 +48,29 @@ def add_staff_save(request):
             return HttpResponseRedirect('/add_staff')
 
 
+@login_required
 def add_course(request):
     return render(request, 'admin_templates/add_course_template.html')
 
 
+@login_required
 def add_course_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
     else:
         course = request.POST.get('course')
-
         try:
-            course_model = Courses(course_name=course)
-            course_model.save()
-            messages.success(request, "Curso adicionado com Sucesso!")
+            course = Courses(course_name=course)
+            course.save()
+            messages.success(request, 'Curso adicionado com Sucesso!')
             return HttpResponseRedirect('/add_course')
         except Exception as e:
             print(e)
-            messages.error(request, "Falha ao adicionar Curso")
+            messages.error(request, 'Falha ao adicionar Curso')
             return HttpResponseRedirect('/add_course')
 
 
+@login_required
 def add_student(request):
     courses = Courses.objects.all()
     return render(
@@ -73,6 +80,7 @@ def add_student(request):
     )
 
 
+@login_required
 def add_student_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
@@ -87,6 +95,12 @@ def add_student_save(request):
         session_end = request.POST.get('session_end')
         course_id = request.POST.get('course')
         gender = request.POST.get('gender')
+
+        profile_pic = request.FILES['profile_pic']
+        print(f'ddd {profile_pic.name} ddd {profile_pic.size}')
+        fs = FileSystemStorage()
+        filename = fs.save(profile_pic.name, profile_pic)
+        profile_pic_url = fs.url(filename)
 
         # session_start = datetime.datetime.strptime(session_start, '%Y-%m-%d').strftime('%Y-%m-%d')
         # session_end = datetime.datetime.strptime(session_end, '%Y-%m-%d').strftime('%Y-%m-%d')
@@ -105,6 +119,7 @@ def add_student_save(request):
             user.students.session_end_year = session_end
             user.students.course_id = Courses.objects.get(id=course_id)
             user.students.gender = gender
+            user.students.profile_pic = profile_pic_url
             user.save()
 
             messages.success(request, "Aluno adicionado com Sucesso!")
@@ -115,19 +130,18 @@ def add_student_save(request):
             return HttpResponseRedirect('/add_student')
 
 
+@login_required
 def add_subject(request):
     courses = Courses.objects.all()
     staffs = CustomUser.objects.filter(user_type=2)
     return render(
         request,
         'admin_templates/add_subject_template.html',
-        {
-            "courses": courses,
-            "staffs": staffs,
-        }
+        {'courses': courses, 'staffs': staffs}
     )
 
 
+@login_required
 def add_subject_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
@@ -135,7 +149,6 @@ def add_subject_save(request):
         subject = request.POST.get('subject')
         course_id = request.POST.get('course')
         course = Courses.objects.get(id=course_id)
-
         staff_id = request.POST.get('staff')
         staff = CustomUser.objects.get(id=staff_id)
 
@@ -154,6 +167,7 @@ def add_subject_save(request):
             return HttpResponseRedirect('/add_subject')
 
 
+@login_required
 def manage_staff(request):
     staffs = Staffs.objects.all()
     return render(
@@ -163,6 +177,7 @@ def manage_staff(request):
     )
 
 
+@login_required
 def manage_student(request):
     students = Students.objects.all()
     return render(
@@ -172,6 +187,7 @@ def manage_student(request):
     )
 
 
+@login_required
 def manage_course(request):
     courses = Courses.objects.all()
     return render(
@@ -181,6 +197,7 @@ def manage_course(request):
     )
 
 
+@login_required
 def manage_subject(request):
     subjects = Subject.objects.all()
     return render(
@@ -190,6 +207,7 @@ def manage_subject(request):
     )
 
 
+@login_required
 def edit_staff(request, staff_id):
     staff = Staffs.objects.get(admin=staff_id)
     return render(
@@ -199,6 +217,7 @@ def edit_staff(request, staff_id):
     )
 
 
+@login_required
 def edit_staff_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
@@ -226,10 +245,11 @@ def edit_staff_save(request):
             return HttpResponseRedirect(f'/edit_staff/{staff_id}')
         except Exception as e:
             print(e)
-            messages.error(request, 'Falha ao adicionar Disciplina')
+            messages.error(request, 'Falha ao alterar Funcionário')
             return HttpResponseRedirect(f'/edit_staff/{staff_id}')
 
 
+@login_required
 def edit_student(request, student_id):
     student = Students.objects.get(admin=student_id)
     courses = Courses.objects.all()  # Preciso enviar a informação dos cursos para que seja possível alterar o aluno
@@ -242,6 +262,7 @@ def edit_student(request, student_id):
     )
 
 
+@login_required
 def edit_student_save(request):
     if request.method != 'POST':
         return HttpResponse('<h2>Método não Permitido</h2>')
@@ -257,6 +278,16 @@ def edit_student_save(request):
         session_start = request.POST.get('session_start')
         session_end = request.POST.get('session_end')
 
+        # Se tiver uma imagem carregada, atualiza. Senão mantem a que figura que está!
+        if request.FILES['profile_pic']:
+            profile_pic = request.FILES['profile_pic']
+            print(f'ddd {profile_pic.name} ddd {profile_pic.size}')
+            fs = FileSystemStorage()
+            filename = fs.save(profile_pic.name, profile_pic)
+            profile_pic_url = fs.url(filename)
+        else:
+            profile_pic_url = None
+
         try:
             user = CustomUser.objects.get(id=student_id)
             user.first_name = first_name
@@ -265,18 +296,20 @@ def edit_student_save(request):
             user.username = username
             user.save()
 
-            student_model = Students.objects.get(admin=student_id)
-            student_model.address = address
-            student_model.gender = gender
-            student_model.session_start = session_start
-            student_model.session_end = session_end
+            student = Students.objects.get(admin=student_id)
+            student.address = address
+            student.gender = gender
+            student.session_start = session_start
+            student.session_end = session_end
+            if profile_pic_url is not None:
+                student.profile_pic = profile_pic_url
             course = Courses.objects.get(id=course_id)
-            student_model.course_id = course
-            student_model.save()
+            student.course_id = course
+            student.save()
 
             messages.success(request, 'Aluno alterado com Sucesso!')
             return HttpResponseRedirect(f'/edit_student/{student_id}')
         except Exception as e:
-            print(e)
             messages.error(request, 'Falha ao alterar Aluno')
+            messages.error(request, e)
             return HttpResponseRedirect(f'/edit_student/{student_id}')

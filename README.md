@@ -33,6 +33,7 @@ Há um projeto que parece interessante e pode ser explorado, que é a adaptaçã
 
 -----
 
+
 ### Quem Somos
 
 - Ana Paula
@@ -41,3 +42,10 @@ Há um projeto que parece interessante e pode ser explorado, que é a adaptaçã
 - Kevin
 - Michel
 - Michele
+
+```
+
+python manage.py loaddata subjects.json
+python manage.py loaddata courses.json
+```
+

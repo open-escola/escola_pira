@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import django_heroku
 from pathlib import Path
+
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -114,6 +115,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+# https://stackoverflow.com/questions/18622007/runtimewarning-datetimefield-received-a-naive-datetime
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/

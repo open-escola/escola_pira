@@ -1,0 +1,173 @@
+[
+  {
+    "model": "core.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "michelmetran",
+      "first_name": "Michel",
+      "last_name": "Metran",
+      "email": "michelmetran@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 1,
+    "fields": {
+      "admin": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "anapaula",
+      "first_name": "Ana Paula",
+      "last_name": "Santos",
+      "email": "santos.anapaula.st@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 2,
+    "fields": {
+      "admin": 2
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "is_superuser": true,
+      "username": "michelepertille",
+      "first_name": "Michele",
+      "last_name": "Pertille",
+      "email": "mi.mcpertille@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-09-03T11:09:19.680Z",
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 3,
+    "fields": {
+      "admin": 3
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "is_superuser": true,
+      "username": "kevinchagas",
+      "first_name": "Kevin",
+      "last_name": "Chagas",
+      "email": "kevinchagas@outlook.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 4,
+    "fields": {
+      "admin": 4
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "is_superuser": true,
+      "username": "gabriellelombardi",
+      "first_name": "Gabrielle",
+      "last_name": "Lombardi",
+      "email": "gabriellelombardi@hotmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 5,
+    "fields": {
+      "admin": 5
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "is_superuser": true,
+      "username": "joseanesathie",
+      "first_name": "Joseane",
+      "last_name": "Sathie",
+      "email": "sathiemimi@hotmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 6,
+    "fields": {
+      "admin": 6
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$76jXJfaev6w5DP51Jnw8IY$3EPqXmLKot/49wah+E+Dz9CR4A0AgX54k+Xcutnaz2A=",
+      "is_superuser": true,
+      "username": "isabellezein",
+      "first_name": "Isabelle",
+      "last_name": "Zein",
+      "email": "isabelle.zein@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 7,
+    "fields": {
+      "admin": 7
+    }
+  }
+]
