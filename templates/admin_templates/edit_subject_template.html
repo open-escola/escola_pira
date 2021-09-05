@@ -1,0 +1,86 @@
+{% extends 'admin_templates/_base.html' %}
+{% block page_title %}
+    Editar Disciplina
+{% endblock page_title %}
+{% load static %}
+
+
+{% block main_content %}
+
+    <section class="content">
+        <div class="container-fluid">
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Editar Disciplinas</h3>
+                                </div>
+                                <form role="form" action="/edit_subject_save" method="post">
+                                    {% csrf_token %}
+                                    <div class="card-body">
+
+                                        <input type="hidden" name="subject_id" value="{{ subject.id }}">
+
+                                        <div class="form-group">
+                                            <label>Nome da Disciplina</label>
+                                            <input type="text" class="form-control" name="subject_name"
+                                                   placeholder="Nome da Disciplina" value="{{ subject.subject_name }}">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Curso</label>
+                                            <select class="form-control" name="course">
+                                                {% for course in courses %}
+                                                    <option value="{{ course.id }}"
+                                                            {% if course.id == subject.course_id.id %}
+                                                            selected {% endif %}>{{ course.course_name }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Staff</label>
+                                            <select class="form-control" name="staff">
+                                                {% for staff in staffs %}
+                                                    <option value="{{ staff.id }}"
+                                                            {% if staff.id == subject.staff_id.id %}
+                                                            selected {% endif %}>{{ staff.first_name }} {{ staff.last_name }}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+
+                                        <!-- Mensagens -->
+                                        <div class="form-group">
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    {% if message.tags == 'error' %}
+                                                        <div class="alert alert-danger"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                    {% if message.tags == 'success' %}
+                                                        <div class="alert alert-success"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+
+                                        </div>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary btn-block">Alterar Disciplina
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+{% endblock main_content %}

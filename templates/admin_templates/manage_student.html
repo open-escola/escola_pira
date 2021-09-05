@@ -7,7 +7,6 @@
 
     <section class="content">
         <div class="container-fluid">
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -26,7 +25,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.card-header -->
                         <div class="card-body table-responsive p-0">
                             <table class="table table-hover text-nowrap">
                                 <thead>
@@ -61,21 +59,18 @@
                                         <td>{{ student.session_start_year }}</td>
                                         <td>{{ student.session_end_year }}</td>
                                         <td>{{ student.course_id.course_name }}</td>
-                                    <td>{{ student.admin.date_joined }}</td>
-                                    <td>{{ student.admin.last_login }}</td>
-                                    <td><a href="/edit_student/{{ student.admin.id }}" class="btn btn-success">Editar
-                                    </td>
-                                </tr>
+                                        <td>{{ student.admin.date_joined }}</td>
+                                        <td>{{ student.admin.last_login }}</td>
+                                        <td><a href="/edit_student/{{ student.admin.id }}" class="btn btn-success">Editar
+                                        </td>
+                                    </tr>
                                 {% endfor %}
                                 </tbody>
                             </table>
                         </div>
-                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div>
             </div>
-
         </div>
     </section>
 

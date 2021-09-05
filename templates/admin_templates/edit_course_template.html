@@ -1,0 +1,66 @@
+{% extends 'admin_templates/_base.html' %}
+{% block page_title %}
+    Editar Curso | Course ID: {{ course.id }}
+{% endblock page_title %}
+{% load static %}
+
+
+{% block main_content %}
+
+    <section class="content">
+        <div class="container-fluid">
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-primary">
+                                <div class="card-header">
+                                    <h3 class="card-title">Editar Cursos</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <!-- form start -->
+                                <form role="form" action="/edit_course_save" method="post">
+                                    {% csrf_token %}
+                                    <div class="card-body">
+
+                                        <input type="hidden" name="course_id" value="{{ course.id }}">
+
+                                        <div class="form-group">
+                                            <label>Nome do Curso</label>
+                                            <input type="text" class="form-control" name="course_name"
+                                                   placeholder="Nome do Curso" value="{{ course.course_name }}">
+                                        </div>
+
+                                        <!-- Mensagens -->
+                                        <div class="form-group">
+                                            {% if messages %}
+                                                {% for message in messages %}
+                                                    {% if message.tags == 'error' %}
+                                                        <div class="alert alert-danger"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                    {% if message.tags == 'success' %}
+                                                        <div class="alert alert-success"
+                                                             style="margin-top: 10px">{{ message }}</div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+
+                                        </div>
+
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary btn-block">Salvar Alterações
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+{% endblock main_content %}

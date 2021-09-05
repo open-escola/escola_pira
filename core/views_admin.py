@@ -122,11 +122,10 @@ def add_student_save(request):
             user.students.profile_pic = profile_pic_url
             user.save()
 
-            messages.success(request, "Aluno adicionado com Sucesso!")
+            messages.success(request, 'Aluno adicionado com Sucesso!')
             return HttpResponseRedirect('/add_student')
         except Exception as e:
-            print(e)
-            messages.error(request, "Falha ao adicionar Aluno")
+            messages.error(request, f'Falha ao adicionar Aluno | Erro: {e}')
             return HttpResponseRedirect('/add_student')
 
 
@@ -278,10 +277,11 @@ def edit_student_save(request):
         session_start = request.POST.get('session_start')
         session_end = request.POST.get('session_end')
 
-        # Se tiver uma imagem carregada, atualiza. Senão mantem a que figura que está!
+        # Se tiver uma imagem carregada, atualiza.
+        # Senão mantem a que imagem que está!
         if request.FILES['profile_pic']:
             profile_pic = request.FILES['profile_pic']
-            print(f'ddd {profile_pic.name} ddd {profile_pic.size}')
+            print(f'Name {profile_pic.name}\nSize {profile_pic.size}')
             fs = FileSystemStorage()
             filename = fs.save(profile_pic.name, profile_pic)
             profile_pic_url = fs.url(filename)
@@ -313,3 +313,76 @@ def edit_student_save(request):
             messages.error(request, 'Falha ao alterar Aluno')
             messages.error(request, e)
             return HttpResponseRedirect(f'/edit_student/{student_id}')
+
+
+@login_required
+def edit_subject(request, subject_id):
+    subject = Subject.objects.get(id=subject_id)
+    courses = Courses.objects.all()
+    staffs = CustomUser.objects.filter(user_type=2)
+    return render(
+        request,
+        'admin_templates/edit_subject_template.html',
+        {
+            'subject': subject,
+            'courses': courses,
+            'staffs': staffs,
+        }
+    )
+
+
+@login_required
+def edit_subject_save(request):
+    if request.method != 'POST':
+        return HttpResponse('<h2>Método não Permitido</h2>')
+    else:
+        subject_id = request.POST.get('subject_id')
+        subject_name = request.POST.get('subject_name')
+        staff_id = request.POST.get('staff')
+        course_id = request.POST.get('course')
+
+        try:
+            subject = Subject.objects.get(id=subject_id)
+            subject.subject_name = subject_name
+            staff = CustomUser.objects.get(id=staff_id)
+            subject.staff_id = staff
+            course = Courses.objects.get(id=course_id)
+            subject.course_id = course
+            subject.save()
+
+            messages.success(request, 'Disciplina alterado com Sucesso!')
+            return HttpResponseRedirect(f'/edit_subject/{subject_id}')
+        except Exception as e:
+            messages.error(request, 'Falha ao alterar Disciplina')
+            messages.error(request, e)
+            return HttpResponseRedirect(f'/edit_subject/{subject_id}')
+
+
+@login_required
+def edit_course(request, course_id):
+    course = Courses.objects.get(id=course_id)
+    return render(
+        request,
+        'admin_templates/edit_course_template.html',
+        {'course': course}
+    )
+
+
+@login_required
+def edit_course_save(request):
+    if request.method != 'POST':
+        return HttpResponse('<h2>Método não Permitido</h2>')
+    else:
+        course_id = request.POST.get('course_id')
+        course_name = request.POST.get('course_name')
+
+        try:
+            course = Courses.objects.get(id=course_id)
+            course.course_name = course_name
+            course.save()
+            messages.success(request, 'Curso alterado com Sucesso!')
+            return HttpResponseRedirect(f'/edit_course/{course_id}')
+        except Exception as e:
+            messages.error(request, 'Falha ao alterar Curso')
+            messages.error(request, e)
+            return HttpResponseRedirect(f'/edit_course/{course_id}')

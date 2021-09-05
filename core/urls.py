@@ -42,4 +42,9 @@ urlpatterns = [
     path('edit_student/<str:student_id>', views_admin.edit_student),
     path('edit_student_save', views_admin.edit_student_save),
 
+    path('edit_subject/<str:subject_id>', views_admin.edit_subject),
+    path('edit_subject_save', views_admin.edit_subject_save),
+
+    path('edit_course/<str:course_id>', views_admin.edit_course),
+    path('edit_course_save', views_admin.edit_course_save),
 ]
