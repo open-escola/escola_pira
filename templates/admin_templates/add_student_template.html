@@ -1,5 +1,7 @@
 {% extends 'admin_templates/_base.html' %}
-{% block page_title %}Adicionar Aluno{% endblock page_title %}
+{% block page_title %}
+    Adicionar Aluno
+{% endblock page_title %}
 {% load static %}
 
 
@@ -15,103 +17,8 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Alunos</h3>
                                 </div>
-                                <form role="form" action="/add_student_save" method="post"
-                                      enctype="multipart/form-data">
-                                    {% csrf_token %}
-                                    <div class="card-body">
-
-                                        <div class="form-group">
-                                            <label>Primeiro Nome</label>
-                                            <input type="text" class="form-control" name="first_name"
-                                                   placeholder="Primeiro Nome">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Sobrenome</label>
-                                            <input type="text" class="form-control" name="last_name"
-                                                   placeholder="Sobrenome">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Nome do Usuário / <i>username</i></label>
-                                            <input type="text" class="form-control" name="username"
-                                                   placeholder="Nome do Usuário">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input type="email" class="form-control" name="email"
-                                                   placeholder="Inserir e-mail">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Senha</label>
-                                            <input type="password" class="form-control" name="password"
-                                                   placeholder="Senha">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Endereço</label>
-                                            <input type="text" class="form-control" name="address"
-                                                   placeholder="Endereço">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Curso</label>
-                                            <select class="form-control" name="course">
-                                                {% for course in courses %}
-                                                    <option value="{{ course.id }}">{{ course.course_name }}</option>
-                                                {% endfor %}
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Gênero</label>
-                                            <select class="form-control" name="gender">
-                                                <option>Masculino</option>
-                                                <option>Feminino</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Data que Começou</label>
-                                            <input type="date" class="form-control" name="session_start"
-                                                   placeholder="Data que iniciou o curso">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Data que Encerrou o Curso</label>
-                                            <input type="date" class="form-control" name="session_end"
-                                                   placeholder="Data que Encerrou o curso">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Profile Pic</label>
-                                            <input type="file" class="form-control" name="profile_pic">
-                                        </div>
-
-                                        <!-- Mensagens -->
-                                        <div class="form-group">
-                                            {% if messages %}
-                                                {% for message in messages %}
-                                                    {% if message.tags == 'error' %}
-                                                        <div class="alert alert-danger"
-                                                             style="margin-top: 10px">{{ message }}</div>
-                                                    {% endif %}
-                                                    {% if message.tags == 'success' %}
-                                                        <div class="alert alert-success"
-                                                             style="margin-top: 10px">{{ message }}</div>
-                                                    {% endif %}
-                                                {% endfor %}
-                                            {% endif %}
-
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary btn-block">Adicionar Aluno
-                                        </button>
-                                    </div>
-                                </form>
+                                {% url 'add_student_save' as action_path %}
+                                {% include 'admin_templates/form_template.html' with messages=messages form=form action_path=action_path button_text='Adicionar Aluno' %}
                             </div>
                         </div>
                     </div>

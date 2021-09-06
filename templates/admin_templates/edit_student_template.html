@@ -1,6 +1,6 @@
 {% extends 'admin_templates/_base.html' %}
 {% block page_title %}
-    Editar Aluno {{ student.admin.username }}
+    Editar Aluno | ID: {{ id }}
 {% endblock page_title %}
 {% load static %}
 
@@ -15,110 +15,10 @@
                         <div class="col-md-12">
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Alunos</h3>
+                                    <h3 class="card-title">Aluno | username: <b>{{ username }}</b></h3>
                                 </div>
-                                <form role="form" action="/edit_student_save" method="post"
-                                      enctype="multipart/form-data">
-                                    {% csrf_token %}
-                                    <div class="card-body">
-
-                                        <input type="hidden" name="student_id" value="{{ student.admin.id }}">
-
-                                        <div class="form-group">
-                                            <label>Primeiro Nome</label>
-                                            <input type="text" class="form-control" name="first_name"
-                                                   placeholder="Primeiro Nome" value="{{ student.admin.first_name }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Sobrenome</label>
-                                            <input type="text" class="form-control" name="last_name"
-                                                   placeholder="Sobrenome" value="{{ student.admin.last_name }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Nome do Usuário / <i>username</i></label>
-                                            <input type="text" class="form-control" name="username"
-                                                   placeholder="Nome do Usuário" value="{{ student.admin.username }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input type="email" class="form-control" name="email"
-                                                   placeholder="Inserir e-mail" value="{{ student.admin.email }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Endereço</label>
-                                            <input type="text" class="form-control" name="address"
-                                                   placeholder="Endereço" value="{{ student.address }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Curso</label>
-                                            <select class="form-control" name="course">
-                                                {% for course in courses %}
-                                                    <option value="{{ course.id }}"
-                                                            {% if course.id == student.course_id.id %}
-                                                            selected {% endif %}>
-                                                        {{ course.course_name }}</option>
-                                                {% endfor %}
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Gênero</label>
-                                            <select class="form-control" name="gender">
-                                                <option {% if student.gender == 'Masculino' %} selected {% endif %}>
-                                                    Masculino
-                                                </option>
-                                                <option {% if student.gender == 'Feminino' %} selected {% endif %}>
-                                                    Feminino
-                                                </option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Data que Começou</label>
-                                            <input type="date" class="form-control" name="session_start"
-                                                   placeholder="Data que iniciou o curso"
-                                                   value="{{ student.session_start_year|date:'Y-m-d' }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Data que Encerrou o Curso</label>
-                                            <input type="date" class="form-control" name="session_end"
-                                                   placeholder="Data que Encerrou o curso"
-                                                   value="{{ student.session_end_year|date:'Y-m-d' }}">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Profile Pic</label>
-                                            <input type="file" class="form-control" name="profile_pic">
-                                        </div>
-
-                                        <!-- Mensagens -->
-                                        <div class="form-group">
-                                            {% if messages %}
-                                                {% for message in messages %}
-                                                    {% if message.tags == 'error' %}
-                                                        <div class="alert alert-danger"
-                                                             style="margin-top: 10px">{{ message }}</div>
-                                                    {% endif %}
-                                                    {% if message.tags == 'success' %}
-                                                        <div class="alert alert-success"
-                                                             style="margin-top: 10px">{{ message }}</div>
-                                                    {% endif %}
-                                                {% endfor %}
-                                            {% endif %}
-
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary btn-block">Salvar Alterações
-                                        </button>
-                                    </div>
-                                </form>
+                                {% url 'edit_student_save' as action_path %}
+                                {% include 'admin_templates/form_template.html' with messages=messages form=form action_path=action_path button_text='Alterar Aluno' %}
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,9 @@
 
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="/admin_home" class="brand-link">
+    <a href="/index1" class="brand-link">
+        {#    <a href="{% url 'admin_home' %}" class="brand-link">#}
+
         <img src="{% static 'dist/img/AdminLTELogo.png' %}" alt="AdminLTE Logo"
              class="brand-image img-circle elevation-3"
              style="opacity: .8">
@@ -18,7 +20,7 @@
                      alt="User Image">
             </div>
             <div class="info">
-                <a href="/admin_home" class="d-block">{{ user.first_name }}</a>
+                <a href="{% url 'admin_home' %}" class="d-block">{{ user.first_name }}</a>
             </div>
         </div>
 
@@ -28,8 +30,19 @@
                 data-accordion="false">
 
                 <!-- MENUS ALUNOS -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                {% url 'add_student' as add_student %}
+                {% url 'manage_student' as manage_student %}
+                {% url 'edit_student' student_id=id as edit_student %}
+                <li class="nav-item has-treeview
+                    {% if request.path == add_student %} menu-open {% endif %}
+                    {% if request.path == manage_student %} menu-open {% endif %}
+                    {% if request.path == edit_student %} menu-open {% endif %}">
+                    <!-- Se adicionar  menu-open, abre! -->
+                    <a href="#"
+                       class="nav-link
+                        {% if request.path == add_student %} active {% endif %}
+                        {% if request.path == manage_student %} active {% endif %}
+                        {% if request.path == edit_student %} active {% endif %}">
                         <i class="nav-icon fas fa-user-graduate"></i>
                         <p>
                             Alunos
@@ -39,14 +52,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/add_student" class="nav-link active">
+                            <a href="{{ add_student }}"
+                               class="nav-link {% if request.path == add_student %} active {% endif %}">
+                                <!-- Se adicionar active, muda! -->
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Adicionar</p>
                                 <span class="right badge badge-success">Ok</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/manage_student" class="nav-link">
+                            <a href="{{ manage_student }}"
+                               class="nav-link
+                                {% if request.path == manage_student %} active {% endif %}
+                                {% if request.path == edit_student %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editar</p>
                                 <span class="right badge badge-success">Ok</span>
@@ -56,8 +74,18 @@
                 </li>
 
                 <!-- MENU FUNCIONÁRIOS -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                {% url 'add_staff' as add_staff %}
+                {% url 'manage_staff' as manage_staff %}
+                {% url 'edit_staff' staff_id=id as edit_staff %}
+                <li class="nav-item has-treeview
+                    {% if request.path == add_staff %} menu-open {% endif %}
+                    {% if request.path == manage_staff %} menu-open {% endif %}
+                    {% if request.path == edit_staff %} menu-open {% endif %}">
+                    <a href="#"
+                       class="nav-link
+                        {% if request.path == add_staff %} active {% endif %}
+                        {% if request.path == manage_staff %} active {% endif %}
+                        {% if request.path == edit_staff %} active {% endif %}">
                         <i class="nav-icon fas fa-chalkboard-teacher"></i>
                         <p>
                             Funcionários
@@ -67,14 +95,18 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/add_staff" class="nav-link active">
+                            <a href="{{ add_staff }}"
+                               class="nav-link {% if request.path == add_staff %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Adicionar</p>
                                 <span class="right badge badge-success">Ok</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/manage_staff" class="nav-link">
+                            <a href="{{ manage_staff }}"
+                               class="nav-link
+                                {% if request.path == manage_staff %} active {% endif %}
+                                {% if request.path == edit_staff %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editar</p>
                                 <span class="right badge badge-success">Ok</span>
@@ -84,8 +116,18 @@
                 </li>
 
                 <!-- MENU CURSO/CLASSE -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                {% url 'add_course' as add_course %}
+                {% url 'manage_course' as manage_course %}
+                {% url 'edit_course' course_id=id as edit_course %}
+                <li class="nav-item has-treeview
+                    {% if request.path == add_course %} menu-open {% endif %}
+                    {% if request.path == manage_course %} menu-open {% endif %}
+                    {% if request.path == edit_course %} menu-open {% endif %}">
+                    <a href="#"
+                       class="nav-link
+                        {% if request.path == add_course %} active {% endif %}
+                        {% if request.path == manage_course %} active {% endif %}
+                        {% if request.path == edit_course %} active {% endif %}">
                         <i class="nav-icon fas fa-school"></i>
                         <p>
                             Curso/Classe
@@ -95,14 +137,18 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/add_course" class="nav-link active">
+                            <a href="{{ add_course }}"
+                               class="nav-link {% if request.path == add_course %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Adicionar</p>
                                 <span class="right badge badge-success">Ok</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/manage_course" class="nav-link">
+                            <a href="{{ manage_course }}"
+                               class="nav-link
+                                {% if request.path == manage_course %} active {% endif %}
+                                {% if request.path == edit_course %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editar</p>
                                 <span class="right badge badge-success">Ok</span>
@@ -112,8 +158,18 @@
                 </li>
 
                 <!-- MENU ASSUNTO -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                {% url 'add_subject' as add_subject %}
+                {% url 'manage_subject' as manage_subject %}
+                {% url 'edit_subject' subject_id=id as edit_subject %}
+                <li class="nav-item has-treeview
+                    {% if request.path == add_subject %} menu-open {% endif %}
+                    {% if request.path == manage_subject %} menu-open {% endif %}
+                    {% if request.path == edit_subject %} menu-open {% endif %}">
+                    <a href="#"
+                       class="nav-link
+                        {% if request.path == add_subject %} active {% endif %}
+                        {% if request.path == manage_subject %} active {% endif %}
+                        {% if request.path == edit_subject %} active {% endif %}">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
                             Disciplinas
@@ -123,14 +179,18 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/add_subject" class="nav-link active">
+                            <a href="{{ add_subject }}"
+                               class="nav-link {% if request.path == add_subject %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Adicionar</p>
                                 <span class="right badge badge-success">Ok</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/manage_subject" class="nav-link">
+                            <a href="{{ manage_subject }}"
+                               class="nav-link
+                                {% if request.path == manage_subject %} active {% endif %}
+                                {% if request.path == edit_subject %} active {% endif %}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editar</p>
                                 <span class="right badge badge-success">Ok</span>
@@ -139,8 +199,9 @@
                     </ul>
                 </li>
 
+                <!-- Outros -->
                 <li class="nav-item">
-                    <a href="/add_staff" class="nav-link">
+                    <a href="{% url 'admin_home' %}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             View Attendance
@@ -149,7 +210,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/add_staff" class="nav-link">
+                    <a href="{% url 'admin_home' %}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Student FeedBack
@@ -158,7 +219,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/add_staff" class="nav-link">
+                    <a href="{% url 'admin_home' %}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Staff FeedBack
@@ -167,7 +228,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/add_staff" class="nav-link">
+                    <a href="{% url 'admin_home' %}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Student Leave
@@ -177,7 +238,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/add_staff" class="nav-link">
+                    <a href="{% url 'admin_home' %}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Staff Leave
