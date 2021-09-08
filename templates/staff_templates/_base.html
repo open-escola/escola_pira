@@ -1,0 +1,62 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include 'staff_templates/_head.html' %}
+    {% block _head_custom %}
+    {% endblock _head_custom %}
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+
+<div class="wrapper">
+    <!-- Navbar -->
+    {% include 'staff_templates/_topbar.html' %}
+
+    <!-- Main Sidebar Container -->
+    {% include 'staff_templates/_sidebar.html' with user=user id=id %}
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        {% include 'staff_templates/content_header.html' %}
+
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">{% block page_title %}{% endblock page_title %}</h1>
+                    </div>
+                    {#                    <div class="col-sm-6">#}
+                    {#                        <ol class="breadcrumb float-sm-right">#}
+                    {#                            <li class="breadcrumb-item"><a href="#">Home</a></li>#}
+                    {#                            <li class="breadcrumb-item active">Dashboard v1</li>#}
+                    {#                        </ol>#}
+                    {#                    </div>#}
+                </div>
+            </div>
+        </div>
+
+        {% block main_content %}
+        {% endblock main_content %}
+    </div>
+
+    <!-- /.content-wrapper -->
+    {% include 'staff_templates/_footer.html' %}
+
+    {#    <!-- Control Sidebar -->#}
+    {#    <aside class="control-sidebar control-sidebar-dark">#}
+    {#        <!-- Control sidebar content goes here -->#}
+    {#    </aside>#}
+    {#    <!-- /.control-sidebar -->#}
+</div>
+
+<!-- jQuery -->
+{% include 'staff_templates/_scripts.html' %}
+{% block _scripts_custom %}
+{% endblock _scripts_custom %}
+
+</body>
+</html>

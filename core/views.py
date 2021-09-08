@@ -50,11 +50,11 @@ def do_login(request):
         if user is not None:
             login(request, user)
             if user.user_type == '1':
-                return HttpResponseRedirect('/admin_home')
+                return HttpResponseRedirect(reverse('admin_home'))
             elif user.user_type == '2':
-                return HttpResponseRedirect(reverse('/staff_home'))
+                return HttpResponseRedirect(reverse('staff_home'))
             elif user.user_type == '3':
-                return HttpResponseRedirect(reverse('/student_home'))
+                return HttpResponseRedirect(reverse('student_home'))
             else:
                 return HttpResponse('<h2>Deu ruim no login</h2>')
         else:

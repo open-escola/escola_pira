@@ -155,7 +155,6 @@ def create_user_profile(sender, instance, created, **kwargs):
                 session_start_year='2020-01-01',
                 session_end_year='2020-12-31',
                 profile_pic='',
-                #gender='Masculino',
             )
 
 

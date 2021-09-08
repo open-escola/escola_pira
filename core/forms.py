@@ -22,6 +22,7 @@ class AddStudentForm(forms.Form):
     course_choices = []
     for course in courses:
         course_choices.append((course.id, course.course_name))
+    print(course_choices)
     course = forms.ChoiceField(label='Curso', choices=course_choices,
                                widget=forms.Select(attrs={'class': 'form-control'}))
 
