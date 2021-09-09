@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.urls import reverse
 
 from core.forms import AddStudentForm, EditStudentForm
-from core.models import CustomUser, Courses, Staffs, Subject, Students
+from core.models import CustomUser, Courses, Staffs, Subject, Students, SessionYear
 
 
 @login_required
@@ -93,8 +93,7 @@ def add_student_save(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             address = form.cleaned_data['address']
-            session_start = form.cleaned_data['session_start']
-            session_end = form.cleaned_data['session_end']
+            session_year_id = form.cleaned_data['session_year_id']
             course_id = form.cleaned_data['course']
             gender = form.cleaned_data['gender']
             profile_pic = request.FILES['profile_pic']
@@ -112,8 +111,7 @@ def add_student_save(request):
                     user_type=3,
                 )
                 user.students.address = address
-                user.students.session_start_year = session_start
-                user.students.session_end_year = session_end
+                user.students.session_year_id = SessionYear.objects.get(id=session_year_id)
                 user.students.course_id = Courses.objects.get(id=course_id)
                 user.students.gender = gender
                 user.students.profile_pic = profile_pic_url
@@ -122,6 +120,7 @@ def add_student_save(request):
                 messages.success(request, 'Aluno adicionado com Sucesso!')
                 return HttpResponseRedirect(reverse('add_student'))
             except Exception as e:
+                print(e)
                 messages.error(request, f'Falha ao adicionar Aluno\n{e}')
                 return HttpResponseRedirect(reverse('add_student'))
         else:
@@ -253,7 +252,7 @@ def edit_staff_save(request):
 
 @login_required
 def edit_student(request, student_id):
-    request.session['student_id'] = student_id  # QUando editar estudante, será armazenado o id do estudante no backend
+    request.session['student_id'] = student_id  # Quando editar estudante, será armazenado o id do estudante no backend
     student = Students.objects.get(admin=student_id)
     form = EditStudentForm()
     form.fields['first_name'].initial = student.admin.first_name
@@ -263,8 +262,7 @@ def edit_student(request, student_id):
     form.fields['address'].initial = student.address
     form.fields['course'].initial = student.course_id.id
     form.fields['gender'].initial = student.gender
-    form.fields['session_start'].initial = student.session_start_year
-    form.fields['session_end'].initial = student.session_end_year
+    form.fields['session_year_id'].initial = student.session_year_id
     form.fields['profile_pic'].initial = student.profile_pic
     return render(
         request,
@@ -289,8 +287,7 @@ def edit_student_save(request):
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             address = form.cleaned_data['address']
-            session_start = form.cleaned_data['session_start']
-            session_end = form.cleaned_data['session_end']
+            session_year_id = form.cleaned_data['session_year_id']
             course_id = form.cleaned_data['course']
             gender = form.cleaned_data['gender']
 
@@ -316,8 +313,7 @@ def edit_student_save(request):
                 student = Students.objects.get(admin=student_id)
                 student.address = address
                 student.gender = gender
-                student.session_start = session_start
-                student.session_end = session_end
+                student.session_year_id = SessionYear.objects.get(id=session_year_id)
                 if profile_pic_url is not None:
                     student.profile_pic = profile_pic_url
                 course = Courses.objects.get(id=course_id)
@@ -410,3 +406,27 @@ def edit_course_save(request):
         except Exception as e:
             messages.error(request, f'Falha ao alterar Curso\n{e}')
             return HttpResponseRedirect(reverse('edit_course', kwargs={'course_id': course_id}))
+
+
+@login_required
+def manage_session(request):
+    return render(request, 'admin_templates/manage_session_template.html')
+
+
+def add_session_save(request):
+    if request.method != 'POST':
+        return HttpResponseRedirect(reverse('manage_session'))
+    else:
+        session_start = request.POST.get('session_start')
+        session_end = request.POST.get('session_end')
+        try:
+            session_year = SessionYear(
+                session_start_year=session_start,
+                session_end_year=session_end
+            )
+            session_year.save()
+            messages.success(request, 'Data adicionada com Sucesso!')
+            return HttpResponseRedirect(reverse('manage_session'))
+        except Exception as e:
+            messages.error(request, f'Falha ao adicionar Data\n{e}')
+            return HttpResponseRedirect(reverse('manage_session'))

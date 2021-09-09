@@ -6,6 +6,12 @@ from django.utils import timezone
 
 
 # Create your models here.
+class SessionYear(models.Model):
+    id = models.AutoField(primary_key=True)
+    session_start_year = models.DateField()
+    session_end_year = models.DateField()
+
+
 class Courses(models.Model):
     id = models.AutoField(primary_key=True)
     course_name = models.CharField(max_length=255)
@@ -43,8 +49,7 @@ class Students(models.Model):
     profile_pic = models.FileField()
     address = models.TextField()
     course_id = models.ForeignKey(Courses, on_delete=models.DO_NOTHING)
-    session_start_year = models.DateTimeField()
-    session_end_year = models.DateTimeField()
+    session_year_id = models.ForeignKey(SessionYear, on_delete=models.CASCADE)
     create_at = models.DateTimeField(default=timezone.now, editable=False)
     update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
@@ -66,6 +71,7 @@ class Attendance(models.Model):
     id = models.AutoField(primary_key=True)
     subject_id = models.ForeignKey(Subject, on_delete=models.DO_NOTHING)
     attendance_date = models.DateTimeField(auto_now_add=True)
+    session_year_id = models.ForeignKey(SessionYear, on_delete=models.CASCADE)
     create_at = models.DateTimeField(default=timezone.now, editable=False)
     update_at = models.DateTimeField(default=timezone.now, editable=False)
     objects = models.Manager()
@@ -152,8 +158,7 @@ def create_user_profile(sender, instance, created, **kwargs):
             Students.objects.create(
                 admin=instance,
                 course_id=Courses.objects.get(id=1),
-                session_start_year='2020-01-01',
-                session_end_year='2020-12-31',
+                session_year_id=SessionYear.objects.get(id=1),
                 profile_pic='',
             )
 

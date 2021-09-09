@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'core.LoginCheckMiddleware.LoginCheckMiddleware'
+    'core.LoginCheckMiddleware.LoginCheckMiddleware'  # Middleware para confirmar se o usuário está logado! Aula 10
 ]
 
 ROOT_URLCONF = 'escola.urls'
@@ -142,9 +142,6 @@ AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
-
 # Criando Usuários
 # echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@myproject.com', 'password')" | python manage.py shell
 # https://stackoverflow.com/questions/6244382/how-to-automate-createsuperuser-on-django
-
-

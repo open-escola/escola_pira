@@ -47,7 +47,11 @@ urlpatterns = [
     path('edit_course/<str:course_id>', views_admin.edit_course, name='edit_course'),
     path('edit_course_save', views_admin.edit_course_save, name='edit_course_save'),
 
+    path('manage_session', views_admin.manage_session, name='manage_session'),
+    path('add_session_save', views_admin.add_session_save, name='add_session_save'),
+
     # Staff Aula 10
     path('staff_home', views_staff.staff_home, name='staff_home'),
     path('student_home', views_student.student_home, name='student_home'),
+
 ]

@@ -37,8 +37,7 @@
                                     <th>E-mail</th>
                                     <th>Endereço</th>
                                     <th>Gênero</th>
-                                    <th>Start Year</th>
-                                    <th>End Year</th>
+                                    <th>Session</th>
                                     <th>Curso</th>
                                     <th>date_joined</th>
                                     <th>last login</th>
@@ -56,8 +55,9 @@
                                         <td>{{ student.admin.email }}</td>
                                         <td>{{ student.address }}</td>
                                         <td>{{ student.gender }}</td>
-                                        <td>{{ student.session_start_year }}</td>
-                                        <td>{{ student.session_end_year }}</td>
+                                        <td>{{ student.session_year_id.session_start_year }}
+                                            até {{ student.session_year_id.session_end_year }}</td>
+
                                         <td>{{ student.course_id.course_name }}</td>
                                         <td>{{ student.admin.date_joined }}</td>
                                         <td>{{ student.admin.last_login }}</td>

@@ -43,7 +43,7 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 - https://www.youtube.com/watch?v=1A4tyUQTizM
 - https://www.youtube.com/watch?v=TYrXsAGNVrY
 
-*(Em 06.09.2021 parei na parte 9. Retomar a partir da 10!)*
+*(Em 09.09.2021 parei nos 20 minutos da parte 11)*
 
 -----
 
@@ -96,3 +96,7 @@ python manage.py createsuperuser --email admin@example.com --username admin
 
 - Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
 - ...
+- 
+
+
+
