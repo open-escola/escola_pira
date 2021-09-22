@@ -1,11 +1,15 @@
 # Escola Pira
 
+
 O projeto *Escola Pira* visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
 e professores, bem como classes e disciplinas.
+
+(Teste)
 
 O projeto foi desenvolvido com o *framework* Django.
 
 -----
+
 
 ### Motivação
 
