@@ -4,12 +4,9 @@
 O projeto *Escola Pira* visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
 e professores, bem como classes e disciplinas.
 
-(Teste)
-
 O projeto foi desenvolvido com o *framework* Django.
 
 -----
-
 
 ### Motivação
 
@@ -54,10 +51,14 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 
 ### Quem Somos
 
+
+(Em ordem alfabética)
+
 - Ana Paula
 - Ana Gabrielle
 - Joseana
 - Kevin
+- Marcel Alessandro
 - [Michel Metran](https://github.com/michelmetran)
 - Michele
 
@@ -101,6 +102,3 @@ python manage.py createsuperuser --email admin@example.com --username admin
 - Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
 - ...
 - 
-
-
-
