@@ -58,7 +58,7 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 - Ana Gabrielle
 - Joseana
 - Kevin
-- Marcel Alessandro
+- Marcel Alessandros
 - [Michel Metran](https://github.com/michelmetran)
 - Michele
 
