@@ -1,0 +1,297 @@
+[
+  {
+    "model": "core.courses",
+    "pk": 1,
+    "fields": {
+      "course_name": "1ª A"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 2,
+    "fields": {
+      "course_name": "1ª B"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 3,
+    "fields": {
+      "course_name": "1ª C"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 4,
+    "fields": {
+      "course_name": "2ª A"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 5,
+    "fields": {
+      "course_name": "2ª B"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 6,
+    "fields": {
+      "course_name": "3ª A"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 7,
+    "fields": {
+      "course_name": "4ª A"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 8,
+    "fields": {
+      "course_name": "4ª B"
+    }
+  },
+  {
+    "model": "core.courses",
+    "pk": 9,
+    "fields": {
+      "course_name": "5ª A"
+    }
+  },
+  {
+    "model": "core.sessionyear",
+    "pk": 1,
+    "fields": {
+      "session_start_year": "2019-02-15",
+      "session_end_year": "2019-12-05"
+    }
+  },
+  {
+    "model": "core.sessionyear",
+    "pk": 2,
+    "fields": {
+      "session_start_year": "2020-02-15",
+      "session_end_year": "2020-12-05"
+    }
+  },
+  {
+    "model": "core.sessionyear",
+    "pk": 3,
+    "fields": {
+      "session_start_year": "2021-02-15",
+      "session_end_year": "2021-12-05"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "admin@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-10-04T01:48:45.902Z",
+      "user_type": "1",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.admin",
+    "pk": 1,
+    "fields": {
+      "admin": 1,
+      "create_at": "2021-10-04T01:48:46.111Z",
+      "update_at": "2021-10-04T01:48:46.111Z"
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 1,
+    "fields": {
+      "subject_name": "Português",
+      "course_id": 1,
+      "staff_id": 3
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 2,
+    "fields": {
+      "subject_name": "Matemática",
+      "course_id": 1,
+      "staff_id": 2
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 3,
+    "fields": {
+      "subject_name": "Física",
+      "course_id": 1,
+      "staff_id": 1
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 4,
+    "fields": {
+      "subject_name": "Química",
+      "course_id": 1,
+      "staff_id": 5
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 5,
+    "fields": {
+      "subject_name": "Biologia",
+      "course_id": 1,
+      "staff_id": 4
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 6,
+    "fields": {
+      "subject_name": "História",
+      "course_id": 1,
+      "staff_id": 1
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 7,
+    "fields": {
+      "subject_name": "Geografia",
+      "course_id": 1,
+      "staff_id": 6
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 8,
+    "fields": {
+      "subject_name": "Inglês",
+      "course_id": 1,
+      "staff_id": 7
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 9,
+    "fields": {
+      "subject_name": "Português",
+      "course_id": 2,
+      "staff_id": 7
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 10,
+    "fields": {
+      "subject_name": "Matemática",
+      "course_id": 2,
+      "staff_id": 2
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 11,
+    "fields": {
+      "subject_name": "Física",
+      "course_id": 3,
+      "staff_id": 2
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 12,
+    "fields": {
+      "subject_name": "Química",
+      "course_id": 4,
+      "staff_id": 1
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 13,
+    "fields": {
+      "subject_name": "Português",
+      "course_id": 5,
+      "staff_id": 5
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 14,
+    "fields": {
+      "subject_name": "Matemática",
+      "course_id": 6,
+      "staff_id": 1
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 15,
+    "fields": {
+      "subject_name": "Física",
+      "course_id": 7,
+      "staff_id": 9
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 16,
+    "fields": {
+      "subject_name": "Química",
+      "course_id": 8,
+      "staff_id": 1
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 17,
+    "fields": {
+      "subject_name": "Português",
+      "course_id": 8,
+      "staff_id": 9
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 18,
+    "fields": {
+      "subject_name": "Matemática",
+      "course_id": 8,
+      "staff_id": 9
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 19,
+    "fields": {
+      "subject_name": "Física",
+      "course_id": 9,
+      "staff_id": 6
+    }
+  },
+  {
+    "model": "core.subject",
+    "pk": 20,
+    "fields": {
+      "subject_name": "Química",
+      "course_id": 9,
+      "staff_id": 7
+    }
+  }
+]

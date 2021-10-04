@@ -1,0 +1,401 @@
+[
+  {
+    "model": "core.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "michelmetran",
+      "first_name": "Michel",
+      "last_name": "Metran",
+      "email": "michelmetran@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 2,
+    "fields": {
+      "admin": 2,
+      "address": "Endereço do Michel",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anapaula",
+      "first_name": "Ana Paula",
+      "last_name": "Santos",
+      "email": "santos.anapaula.st@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 3,
+    "fields": {
+      "admin": 3,
+      "address": "Endereço da Ana Paula",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "michelepertille",
+      "first_name": "Michele",
+      "last_name": "Pertille",
+      "email": "mi.mcpertille@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-09-03T11:09:19.680Z",
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 4,
+    "fields": {
+      "admin": 4,
+      "address": "Endereço da Michele",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "kevinchagas",
+      "first_name": "Kevin",
+      "last_name": "Chagas",
+      "email": "kevinchagas@outlook.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 5,
+    "fields": {
+      "admin": 5,
+      "address": "Endereço do Kevin",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "gabriellelombardi",
+      "first_name": "Gabrielle",
+      "last_name": "Lombardi",
+      "email": "gabriellelombardi@hotmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 6,
+    "fields": {
+      "admin": 6,
+      "address": "Endereço da Gabrielle",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "joseanesathie",
+      "first_name": "Joseane",
+      "last_name": "Sathie",
+      "email": "sathiemimi@hotmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 7,
+    "fields": {
+      "admin": 7,
+      "address": "Endereço da Joseane",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "isabellezein",
+      "first_name": "Isabelle",
+      "last_name": "Zein",
+      "email": "isabelle.zein@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 8,
+    "fields": {
+      "admin": 8,
+      "address": "Endereço da Isabelle",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "is_superuser": false,
+      "username": "marcelalessandro",
+      "first_name": "Marcel",
+      "last_name": "Alessandro",
+      "email": "marcelalessandro@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "2",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.staffs",
+    "pk": 9,
+    "fields": {
+      "admin": 9,
+      "address": "Endereço do Marcel",
+      "create_at": "2021-10-04T01:49:34.370Z",
+      "update_at": "2021-10-04T01:49:34.370Z"
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno1",
+      "first_name": "aluno1",
+      "last_name": "aluno",
+      "email": "aluno1@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 10,
+      "gender": "Masculino",
+      "profile_pic": "/media/menino.jpg",
+      "address": "Endereço do Aluno1",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno2",
+      "first_name": "aluno2",
+      "last_name": "aluno",
+      "email": "aluno2@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 11,
+      "gender": "Masculino",
+      "profile_pic": "/media/menino.jpg",
+      "address": "Endereço do Aluno2",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno3",
+      "first_name": "aluno3",
+      "last_name": "aluno",
+      "email": "aluno3@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 12,
+      "gender": "Masculino",
+      "profile_pic": "/media/menino.jpg",
+      "address": "Endereço do Aluno3",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno4",
+      "first_name": "aluno4",
+      "last_name": "aluno",
+      "email": "aluno4@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 13,
+      "gender": "Masculino",
+      "profile_pic": "/media/menina.jpg",
+      "address": "Endereço do Aluno4",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno5",
+      "first_name": "aluno5",
+      "last_name": "aluno",
+      "email": "aluno5@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 14,
+      "gender": "Masculino",
+      "profile_pic": "/media/menino.jpg",
+      "address": "Endereço do Aluno5",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  },
+  {
+    "model": "core.customuser",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aluno6",
+      "first_name": "aluno6",
+      "last_name": "aluno",
+      "email": "aluno6@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "user_type": "3",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.students",
+    "pk": 1,
+    "fields": {
+      "admin": 15,
+      "gender": "Masculino",
+      "profile_pic": "/media/menina.jpg",
+      "address": "Endereço do Aluno6",
+      "course_id": 3,
+      "session_year_id": 1
+    }
+  }
+]
