@@ -1,6 +1,7 @@
 .idea/
 staticfiles/
-media/
+
+#media/
 #core/fixtures/*
 
 # Byte-compiled / optimized / DLL files
