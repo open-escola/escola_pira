@@ -24,9 +24,7 @@ Django: [django-adminlte3](https://github.com/d-demirci/django-adminlte3) by [d-
 
 -----
 
-
 ### Tutorial
-
 
 Para realizar o trabalho, com adaptações para as necessidades para escolas brasileiras, bem como aperfeiçoamentos no
 código, foi seguido o
@@ -49,7 +47,7 @@ do canal [Super Coders](https://www.youtube.com/channel/UCyz5M_3Rv2jLUDs4R_yRBkw
 10. *descrever*
 11. Funções em AJAX para Attendance no perfil Staff!
 
-*(Em 09.09.2021 parei nos 20 minutos da parte 11)*
+*(Em 03.10.2021 concluí parte 11)*
 
 <br>
 
@@ -64,9 +62,7 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 
 -----
 
-
 ### Quem Somos
-
 
 *Em ordem alfabética*
 
@@ -81,7 +77,6 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 ----
 
 ### Como usar?
-
 
 #### Na Máquina Local
 
@@ -99,18 +94,7 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 ----
 
 
-### Dados de Exemplo
-
-```
-python manage.py loaddata subjects.json
-python manage.py loaddata courses.json
-python manage.py createsuperuser --email admin@example.com --username admin
-```
-
-----
-
-
-### TODO
+### ToDo
 
 - Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
 - ...
@@ -127,7 +111,21 @@ python manage.py createsuperuser --email admin@example.com --username admin
 
 <br>
 
-**É possível resetar o DB do heroku!**
+**É possível *resetar* o DB do heroku!**
 
 ```heroku pg:reset DATABASE --app openescola```
 
+----
+
+
+### Dados de Exemplo
+
+```
+python manage.py loaddata major_data.json
+python manage.py loaddata users_data.json
+
+heroku run python manage.py loaddata major_data.json --app openescola
+heroku run python manage.py loaddata users_data.json --app openescola
+
+python manage.py createsuperuser --email admin@example.com --username admin
+```

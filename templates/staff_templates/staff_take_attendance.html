@@ -120,6 +120,9 @@
                     console.log("SAVE ATTENDANCE");
                     console.log($("input[name='student_data[]']").val());
 
+                    $(this).attr("disable", "disable")
+                    $(this).text("Saving Attendance Data")
+
                     var student_data = $("input[name='student_data[]']").map(function () {
                         if ($(this).is(".checked")) {
                             return {"id": $(this).val(), status: 1};
@@ -150,6 +153,12 @@
                         },
                     })
                         .done(function (response) {
+                            if (response == "Ok") {
+                                alert("Attendance Save")
+                            } else {
+                                alert("Error in Saving Data")
+                            }
+                            location.reload()
                             console.log(response)
                         })
                         .fail(function () {
