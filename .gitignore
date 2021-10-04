@@ -1,7 +1,7 @@
 .idea/
 staticfiles/
 media/
-core/fixtures/*
+#core/fixtures/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
