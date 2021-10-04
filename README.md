@@ -141,3 +141,5 @@ heroku run python manage.py loaddata admin.json --app openescola
 heroku run python manage.py loaddata initial_data.json --app openescola
 #python manage.py createsuperuser --email admin@example.com --username admin
 ```
+
+
