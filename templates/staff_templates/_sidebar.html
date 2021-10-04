@@ -71,6 +71,52 @@
                     </ul>
                 </li>
 
+
+                <!-- MENUS ATENDANCE -->
+                {% url 'staff_take_attendance' as staff_take_attendance %}
+                {% url 'manage_student' as manage_student %}
+                {% url 'edit_student' student_id=id as edit_student %}
+                <li class="nav-item has-treeview
+                    {% if request.path == staff_take_attendance %} menu-open {% endif %}
+                    {% if request.path == manage_student %} menu-open {% endif %}
+                    {% if request.path == edit_student %} menu-open {% endif %}">
+                    <!-- Se adicionar  menu-open, abre! -->
+                    <a href="#"
+                       class="nav-link
+                        {% if request.path == staff_take_attendance %} active {% endif %}
+                        {% if request.path == manage_student %} active {% endif %}
+                        {% if request.path == edit_student %} active {% endif %}">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>
+                            Attendance
+                            <i class="right fas fa-angle-left"></i>
+                            <span class="right badge badge-success">Ok</span>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ staff_take_attendance }}"
+                               class="nav-link {% if request.path == staff_take_attendance %} active {% endif %}">
+                                <!-- Se adicionar active, muda! -->
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>staff_take_attendace</p>
+                                <span class="right badge badge-success">Ok</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ manage_student }}"
+                               class="nav-link
+                                {% if request.path == manage_student %} active {% endif %}
+                                {% if request.path == edit_student %} active {% endif %}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Editar</p>
+                                <span class="right badge badge-success">Ok</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
             </ul>
         </nav>
     </div>

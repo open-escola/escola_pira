@@ -1,0 +1,164 @@
+{% extends 'staff_templates/_base.html' %}
+{% block page_title %}
+    Take Attendance
+{% endblock page_title %}
+{% load static %}
+{% block main_content %}
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- general form elements -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Take Attendence</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        {% comment %}
+# Aula 11, as 21:43... usar ajax
+                                <form role="form" action="/add_subject_save" method="post">
+                                    {% csrf_token %}
+{% endcomment %}
+                        <div class="card-body">
+
+                            <div class="form-group">
+                                <label>Curso</label>
+                                <select class="form-control" name="subject" id="subject">
+                                    {% for subject in subjects %}
+                                        <option value="{{ subject.id }}">{{ subject.subject_name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Session Year</label>
+                                <select class="form-control" name="session_year" id="session_year">
+                                    {% for session_year in session_years %}
+                                        <option value="{{ session_year.id }}">{{ session_year.session_start_year }}
+                                            até {{ session_year.session_end_year }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <!-- Mensagens -->
+                            <div class="form-group">
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        {% if message.tags == 'error' %}
+                                            <div class="alert alert-danger"
+                                                 style="margin-top: 10px">{{ message }}</div>
+                                        {% endif %}
+                                        {% if message.tags == 'success' %}
+                                            <div class="alert alert-success"
+                                                 style="margin-top: 10px">{{ message }}</div>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary btn-block" id="fetch_student">Fetch Students
+                            </button>
+                        </div>
+                        <div id="student_data" class="card-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock main_content %}
+
+{% block _scripts_custom %}
+
+    <script>
+        $(document).ready(function () {
+            console.log("Caralha de AJAX! Aula 11")
+
+            {# FETCH STUDENTS #}
+            $("#fetch_student").click(function () {
+                var subject = $("#subject").val();
+                var session_year = $("#session_year").val();
+                $.ajax({
+                    url: '{% url 'get_students' %}',
+                    type: 'POST',
+                    data: {subject: subject, session_year: session_year},
+                })
+                    .done(function (response) {
+                        var json_data = JSON.parse(response);
+                        console.log(json_data);
+
+                        var div_data = "";
+                        div_data += "<div class='form-group'><label>Attendance Date: </label><input type='date' name='attendance_date' id='attendance_date' class='form-control'></div>";
+                        div_data += "<div class='form-group'><div class='row'>";
+
+                        for (key in json_data) {
+                            div_data += "<div class='col-lg-4'>" +
+                                "<div class='form-check'>" +
+                                "<input type='checkbox' checked='checked' name='student_data[]' value='" + json_data[key]['id'] + "'><label class='form-check-label'>"
+                                + "   " + json_data[key]['name'] + "</div></div>";
+                        }
+                        div_data += "</div>";
+                        div_data += "</div>";
+                        div_data += "<div class='form-group'>";
+                        div_data += "<button id='save_attendance' class='btn btn-success btn-block' type='button'>Save Attendance Data</button>";
+                        div_data += "</div>";
+                        $("#student_data").html(div_data)
+                    })
+                    .fail(function () {
+                        alert("Error in Fetching Students")
+                    })
+
+                {# SAVE ATTENDANCE #}
+                $(document).on("click", "#save_attendance", function () {
+                    console.log("SAVE ATTENDANCE");
+                    console.log($("input[name='student_data[]']").val());
+
+                    var student_data = $("input[name='student_data[]']").map(function () {
+                        if ($(this).is(".checked")) {
+                            return {"id": $(this).val(), status: 1};
+                        } else {
+                            return {"id": $(this).val(), status: 0};
+                        }
+                    }).get();
+
+                    student_data = JSON.stringify(student_data);
+                    console.log("student_data");
+                    console.log(student_data);
+
+                    var attendance_date = $("#attendance_date").val();
+                    console.log("attendance_date");
+                    console.log(attendance_date);
+
+                    var subject_id = $("#subject").val();
+                    var session_year_id = $("#session_year").val();
+
+                    $.ajax({
+                        url: '{% url 'save_attendance_data' %}',
+                        type: 'POST',
+                        data: {
+                            student_ids: student_data,
+                            attendance_date: attendance_date,
+                            subject_id: subject_id,
+                            session_year_id: session_year_id,
+                        },
+                    })
+                        .done(function (response) {
+                            console.log(response)
+                        })
+                        .fail(function () {
+                            alert("Error in Saving Attendance")
+                        })
+                })
+            })
+        })
+    </script>
+
+{% endblock _scripts_custom %}
+

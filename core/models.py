@@ -10,6 +10,7 @@ class SessionYear(models.Model):
     id = models.AutoField(primary_key=True)
     session_start_year = models.DateField()
     session_end_year = models.DateField()
+    objects = models.Manager()
 
 
 class Courses(models.Model):
@@ -79,7 +80,7 @@ class Attendance(models.Model):
 
 class AttendanceReport(models.Model):
     id = models.AutoField(primary_key=True)
-    subject_id = models.ForeignKey(Subject, on_delete=models.DO_NOTHING)
+    student_id = models.ForeignKey(Students, on_delete=models.DO_NOTHING)
     attendance_id = models.ForeignKey(Attendance, on_delete=models.CASCADE)
     status = models.BooleanField(default=False)
     create_at = models.DateTimeField(default=timezone.now, editable=False)

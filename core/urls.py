@@ -54,4 +54,9 @@ urlpatterns = [
     path('staff_home', views_staff.staff_home, name='staff_home'),
     path('student_home', views_student.student_home, name='student_home'),
 
+    # Aula 11
+    path('staff_take_attendance', views_staff.staff_take_attendance, name='staff_take_attendance'),
+    path('get_students', views_staff.get_students, name='get_students'),
+    path('save_attendance_data', views_staff.save_attendance_data, name='save_attendance_data'),
+
 ]
