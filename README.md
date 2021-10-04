@@ -93,14 +93,12 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 
 ----
 
-
 ### ToDo
 
 - Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
 - ...
 
 ----
-
 
 ### Alterações do DB
 
@@ -117,15 +115,10 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 
 ----
 
-
 ### Dados de Exemplo
 
 ```
-python manage.py loaddata major_data.json
-python manage.py loaddata users_data.json
-
-heroku run python manage.py loaddata major_data.json --app openescola
-heroku run python manage.py loaddata users_data.json --app openescola
-
-python manage.py createsuperuser --email admin@example.com --username admin
+python manage.py loaddata initial_data
+heroku run python manage.py loaddata initial_data --app openescola
+#python manage.py createsuperuser --email admin@example.com --username admin
 ```
