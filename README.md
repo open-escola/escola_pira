@@ -135,7 +135,9 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 ### Dados de Exemplo
 
 ```
-python manage.py loaddata initial_data
+python manage.py loaddata admin.json
+python manage.py loaddata initial_data.json
+heroku run python manage.py loaddata admin.json --app openescola
 heroku run python manage.py loaddata initial_data.json --app openescola
 #python manage.py createsuperuser --email admin@example.com --username admin
 ```
