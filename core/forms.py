@@ -39,6 +39,7 @@ class AddStudentForm(forms.Form):
         max_length=50,
         widget=forms.TextInput(attrs={'class': 'form-control'})
     )
+
     course_choices = []
     try:
         courses = Courses.objects.all()
@@ -70,7 +71,6 @@ class AddStudentForm(forms.Form):
                 (session.id, '{} até {}'.format(session.session_start_year, session.session_end_year)))
     except Exception as e:
         print(e)
-
     session_year_id = forms.ChoiceField(
         label='session year',
         choices=session_choices,
@@ -81,6 +81,7 @@ class AddStudentForm(forms.Form):
         max_length=50,
         widget=forms.FileInput(attrs={'class': 'form-control'})
     )
+
 
 class EditStudentForm(forms.Form):
     first_name = forms.CharField(label='Primeiro Nome', max_length=50,
@@ -99,8 +100,11 @@ class EditStudentForm(forms.Form):
             course_choices.append((course.id, course.course_name))
     except Exception as e:
         print(e)
-    course = forms.ChoiceField(label='Curso', choices=course_choices,
-                               widget=forms.Select(attrs={'class': 'form-control'}))
+    course = forms.ChoiceField(
+        label='Curso',
+        choices=course_choices,
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
 
     gender_choices = (
         ('Masculino', 'Masculino'),

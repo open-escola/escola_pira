@@ -1,6 +1,5 @@
 # Escola Pira
 
-
 O projeto *Escola Pira* visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
 e professores, bem como classes e disciplinas.
 
@@ -8,9 +7,7 @@ O projeto foi desenvolvido com o *framework* Django.
 
 -----
 
-
 ### Como acessar?!
-
 
 [openescola.heroku.com](https://openescola.herokuapp.com/)
 
@@ -19,18 +16,14 @@ O projeto foi desenvolvido com o *framework* Django.
 
 -----
 
-
 ### Motivação
-
 
 O presente projeto é resultado do trabalho do **Grupo 5** do *Projeto Integrador*, uma disciplina da UNIVESP, do Eixo da
 Computação, Polo Piracicaba.
 
 -----
 
-
 ### Template HTML
-
 
 Foi utilizado o *template* [**AdminLTE**](https://adminlte.io/themes/v3/). É distribuído por meio da Licença MIT, que
 possibilita uso.
@@ -135,11 +128,15 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 ### Dados de Exemplo
 
 ```
+# Load Local
 python manage.py loaddata admin.json
 python manage.py loaddata initial_data.json
+python manage.py loaddata students.json
+
+# Load Server
 heroku run python manage.py loaddata admin.json --app openescola
 heroku run python manage.py loaddata initial_data.json --app openescola
-#python manage.py createsuperuser --email admin@example.com --username admin
+heroku run python manage.py loaddata students.json --app openescola
 ```
 
 
