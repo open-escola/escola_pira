@@ -8,7 +8,8 @@ pytz==2021.1
 #requests=>2.20.1
 requests==2.25.1
 whitenoise>=5.3.0
-PyYAML=>5.4.1
+#PyYAML=>5.4.1
+PyYAML==5.4.1
 cryptography>=3.4.7
 pymysql=>1.0.2
 
