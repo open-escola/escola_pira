@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+    database:
+        image: mysql:5.7
+        ports:
+            - "3306:3306"
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_HOST: localhost
+            MYSQL_DATABASE: db_escola
+            MYSQL_USER: michel
+            MYSQL_PASSWORD: minha_senha
+        volumes:
+            - db-volume:/var/lib/mysql
+volumes:
+    db-volume:
