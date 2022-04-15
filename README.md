@@ -77,6 +77,7 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 
 - Ana Paula
 - Ana Gabrielle
+- [João Victor](https://github.com/JvPelai)
 - Joseana
 - Kevin
 - Marcel Alessandro
@@ -91,10 +92,12 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 
 Para testes, customizações etc.
 
-1. Criar um banco de dados conforme especificações contidas em *settings.py*;
-2. Rodar o comando ```python manage.py makemigrations``` para criar as querys que criarão as tabelas;
-3. Rodar o comando ```python manage.py migrate``` para alterar o banco de dados.
-4. Rodar o comando ```python manage.py runserver``` para iniciar o servidor *gunicorn*.
+1) Criar um banco de dados conforme especificações contidas em *settings.py*.
+ (Opcional: ```docker-compose up```, é necessário ter o [docker](https://www.docker.com/get-started/) instalado localmente).
+2) Instalar as dependências do projeto ```pip install -r requirements.txt```.
+3) Rodar o comando ```python manage.py makemigrations``` para criar as querys que criarão as tabelas.
+4) Rodar o comando ```python manage.py migrate``` para alterar o banco de dados.
+5) Rodar o comando ```python manage.py runserver``` para iniciar o servidor *gunicorn*.
 
 #### Em um site
 
