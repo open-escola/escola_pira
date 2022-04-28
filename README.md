@@ -92,8 +92,8 @@ Há ainda outros canais com sistemas similares para gestão educacional.
 
 Para testes, customizações etc.
 
-1) Criar um banco de dados conforme especificações contidas em *settings.py*.
- (Opcional: ```docker-compose up```, é necessário ter o [docker](https://www.docker.com/get-started/) instalado localmente).
+1) Criar um banco de dados conforme especificações contidas em *settings.py*.<br>
+*Opcional*: ```docker-compose up```, é necessário ter o [docker](https://www.docker.com/get-started/) instalado localmente).
 2) Instalar as dependências do projeto ```pip install -r requirements.txt```.
 3) Rodar o comando ```python manage.py makemigrations``` para criar as querys que criarão as tabelas.
 4) Rodar o comando ```python manage.py migrate``` para alterar o banco de dados.
@@ -105,11 +105,11 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 
 ----
 
-
-### *ToDo*
+### *TODO*
 
 - Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
 - Ajustar *dump* e *load*
+- Ajustar *load data*, devido a alterações no endereço (04.2022)
 
 ----
 
@@ -142,4 +142,9 @@ heroku run python manage.py loaddata initial_data.json --app openescola
 heroku run python manage.py loaddata students.json --app openescola
 ```
 
+-----
 
+### API
+
+- [CEPs Automáticos](https://velhobit.com.br/programacao/carregando-cep-cidades-dinamicamente.html)
+- [Como consumir uma API no Frontend](https://www.youtube.com/watch?v=UDoCiC_e908)

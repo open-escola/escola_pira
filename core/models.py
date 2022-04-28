@@ -53,6 +53,16 @@ class Students(models.Model):
     gender = models.CharField(max_length=255)
     profile_pic = models.FileField()
     address = models.TextField()
+
+    # API Abril 2022
+    cep = models.TextField()
+    logradouro = models.TextField()
+    numero = models.TextField()
+    complemento = models.TextField()
+    bairro = models.TextField()
+    localidade = models.TextField()
+    uf = models.TextField()
+
     course_id = models.ForeignKey(Courses, on_delete=models.DO_NOTHING)
     session_year_id = models.ForeignKey(SessionYear, on_delete=models.CASCADE)
     create_at = models.DateTimeField(default=timezone.now, editable=False)

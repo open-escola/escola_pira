@@ -34,8 +34,45 @@ class AddStudentForm(forms.Form):
         max_length=50,
         widget=forms.PasswordInput(attrs={'class': 'form-control'})
     )
-    address = forms.CharField(
-        label='Endereço',
+    # address = forms.CharField(
+    #     label='Endereço',
+    #     max_length=50,
+    #     widget=forms.TextInput(attrs={'class': 'form-control'})
+    # )
+
+    # Outros campos de Endereço
+    cep = forms.CharField(
+        label='cep',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    logradouro = forms.CharField(
+        label='logradouro',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    bairro = forms.CharField(
+        label='bairro',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    localidade = forms.CharField(
+        label='localidade',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    uf = forms.CharField(
+        label='uf',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    numero = forms.CharField(
+        label='numero',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    complemento = forms.CharField(
+        label='complemento',
         max_length=50,
         widget=forms.TextInput(attrs={'class': 'form-control'})
     )
@@ -71,6 +108,7 @@ class AddStudentForm(forms.Form):
                 (session.id, '{} até {}'.format(session.session_start_year, session.session_end_year)))
     except Exception as e:
         print(e)
+
     session_year_id = forms.ChoiceField(
         label='session year',
         choices=session_choices,
@@ -84,14 +122,34 @@ class AddStudentForm(forms.Form):
 
 
 class EditStudentForm(forms.Form):
-    first_name = forms.CharField(label='Primeiro Nome', max_length=50,
-                                 widget=forms.TextInput(
-                                     attrs={'class': 'form-control', 'placeholder': 'Primeiro Nome'}))
-    last_name = forms.CharField(label='Sobrenome', max_length=50,
-                                widget=forms.TextInput(attrs={'class': 'form-control'}))
-    username = forms.CharField(label='Username', max_length=50, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    email = forms.EmailField(label='E-mail', max_length=50, widget=forms.EmailInput(attrs={'class': 'form-control'}))
-    address = forms.CharField(label='Endereço', max_length=50, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    first_name = forms.CharField(
+        label='Primeiro Nome',
+        max_length=50,
+        widget=forms.TextInput(
+            attrs={
+                'class': 'form-control',
+                'placeholder': 'Primeiro Nome'}
+        )
+    )
+    last_name = forms.CharField(
+        label='Sobrenome',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'}))
+    username = forms.CharField(
+        label='Username',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    email = forms.EmailField(
+        label='E-mail',
+        max_length=50,
+        widget=forms.EmailInput(attrs={'class': 'form-control'})
+    )
+    address = forms.CharField(
+        label='Endereço',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
 
     course_choices = []
     try:
@@ -100,6 +158,7 @@ class EditStudentForm(forms.Form):
             course_choices.append((course.id, course.course_name))
     except Exception as e:
         print(e)
+
     course = forms.ChoiceField(
         label='Curso',
         choices=course_choices,
@@ -110,8 +169,11 @@ class EditStudentForm(forms.Form):
         ('Masculino', 'Masculino'),
         ('Feminino', 'Feminino')
     )
-    gender = forms.ChoiceField(label='Gênero', choices=gender_choices,
-                               widget=forms.Select(attrs={'class': 'form-control'}))
+    gender = forms.ChoiceField(
+        label='Gênero',
+        choices=gender_choices,
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
 
     session_choices = []
     try:
@@ -121,7 +183,15 @@ class EditStudentForm(forms.Form):
                 (session.id, f'{session.session_start_year} até {session.session_end_year}'))
     except Exception as e:
         print(e)
-    session_year_id = forms.ChoiceField(label='session year', choices=session_choices,
-                                        widget=forms.Select(attrs={'class': 'form-control'}))
-    profile_pic = forms.FileField(label='profile_pic', max_length=50,
-                                  widget=forms.FileInput(attrs={'class': 'form-control'}), required=False)
+
+    session_year_id = forms.ChoiceField(
+        label='session year',
+        choices=session_choices,
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
+    profile_pic = forms.FileField(
+        label='profile_pic',
+        max_length=50,
+        widget=forms.FileInput(attrs={'class': 'form-control'}),
+        required=False
+    )
