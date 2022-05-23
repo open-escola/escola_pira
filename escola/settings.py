@@ -83,7 +83,10 @@ DATABASES = {
         'PASSWORD': 'minha_senha',
         'HOST': 'localhost',
         'PORT': '3306',
-    }
+        'TEST': {
+            'NAME': 'test_db_escola',
+        },
+    },
 }
 
 # Password validation
