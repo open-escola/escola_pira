@@ -176,10 +176,10 @@
     "fields": {
       "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
       "is_superuser": false,
-      "username": "kevinchagas",
-      "first_name": "Kevin",
-      "last_name": "Chagas",
-      "email": "kevinchagas@outlook.com",
+      "username": "joaovictor",
+      "first_name": "Joao",
+      "last_name": "Victor",
+      "email": "joaovictor@outlook.com",
       "is_staff": false,
       "is_active": true,
       "user_type": "2",
@@ -192,7 +192,7 @@
     "pk": 4,
     "fields": {
       "admin": 5,
-      "address": "Endereço do Kevin",
+      "address": "Endereço do Joao",
       "create_at": "2021-10-04T01:49:34.370Z",
       "update_at": "2021-10-04T01:49:34.370Z"
     }
@@ -230,10 +230,10 @@
     "fields": {
       "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
       "is_superuser": false,
-      "username": "joseanesathie",
-      "first_name": "Joseane",
-      "last_name": "Sathie",
-      "email": "sathiemimi@hotmail.com",
+      "username": "felipeassalin",
+      "first_name": "Felipe",
+      "last_name": "Assalin",
+      "email": "felipeassalin@hotmail.com",
       "is_staff": false,
       "is_active": true,
       "user_type": "2",
