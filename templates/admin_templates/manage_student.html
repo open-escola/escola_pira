@@ -35,12 +35,12 @@
                                     <th>Sobrenome</th>
                                     <th>Username</th>
                                     <th>E-mail</th>
-                                    <th>Endereço</th>
-                                    <th>Gênero</th>
-                                    <th>Session</th>
+                                    {#                                    <th>Endereço</th>#}
+                                    {#                                    <th>Gênero</th>#}
+                                    {#                                    <th>Session</th>#}
                                     <th>Curso</th>
-                                    <th>date_joined</th>
-                                    <th>last login</th>
+                                    {#                                    <th>date_joined</th>#}
+                                    {#                                    <th>last login</th>#}
                                     <th>Ações</th>
                                 </tr>
                                 </thead>
@@ -53,14 +53,13 @@
                                         <td>{{ student.admin.last_name }}</td>
                                         <td>{{ student.admin.username }}</td>
                                         <td>{{ student.admin.email }}</td>
-                                        <td>{{ student.address }}</td>
-                                        <td>{{ student.gender }}</td>
-                                        <td>{{ student.session_year_id.session_start_year }}
-                                            até {{ student.session_year_id.session_end_year }}</td>
-
+                                        {#                                        <td>{{ student.address }}</td>#}
+                                        {#                                        <td>{{ student.gender }}</td>#}
+                                        {#                                        <td>{{ student.session_year_id.session_start_year }}#}
+                                        {#                                            até {{ student.session_year_id.session_end_year }}</td>#}
                                         <td>{{ student.course_id.course_name }}</td>
-                                        <td>{{ student.admin.date_joined }}</td>
-                                        <td>{{ student.admin.last_login }}</td>
+                                        {#                                        <td>{{ student.admin.date_joined }}</td>#}
+                                        {#                                        <td>{{ student.admin.last_login }}</td>#}
                                         <td><a href="{% url 'edit_student' student_id=student.admin.id %}"
                                                class="btn btn-success">Editar
                                         </td>
