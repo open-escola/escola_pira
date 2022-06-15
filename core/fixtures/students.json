@@ -1,2972 +1,3314 @@
 [
-  {
-    "model": "core.customuser",
-    "pk": 10,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucitoczeki",
-      "first_name": "Luci",
-      "last_name": "Toczeki",
-      "email": "lucitoczeki@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
+    {
+        "model": "core.customuser",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anapinheiro",
+            "first_name": "Ana",
+            "last_name": "Pinheiro",
+            "email": "anapinheiro@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 1,
+        "fields": {
+            "admin": 10,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13432-009",
+            "logradouro": "Rua S\u00e3o Jo\u00e3o",
+            "numero": "706",
+            "complemento": "Sobreloja",
+            "bairro": "Centro (\u00c1rtemis)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "amilkaoliveira",
+            "first_name": "Amilka",
+            "last_name": "Oliveira",
+            "email": "amilkaoliveira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 2,
+        "fields": {
+            "admin": 11,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13425-011",
+            "logradouro": "Rua A",
+            "numero": "795",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Caxambu",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "caioraimundo",
+            "first_name": "Caio",
+            "last_name": "Raimundo",
+            "email": "caioraimundo@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 3,
+        "fields": {
+            "admin": 12,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13420-542",
+            "logradouro": "Rua Pedro Ferraz Pacheco",
+            "numero": "157",
+            "complemento": "Apto. 16",
+            "bairro": "Piracicamirim",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "agnaldopires",
+            "first_name": "Agnaldo",
+            "last_name": "Pires",
+            "email": "agnaldopires@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 4,
+        "fields": {
+            "admin": 13,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-123",
+            "logradouro": "Rua Alferes Jos\u00e9 Caetano",
+            "numero": "757",
+            "complemento": "Apto. 69",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 14,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "carenansaloni",
+            "first_name": "Caren",
+            "last_name": "Ansaloni",
+            "email": "carenansaloni@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 5,
+        "fields": {
+            "admin": 14,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13419-210",
+            "logradouro": "Rua Dom Pedro II",
+            "numero": "664",
+            "complemento": "Apto. 53",
+            "bairro": "Cidade Alta",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 15,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anapereira",
+            "first_name": "Ana",
+            "last_name": "Pereira",
+            "email": "anapereira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 6,
+        "fields": {
+            "admin": 15,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13400-540",
+            "logradouro": "Pra\u00e7a Miguel Arcanjo Ben\u00edcio Dutra",
+            "numero": "772",
+            "complemento": "",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 16,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andreasilva",
+            "first_name": "Andrea",
+            "last_name": "Silva",
+            "email": "andreasilva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 7,
+        "fields": {
+            "admin": 16,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13428-409",
+            "logradouro": "Rua Treze de Maio",
+            "numero": "854",
+            "complemento": "Sobreloja",
+            "bairro": "Centro (Tupi)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 17,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alexandrenascimento",
+            "first_name": "Alexandre",
+            "last_name": "Nascimento",
+            "email": "alexandrenascimento@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 8,
+        "fields": {
+            "admin": 17,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13420-165",
+            "logradouro": "Rua Frei Pedro Sinzig",
+            "numero": "579",
+            "complemento": "",
+            "bairro": "Parque Santa Cec\u00edlia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andreaassuncao",
+            "first_name": "Andrea",
+            "last_name": "Assuncao",
+            "email": "andreaassuncao@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 9,
+        "fields": {
+            "admin": 18,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13401-560",
+            "logradouro": "Rua Jo\u00e3o Gimenes",
+            "numero": "28",
+            "complemento": "Apto. 43",
+            "bairro": "Monte L\u00edbano",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "agnaldojesus",
+            "first_name": "Agnaldo",
+            "last_name": "Jesus",
+            "email": "agnaldojesus@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 10,
+        "fields": {
+            "admin": 19,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-460",
+            "logradouro": "Rua Jo\u00e3o Boles",
+            "numero": "611",
+            "complemento": "",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 20,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "agdaleite",
+            "first_name": "Agda",
+            "last_name": "Leite",
+            "email": "agdaleite@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 11,
+        "fields": {
+            "admin": 20,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13408-045",
+            "logradouro": "Rua Um",
+            "numero": "738",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Irapu\u00e3",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 21,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "ariovaldofilho",
+            "first_name": "Ariovaldo",
+            "last_name": "Filho",
+            "email": "ariovaldofilho@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 12,
+        "fields": {
+            "admin": 21,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13425-710",
+            "logradouro": "Rua Br\u00e1ulio Pedroso",
+            "numero": "66",
+            "complemento": "",
+            "bairro": "Jardim Alvorada",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 22,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "avilmarassis",
+            "first_name": "Avilmar",
+            "last_name": "Assis",
+            "email": "avilmarassis@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 13,
+        "fields": {
+            "admin": 22,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13409-225",
+            "logradouro": "Rua Pedro Correa Sampaio",
+            "numero": "260",
+            "complemento": "Apto. 64",
+            "bairro": "Parque S\u00e3o Matheus II",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 23,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniomelo",
+            "first_name": "Antonio",
+            "last_name": "Melo",
+            "email": "antoniomelo@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 14,
+        "fields": {
+            "admin": 23,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13423-242",
+            "logradouro": "Rua B",
+            "numero": "231",
+            "complemento": "Apto. 42",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 24,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anamoura",
+            "first_name": "Ana",
+            "last_name": "Moura",
+            "email": "anamoura@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 15,
+        "fields": {
+            "admin": 24,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13402-542",
+            "logradouro": "Rua Um",
+            "numero": "872",
+            "complemento": "Sobreloja",
+            "bairro": "Loteamento Residencial Santo Ant\u00f4nio II",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 25,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anaalves",
+            "first_name": "Ana",
+            "last_name": "Alves",
+            "email": "anaalves@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 16,
+        "fields": {
+            "admin": 25,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13405-023",
+            "logradouro": "Rua Jo\u00e3o Crocomo",
+            "numero": "978",
+            "complemento": "Apto. 21",
+            "bairro": "Nova Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 26,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "adrianaguim",
+            "first_name": "Adriana",
+            "last_name": "Guim",
+            "email": "adrianaguim@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 17,
+        "fields": {
+            "admin": 26,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13426-259",
+            "logradouro": "Rua Jo\u00e3o Tedesco",
+            "numero": "752",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Ast\u00farias II",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 27,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniosilva",
+            "first_name": "Antonio",
+            "last_name": "Silva",
+            "email": "antoniosilva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 18,
+        "fields": {
+            "admin": 27,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13412-356",
+            "logradouro": "Rua Pedro Cobra",
+            "numero": "945",
+            "complemento": "Apto. 42",
+            "bairro": "Conjunto Residencial M\u00e1rio Dedini",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 28,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andersonpaiva",
+            "first_name": "Anderson",
+            "last_name": "Paiva",
+            "email": "andersonpaiva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 19,
+        "fields": {
+            "admin": 28,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13401-590",
+            "logradouro": "Rua Dois",
+            "numero": "491",
+            "complemento": "Apto. 54",
+            "bairro": "Monte L\u00edbano",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 29,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anaamorim",
+            "first_name": "Ana",
+            "last_name": "Amorim",
+            "email": "anaamorim@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 20,
+        "fields": {
+            "admin": 29,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13412-083",
+            "logradouro": "Rua Doze de Outubro",
+            "numero": "47",
+            "complemento": "Sobreloja",
+            "bairro": "Nossa Senhora de F\u00e1tima",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 30,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anasantos",
+            "first_name": "Ana",
+            "last_name": "Santos",
+            "email": "anasantos@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 21,
+        "fields": {
+            "admin": 30,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13409-145",
+            "logradouro": "Rua An\u00edzio Caetano da Silva",
+            "numero": "173",
+            "complemento": "Sobreloja",
+            "bairro": "Parque Residencial Monte Rey III",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 31,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "albertosilva",
+            "first_name": "Alberto",
+            "last_name": "Silva",
+            "email": "albertosilva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 22,
+        "fields": {
+            "admin": 31,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13401-524",
+            "logradouro": "Rua Jos\u00e9 Pedro de Freitas",
+            "numero": "521",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Esplanada",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 32,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "arnaldomoco",
+            "first_name": "Arnaldo",
+            "last_name": "Moco",
+            "email": "arnaldomoco@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 23,
+        "fields": {
+            "admin": 32,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13415-080",
+            "logradouro": "Rua Pedro Sampronha",
+            "numero": "755",
+            "complemento": "Apto. 13",
+            "bairro": "Monte Alegre",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 33,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "adalbertoribeiro",
+            "first_name": "Adalberto",
+            "last_name": "Ribeiro",
+            "email": "adalbertoribeiro@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 24,
+        "fields": {
+            "admin": 33,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-904",
+            "logradouro": "Pra\u00e7a Jos\u00e9 Bonif\u00e1cio",
+            "numero": "914",
+            "complemento": "Apto. 27",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 34,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alexvidaurre",
+            "first_name": "Alex",
+            "last_name": "Vidaurre",
+            "email": "alexvidaurre@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 25,
+        "fields": {
+            "admin": 34,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-903",
+            "logradouro": "Pra\u00e7a Jos\u00e9 Bonif\u00e1cio",
+            "numero": "840",
+            "complemento": "Sobreloja",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 35,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "aristeulopes",
+            "first_name": "Aristeu",
+            "last_name": "Lopes",
+            "email": "aristeulopes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 26,
+        "fields": {
+            "admin": 35,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13412-083",
+            "logradouro": "Rua Doze de Outubro",
+            "numero": "3",
+            "complemento": "Sobreloja",
+            "bairro": "Nossa Senhora de F\u00e1tima",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 36,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "adrianadaniel",
+            "first_name": "Adriana",
+            "last_name": "Daniel",
+            "email": "adrianadaniel@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 27,
+        "fields": {
+            "admin": 36,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13403-341",
+            "logradouro": "Rua Pedro Piassa",
+            "numero": "764",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Parque Jupi\u00e1",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 37,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "albertomagalhaes",
+            "first_name": "Alberto",
+            "last_name": "Magalhaes",
+            "email": "albertomagalhaes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 28,
+        "fields": {
+            "admin": 37,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13401-590",
+            "logradouro": "Rua Dois",
+            "numero": "821",
+            "complemento": "Apto. 110",
+            "bairro": "Monte L\u00edbano",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 38,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "amaurimassochin",
+            "first_name": "Amauri",
+            "last_name": "Massochin",
+            "email": "amaurimassochin@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 29,
+        "fields": {
+            "admin": 38,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-090",
+            "logradouro": "Pra\u00e7a Alfredo Cardoso",
+            "numero": "188",
+            "complemento": "Sobreloja",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 39,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alcemarmatos",
+            "first_name": "Alcemar",
+            "last_name": "Matos",
+            "email": "alcemarmatos@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 30,
+        "fields": {
+            "admin": 39,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13424-270",
+            "logradouro": "Rua Nossa Senhora Aparecida",
+            "numero": "193",
+            "complemento": "",
+            "bairro": "Paulic\u00e9ia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 40,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andressugasti",
+            "first_name": "Andres",
+            "last_name": "Sugasti",
+            "email": "andressugasti@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 31,
+        "fields": {
+            "admin": 40,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13420-449",
+            "logradouro": "Rua Jo\u00e3o Maciel",
+            "numero": "654",
+            "complemento": "Sobreloja",
+            "bairro": "Morumbi",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 41,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "adrianorossini",
+            "first_name": "Adriano",
+            "last_name": "Rossini",
+            "email": "adrianorossini@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 32,
+        "fields": {
+            "admin": 41,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13426-353",
+            "logradouro": "Rua Zulmiro Pedroso",
+            "numero": "549",
+            "complemento": "",
+            "bairro": "Prezoto",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 42,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "ayslanpossebom",
+            "first_name": "Ayslan",
+            "last_name": "Possebom",
+            "email": "ayslanpossebom@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 33,
+        "fields": {
+            "admin": 42,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13427-235",
+            "logradouro": "Estrada Nossa Senhora da Concei\u00e7\u00e3o",
+            "numero": "442",
+            "complemento": "Apto. 112",
+            "bairro": "Concei\u00e7\u00e3o",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 43,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniofilho",
+            "first_name": "Antonio",
+            "last_name": "Filho",
+            "email": "antoniofilho@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 34,
+        "fields": {
+            "admin": 43,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13419-136",
+            "logradouro": "Pra\u00e7a da Bandeira",
+            "numero": "377",
+            "complemento": "",
+            "bairro": "Cidade Alta",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 44,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "carloslize",
+            "first_name": "Carlos",
+            "last_name": "Lize",
+            "email": "carloslize@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 35,
+        "fields": {
+            "admin": 44,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13405-463",
+            "logradouro": "Rua Jo\u00e3o Graner",
+            "numero": "203",
+            "complemento": "",
+            "bairro": "Jardim Algodoal",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 45,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "acaciopereira",
+            "first_name": "Acacio",
+            "last_name": "Pereira",
+            "email": "acaciopereira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 36,
+        "fields": {
+            "admin": 45,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13403-154",
+            "logradouro": "Rua Seis",
+            "numero": "281",
+            "complemento": "",
+            "bairro": "Glebas Calif\u00f3rnia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 46,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andreoliveira",
+            "first_name": "Andre",
+            "last_name": "Oliveira",
+            "email": "andreoliveira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 37,
+        "fields": {
+            "admin": 46,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13405-073",
+            "logradouro": "Pra\u00e7a Professor Leandro Guerine",
+            "numero": "529",
+            "complemento": "Apto. 41",
+            "bairro": "Nova Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 47,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anasilva",
+            "first_name": "Ana",
+            "last_name": "Silva",
+            "email": "anasilva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 38,
+        "fields": {
+            "admin": 47,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13401-548",
+            "logradouro": "Rua Jo\u00e3o Ramalho",
+            "numero": "348",
+            "complemento": "",
+            "bairro": "Paulic\u00e9ia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 48,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniojunior",
+            "first_name": "Antonio",
+            "last_name": "Junior",
+            "email": "antoniojunior@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 39,
+        "fields": {
+            "admin": 48,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13420-165",
+            "logradouro": "Rua Frei Pedro Sinzig",
+            "numero": "91",
+            "complemento": "Apto. 123",
+            "bairro": "Parque Santa Cec\u00edlia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 49,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "analima",
+            "first_name": "Ana",
+            "last_name": "Lima",
+            "email": "analima@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 40,
+        "fields": {
+            "admin": 49,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13412-083",
+            "logradouro": "Rua Doze de Outubro",
+            "numero": "592",
+            "complemento": "Sobreloja",
+            "bairro": "Nossa Senhora de F\u00e1tima",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 50,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andresamacan",
+            "first_name": "Andresa",
+            "last_name": "Macan",
+            "email": "andresamacan@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 41,
+        "fields": {
+            "admin": 50,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13400-020",
+            "logradouro": "Pra\u00e7a Allan Kardec",
+            "numero": "442",
+            "complemento": "",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 51,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "brunorocha",
+            "first_name": "Bruno",
+            "last_name": "Rocha",
+            "email": "brunorocha@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 42,
+        "fields": {
+            "admin": 51,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13411-577",
+            "logradouro": "Rua Jo\u00e3o St\u00eanico",
+            "numero": "74",
+            "complemento": "Apto. 3",
+            "bairro": "Santa Ol\u00edmpia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 52,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "caetanobonchristiani",
+            "first_name": "Caetano",
+            "last_name": "Bonchristiani",
+            "email": "caetanobonchristiani@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 43,
+        "fields": {
+            "admin": 52,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13412-213",
+            "logradouro": "Rua Um",
+            "numero": "125",
+            "complemento": "",
+            "bairro": "Santa Terezinha",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 53,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "aureacosta",
+            "first_name": "Aurea",
+            "last_name": "Costa",
+            "email": "aureacosta@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 44,
+        "fields": {
+            "admin": 53,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13423-246",
+            "logradouro": "Rua B",
+            "numero": "707",
+            "complemento": "Apto. 71",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 54,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anacoutinho",
+            "first_name": "Ana",
+            "last_name": "Coutinho",
+            "email": "anacoutinho@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 45,
+        "fields": {
+            "admin": 54,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13400-030",
+            "logradouro": "Pra\u00e7a Ant\u00f4nio de P\u00e1dua Dutra",
+            "numero": "216",
+            "complemento": "Apto. 141",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 55,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andrearaujo",
+            "first_name": "Andre",
+            "last_name": "Araujo",
+            "email": "andrearaujo@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 46,
+        "fields": {
+            "admin": 55,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13425-137",
+            "logradouro": "Rua Dez",
+            "numero": "845",
+            "complemento": "Apto. 33",
+            "bairro": "\u00c1gua Branca",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 56,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "caioschaffer",
+            "first_name": "Caio",
+            "last_name": "Schaffer",
+            "email": "caioschaffer@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 47,
+        "fields": {
+            "admin": 56,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13406-343",
+            "logradouro": "Rua Dalvino Pedroso",
+            "numero": "850",
+            "complemento": "Sobreloja",
+            "bairro": "Residencial Alto da Boa Vista",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 57,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anacuzzatti",
+            "first_name": "Ana",
+            "last_name": "Cuzzatti",
+            "email": "anacuzzatti@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 48,
+        "fields": {
+            "admin": 57,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13423-246",
+            "logradouro": "Rua B",
+            "numero": "958",
+            "complemento": "Sobreloja",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 58,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alessandralosso",
+            "first_name": "Alessandra",
+            "last_name": "Losso",
+            "email": "alessandralosso@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 49,
+        "fields": {
+            "admin": 58,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13411-305",
+            "logradouro": "Rua Vinte Oito de Outubro",
+            "numero": "751",
+            "complemento": "",
+            "bairro": "Vila Bel\u00e9m",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 59,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "annasantos",
+            "first_name": "Anna",
+            "last_name": "Santos",
+            "email": "annasantos@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 50,
+        "fields": {
+            "admin": 59,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13417-260",
+            "logradouro": "Pra\u00e7a Carlos Razera",
+            "numero": "326",
+            "complemento": "Apto. 110",
+            "bairro": "Piracicamirim",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 60,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anabernardes",
+            "first_name": "Ana",
+            "last_name": "Bernardes",
+            "email": "anabernardes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 51,
+        "fields": {
+            "admin": 60,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13432-602",
+            "logradouro": "Rua Jaci",
+            "numero": "793",
+            "complemento": "",
+            "bairro": "Colinas do Piracicaba (\u00c1rtemis)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 61,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "carlasimoes",
+            "first_name": "Carla",
+            "last_name": "Simoes",
+            "email": "carlasimoes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 52,
+        "fields": {
+            "admin": 61,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13405-073",
+            "logradouro": "Pra\u00e7a Professor Leandro Guerine",
+            "numero": "645",
+            "complemento": "Apto. 30",
+            "bairro": "Nova Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 62,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "brunobahia",
+            "first_name": "Bruno",
+            "last_name": "Bahia",
+            "email": "brunobahia@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 53,
+        "fields": {
+            "admin": 62,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-650",
+            "logradouro": "Pra\u00e7a Thomas Alva Edson",
+            "numero": "215",
+            "complemento": "Sobreloja",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 63,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "annaalves",
+            "first_name": "Anna",
+            "last_name": "Alves",
+            "email": "annaalves@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 54,
+        "fields": {
+            "admin": 63,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13405-364",
+            "logradouro": "Pra\u00e7a Jos\u00e9 Laerte Zitelli",
+            "numero": "968",
+            "complemento": "",
+            "bairro": "Vila Rezende",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 64,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "angelicazanuni",
+            "first_name": "Angelica",
+            "last_name": "Zanuni",
+            "email": "angelicazanuni@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 55,
+        "fields": {
+            "admin": 64,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13400-570",
+            "logradouro": "Pra\u00e7a Padre Roberto Landell de Moura",
+            "numero": "53",
+            "complemento": "",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 65,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "ailtonsantos",
+            "first_name": "Ailton",
+            "last_name": "Santos",
+            "email": "ailtonsantos@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 56,
+        "fields": {
+            "admin": 65,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13402-118",
+            "logradouro": "Rua Jo\u00e3o Zilio",
+            "numero": "584",
+            "complemento": "Apto. 53",
+            "bairro": "Novo Horizonte",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 66,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniomaria",
+            "first_name": "Antonio",
+            "last_name": "Maria",
+            "email": "antoniomaria@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 57,
+        "fields": {
+            "admin": 66,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-300",
+            "logradouro": "Rua Treze de Maio",
+            "numero": "148",
+            "complemento": "Sobreloja",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 67,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "carlacamara",
+            "first_name": "Carla",
+            "last_name": "Camara",
+            "email": "carlacamara@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 58,
+        "fields": {
+            "admin": 67,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13420-785",
+            "logradouro": "Rua Virg\u00edlio Pedro Soave",
+            "numero": "470",
+            "complemento": "",
+            "bairro": "Dois C\u00f3rregos",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 68,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andreamello",
+            "first_name": "Andrea",
+            "last_name": "Mello",
+            "email": "andreamello@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 59,
+        "fields": {
+            "admin": 68,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13432-970",
+            "logradouro": "Pra\u00e7a Jo\u00e3o Alfredo",
+            "numero": "196",
+            "complemento": "Sobreloja",
+            "bairro": "Centro (\u00c1rtemis)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 69,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "albertoneto",
+            "first_name": "Alberto",
+            "last_name": "Neto",
+            "email": "albertoneto@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 60,
+        "fields": {
+            "admin": 69,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13426-259",
+            "logradouro": "Rua Jo\u00e3o Tedesco",
+            "numero": "492",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Ast\u00farias II",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 70,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alynegama",
+            "first_name": "Alyne",
+            "last_name": "Gama",
+            "email": "alynegama@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 61,
+        "fields": {
+            "admin": 70,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13400-460",
+            "logradouro": "Rua Jo\u00e3o Boles",
+            "numero": "792",
+            "complemento": "",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 71,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anadumans",
+            "first_name": "Ana",
+            "last_name": "Dumans",
+            "email": "anadumans@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 62,
+        "fields": {
+            "admin": 71,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13405-044",
+            "logradouro": "Pra\u00e7a Maria Nassif Cariacas",
+            "numero": "76",
+            "complemento": "Apto. 72",
+            "bairro": "Nova Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 72,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alinenunes",
+            "first_name": "Aline",
+            "last_name": "Nunes",
+            "email": "alinenunes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 63,
+        "fields": {
+            "admin": 72,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13423-242",
+            "logradouro": "Rua B",
+            "numero": "970",
+            "complemento": "Sobreloja",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 73,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "augustobitu",
+            "first_name": "Augusto",
+            "last_name": "Bitu",
+            "email": "augustobitu@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 64,
+        "fields": {
+            "admin": 73,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13425-682",
+            "logradouro": "Rua Sete",
+            "numero": "69",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Itamarac\u00e1",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 74,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anacorrea",
+            "first_name": "Ana",
+            "last_name": "Correa",
+            "email": "anacorrea@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 65,
+        "fields": {
+            "admin": 74,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13419-003",
+            "logradouro": "Pra\u00e7a General Carlos Machado Bittencourt",
+            "numero": "805",
+            "complemento": "Sobreloja",
+            "bairro": "Cidade Alta",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 75,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "aparecidopinto",
+            "first_name": "Aparecido",
+            "last_name": "Pinto",
+            "email": "aparecidopinto@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 66,
+        "fields": {
+            "admin": 75,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13408-145",
+            "logradouro": "Estrada S\u00e3o Pedro",
+            "numero": "751",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Residencial Javary II",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 76,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniosouza",
+            "first_name": "Antonio",
+            "last_name": "Souza",
+            "email": "antoniosouza@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 67,
+        "fields": {
+            "admin": 76,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13425-083",
+            "logradouro": "Pra\u00e7a Jo\u00e3o Francisco Coimbra Neto",
+            "numero": "278",
+            "complemento": "",
+            "bairro": "\u00c1gua Branca",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 77,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alineoliveira",
+            "first_name": "Aline",
+            "last_name": "Oliveira",
+            "email": "alineoliveira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 68,
+        "fields": {
+            "admin": 77,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13417-791",
+            "logradouro": "Rua Dom Pedro I",
+            "numero": "62",
+            "complemento": "Sobreloja",
+            "bairro": "Nova Am\u00e9rica",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 78,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "analeal",
+            "first_name": "Ana",
+            "last_name": "Leal",
+            "email": "analeal@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 69,
+        "fields": {
+            "admin": 78,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13411-512",
+            "logradouro": "Rua Nossa Senhora Aparecida",
+            "numero": "480",
+            "complemento": "Sobreloja",
+            "bairro": "Santana",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 79,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "brunorosa",
+            "first_name": "Bruno",
+            "last_name": "Rosa",
+            "email": "brunorosa@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 70,
+        "fields": {
+            "admin": 79,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13403-159",
+            "logradouro": "Rua Um",
+            "numero": "33",
+            "complemento": "Sobreloja",
+            "bairro": "Glebas Calif\u00f3rnia",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 80,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alexandrasousa",
+            "first_name": "Alexandra",
+            "last_name": "Sousa",
+            "email": "alexandrasousa@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 71,
+        "fields": {
+            "admin": 80,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13419-003",
+            "logradouro": "Pra\u00e7a General Carlos Machado Bittencourt",
+            "numero": "99",
+            "complemento": "Apto. 66",
+            "bairro": "Cidade Alta",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 81,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "aricharao",
+            "first_name": "Ari",
+            "last_name": "Charao",
+            "email": "aricharao@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 72,
+        "fields": {
+            "admin": 81,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13417-779",
+            "logradouro": "Rua Caetano de Campos",
+            "numero": "188",
+            "complemento": "",
+            "bairro": "Piracicamirim",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 82,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniobarbosa",
+            "first_name": "Antonio",
+            "last_name": "Barbosa",
+            "email": "antoniobarbosa@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 73,
+        "fields": {
+            "admin": 82,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13412-083",
+            "logradouro": "Rua Doze de Outubro",
+            "numero": "249",
+            "complemento": "Sobreloja",
+            "bairro": "Nossa Senhora de F\u00e1tima",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 83,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "amandiojorge",
+            "first_name": "Amandio",
+            "last_name": "Jorge",
+            "email": "amandiojorge@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 74,
+        "fields": {
+            "admin": 83,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13408-046",
+            "logradouro": "Rua Dois",
+            "numero": "773",
+            "complemento": "",
+            "bairro": "Jardim Irapu\u00e3",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 9,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 84,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "bernardomedina",
+            "first_name": "Bernardo",
+            "last_name": "Medina",
+            "email": "bernardomedina@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 75,
+        "fields": {
+            "admin": 84,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13402-066",
+            "logradouro": "Rua Pedro Habechian",
+            "numero": "577",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim Itapu\u00e3",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 8,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 85,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anibalfilho",
+            "first_name": "Anibal",
+            "last_name": "Filho",
+            "email": "anibalfilho@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 76,
+        "fields": {
+            "admin": 85,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13401-210",
+            "logradouro": "Rua Vinte e Tr\u00eas de Maio",
+            "numero": "794",
+            "complemento": "Apto. 9",
+            "bairro": "Paulista",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 86,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "annafoz",
+            "first_name": "Anna",
+            "last_name": "Foz",
+            "email": "annafoz@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 77,
+        "fields": {
+            "admin": 86,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13405-325",
+            "logradouro": "Rua Pedro Sacone",
+            "numero": "261",
+            "complemento": "Apto. 52",
+            "bairro": "Vila Rezende",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 87,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "antoniasantos",
+            "first_name": "Antonia",
+            "last_name": "Santos",
+            "email": "antoniasantos@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 78,
+        "fields": {
+            "admin": 87,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13403-846",
+            "logradouro": "Pra\u00e7a Professor S\u00e9rgio Bonganhi",
+            "numero": "503",
+            "complemento": "",
+            "bairro": "Terras de Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 88,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anachuengue",
+            "first_name": "Ana",
+            "last_name": "Chuengue",
+            "email": "anachuengue@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 79,
+        "fields": {
+            "admin": 88,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13426-353",
+            "logradouro": "Rua Zulmiro Pedroso",
+            "numero": "326",
+            "complemento": "",
+            "bairro": "Prezoto",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 89,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "berenicerodrigues",
+            "first_name": "Berenice",
+            "last_name": "Rodrigues",
+            "email": "berenicerodrigues@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 80,
+        "fields": {
+            "admin": 89,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13425-083",
+            "logradouro": "Pra\u00e7a Jo\u00e3o Francisco Coimbra Neto",
+            "numero": "240",
+            "complemento": "",
+            "bairro": "\u00c1gua Branca",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 90,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "airtonjunior",
+            "first_name": "Airton",
+            "last_name": "Junior",
+            "email": "airtonjunior@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 81,
+        "fields": {
+            "admin": 90,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13412-327",
+            "logradouro": "Rua Jo\u00e3o Chiodi",
+            "numero": "138",
+            "complemento": "",
+            "bairro": "Conjunto Residencial M\u00e1rio Dedini",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 3,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 91,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "augustonovaes",
+            "first_name": "Augusto",
+            "last_name": "Novaes",
+            "email": "augustonovaes@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 82,
+        "fields": {
+            "admin": 91,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13423-246",
+            "logradouro": "Rua B",
+            "numero": "739",
+            "complemento": "",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 6,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 92,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andreaamaro",
+            "first_name": "Andrea",
+            "last_name": "Amaro",
+            "email": "andreaamaro@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 83,
+        "fields": {
+            "admin": 92,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13401-411",
+            "logradouro": "Rua A",
+            "numero": "421",
+            "complemento": "",
+            "bairro": "Jardim Tatuap\u00e9",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 2
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 93,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alexfidelis",
+            "first_name": "Alex",
+            "last_name": "Fidelis",
+            "email": "alexfidelis@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 84,
+        "fields": {
+            "admin": 93,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13432-970",
+            "logradouro": "Pra\u00e7a Jo\u00e3o Alfredo",
+            "numero": "597",
+            "complemento": "Apto. 63",
+            "bairro": "Centro (\u00c1rtemis)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 94,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anatijiboy",
+            "first_name": "Ana",
+            "last_name": "Tijiboy",
+            "email": "anatijiboy@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 85,
+        "fields": {
+            "admin": 94,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13411-087",
+            "logradouro": "Rua Pedro Rosental",
+            "numero": "724",
+            "complemento": "",
+            "bairro": "Santa Terezinha",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 2,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 95,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "aparecidosilva",
+            "first_name": "Aparecido",
+            "last_name": "Silva",
+            "email": "aparecidosilva@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 86,
+        "fields": {
+            "admin": 95,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13403-880",
+            "logradouro": "Pra\u00e7a M\u00e1rio Ambr\u00f3sio",
+            "numero": "684",
+            "complemento": "Sobreloja",
+            "bairro": "Terras de Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 96,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "beatrizferreira",
+            "first_name": "Beatriz",
+            "last_name": "Ferreira",
+            "email": "beatrizferreira@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 87,
+        "fields": {
+            "admin": 96,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13423-638",
+            "logradouro": "Rua Caetano Jos\u00e9 da Cunha",
+            "numero": "750",
+            "complemento": "Sobreloja",
+            "bairro": "Gar\u00e7as",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 97,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "anaprovenzi",
+            "first_name": "Ana",
+            "last_name": "Provenzi",
+            "email": "anaprovenzi@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 88,
+        "fields": {
+            "admin": 97,
+            "gender": "Feminino",
+            "profile_pic": "/media/menina.jpg",
+            "cep": "13402-014",
+            "logradouro": "Rua Um",
+            "numero": "435",
+            "complemento": "Sobreloja",
+            "bairro": "Jardim S\u00e3o Paulo",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 3
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 98,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "andersondamacena",
+            "first_name": "Anderson",
+            "last_name": "Damacena",
+            "email": "andersondamacena@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 89,
+        "fields": {
+            "admin": 98,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13432-602",
+            "logradouro": "Rua Jaci",
+            "numero": "530",
+            "complemento": "",
+            "bairro": "Colinas do Piracicaba (\u00c1rtemis)",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 4,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 99,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "arlissfilho",
+            "first_name": "Arliss",
+            "last_name": "Filho",
+            "email": "arlissfilho@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 90,
+        "fields": {
+            "admin": 99,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13423-213",
+            "logradouro": "Rua A",
+            "numero": "894",
+            "complemento": "Apto. 18",
+            "bairro": "Santa Rita",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 1,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 100,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "brucelima",
+            "first_name": "Bruce",
+            "last_name": "Lima",
+            "email": "brucelima@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 91,
+        "fields": {
+            "admin": 100,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13403-839",
+            "logradouro": "Pra\u00e7a Ant\u00f4nio Pavan",
+            "numero": "180",
+            "complemento": "Apto. 111",
+            "bairro": "Terras de Piracicaba",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 7,
+            "session_year_id": 1
+        }
+    },
+    {
+        "model": "core.customuser",
+        "pk": 101,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "almiropinto",
+            "first_name": "Almiro",
+            "last_name": "Pinto",
+            "email": "almiropinto@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "user_type": "3",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "core.students",
+        "pk": 92,
+        "fields": {
+            "admin": 101,
+            "gender": "Masculino",
+            "profile_pic": "/media/menino.jpg",
+            "cep": "13400-340",
+            "logradouro": "Pra\u00e7a Jos\u00e9 Bonif\u00e1cio",
+            "numero": "19",
+            "complemento": "Apto. 57",
+            "bairro": "Centro",
+            "localidade": "Piracicaba",
+            "uf": "SP",
+            "course_id": 5,
+            "session_year_id": 3
+        }
     }
-  },
-  {
-    "model": "core.students",
-    "pk": 1,
-    "fields": {
-      "admin": 10,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Benedicto de Almeida Souza, 214 - Parque S\u00e3o Matheus - Piracicaba, SP - CEP: 13409-196",
-      "course_id": 4,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 11,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizalves",
-      "first_name": "Luiz",
-      "last_name": "Alves",
-      "email": "luizalves@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 2,
-    "fields": {
-      "admin": 11,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Travessa Vinte e Quatro de Abril, 746 - Piracicamirim - Piracicaba, SP - CEP: 13420-532",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 12,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcussilva",
-      "first_name": "Marcus",
-      "last_name": "Silva",
-      "email": "marcussilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 3,
-    "fields": {
-      "admin": 12,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Paulista, 103 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-070",
-      "course_id": 5,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 13,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "jovaniacomper",
-      "first_name": "Jovania",
-      "last_name": "Comper",
-      "email": "jovaniacomper@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 4,
-    "fields": {
-      "admin": 13,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a Thomas Alva Edson, 328 - Centro - Piracicaba, SP - CEP: 13400-650",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 14,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leandromadeiro",
-      "first_name": "Leandro",
-      "last_name": "Madeiro",
-      "email": "leandromadeiro@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 5,
-    "fields": {
-      "admin": 14,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Ant\u00f4nio Corr\u00eaa Barbosa, 44 - Centro - Piracicaba, SP - CEP: 13400-810",
-      "course_id": 9,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 15,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianafernandes",
-      "first_name": "Juliana",
-      "last_name": "Fernandes",
-      "email": "julianafernandes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 6,
-    "fields": {
-      "admin": 15,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Ant\u00f4nio Corr\u00eaa Barbosa 2233, 112 - Centro - Piracicaba, SP - CEP: 13400-900",
-      "course_id": 9,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 16,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciosilva",
-      "first_name": "Marcio",
-      "last_name": "Silva",
-      "email": "marciosilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 7,
-    "fields": {
-      "admin": 16,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a At\u00edlio Balbo, 792 - Santa Terezinha - Piracicaba, SP - CEP: 13409-022",
-      "course_id": 6,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 17,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciakruger",
-      "first_name": "Marcia",
-      "last_name": "Kruger",
-      "email": "marciakruger@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 8,
-    "fields": {
-      "admin": 17,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Rio Claro, 689 - Arei\u00e3o - Piracicaba, SP - CEP: 13414-048",
-      "course_id": 5,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 18,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "jossimeramos",
-      "first_name": "Jossime",
-      "last_name": "Ramos",
-      "email": "jossimeramos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 9,
-    "fields": {
-      "admin": 18,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Pomp\u00e9ia, 955 - Pomp\u00e9ia - Piracicaba, SP - CEP: 13421-330",
-      "course_id": 8,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 19,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "karinesilva",
-      "first_name": "Karine",
-      "last_name": "Silva",
-      "email": "karinesilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 10,
-    "fields": {
-      "admin": 19,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Travessa Vinte e Quatro de Julho, 254 - Piracicamirim - Piracicaba, SP - CEP: 13420-520",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 20,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "maralima",
-      "first_name": "Mara",
-      "last_name": "Lima",
-      "email": "maralima@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 11,
-    "fields": {
-      "admin": 20,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Orl\u00e2ndia, 172 - Parque Taquaral - Piracicaba, SP - CEP: 13423-506",
-      "course_id": 8,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 21,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcoricardino",
-      "first_name": "Marco",
-      "last_name": "Ricardino",
-      "email": "marcoricardino@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 12,
-    "fields": {
-      "admin": 21,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Jo\u00e3o Egydio AdamoliResidencial Jardim Colonial, 590 - Jardim Calif\u00f3rnia - Piracicaba, SP - CEP: 13424-710",
-      "course_id": 2,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 22,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "manoelponce",
-      "first_name": "Manoel",
-      "last_name": "Ponce",
-      "email": "manoelponce@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 13,
-    "fields": {
-      "admin": 22,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Marco Antonio Abdalla, 947 - Campestre - Piracicaba, SP - CEP: 13401-744",
-      "course_id": 9,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 23,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luismarcelino",
-      "first_name": "Luis",
-      "last_name": "Marcelino",
-      "email": "luismarcelino@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 14,
-    "fields": {
-      "admin": 23,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Silva Jardim, 506 - Cidade Alta - Piracicaba, SP - CEP: 13419-140",
-      "course_id": 2,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 24,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "juvenalsousa",
-      "first_name": "Juvenal",
-      "last_name": "Sousa",
-      "email": "juvenalsousa@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 15,
-    "fields": {
-      "admin": 24,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida das Ondas, 315 - Ondinhas - Piracicaba, SP - CEP: 13403-667",
-      "course_id": 2,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 25,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianadelsim",
-      "first_name": "Juliana",
-      "last_name": "Delsim",
-      "email": "julianadelsim@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 16,
-    "fields": {
-      "admin": 25,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Ja\u00fa, 263 - Jardim Tatuap\u00e9 - Piracicaba, SP - CEP: 13402-090",
-      "course_id": 6,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 26,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucivaldooliveira",
-      "first_name": "Lucivaldo",
-      "last_name": "Oliveira",
-      "email": "lucivaldooliveira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 17,
-    "fields": {
-      "admin": 26,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Henrique Brasiliense Pinto de Almeida, 49 - Ch\u00e1caras \u00c1gua Branca - Piracicaba, SP - CEP: 13426-609",
-      "course_id": 1,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 27,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leandrocarvalho",
-      "first_name": "Leandro",
-      "last_name": "Carvalho",
-      "email": "leandrocarvalho@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 18,
-    "fields": {
-      "admin": 27,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Cinyra de Almeida Canto Teixeira, 498 - Loteamento Kobayat L\u00edbano - Piracicaba, SP - CEP: 13402-234",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 28,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "juarezcarvalho",
-      "first_name": "Juarez",
-      "last_name": "Carvalho",
-      "email": "juarezcarvalho@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 19,
-    "fields": {
-      "admin": 28,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Jo\u00e3o Alves de Almeida, 161 - Nossa Senhora de F\u00e1tima - Piracicaba, SP - CEP: 13412-080",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 29,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "juliomilitao",
-      "first_name": "Julio",
-      "last_name": "Militao",
-      "email": "juliomilitao@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 20,
-    "fields": {
-      "admin": 29,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Branca Leite Marcondes, 610 - Jardim Elite - Piracicaba, SP - CEP: 13417-420",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 30,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcosrodrigues",
-      "first_name": "Marcos",
-      "last_name": "Rodrigues",
-      "email": "marcosrodrigues@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 21,
-    "fields": {
-      "admin": 30,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Marconi, 85 - Vila Independ\u00eancia - Piracicaba, SP - CEP: 13418-130",
-      "course_id": 7,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 31,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lourdesjung",
-      "first_name": "Lourdes",
-      "last_name": "Jung",
-      "email": "lourdesjung@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 22,
-    "fields": {
-      "admin": 31,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Joaquim de Almeida Lima, 757 - Gar\u00e7as - Piracicaba, SP - CEP: 13423-628",
-      "course_id": 2,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 32,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcosrosa",
-      "first_name": "Marcos",
-      "last_name": "Rosa",
-      "email": "marcosrosa@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 23,
-    "fields": {
-      "admin": 32,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Primavera, 820 - Arei\u00e3o - Piracicaba, SP - CEP: 13414-036",
-      "course_id": 7,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 33,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leilacaldas",
-      "first_name": "Leila",
-      "last_name": "Caldas",
-      "email": "leilacaldas@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 24,
-    "fields": {
-      "admin": 33,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Caminho de Servid\u00e3o \u00c2ngelo Serimarco, 984 - Dois C\u00f3rregos - Piracicaba, SP - CEP: 13420-792",
-      "course_id": 5,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 34,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "larissefontinele",
-      "first_name": "Larisse",
-      "last_name": "Fontinele",
-      "email": "larissefontinele@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 25,
-    "fields": {
-      "admin": 34,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Marcos Plauto de Coimbra, 609 - Residencial Paineiras - Piracicaba, SP - CEP: 13402-814",
-      "course_id": 9,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 35,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciasilva",
-      "first_name": "Marcia",
-      "last_name": "Silva",
-      "email": "marciasilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 26,
-    "fields": {
-      "admin": 35,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Carlos de CilloJardim dos Ip\u00eas, 508 - Jardim Calif\u00f3rnia - Piracicaba, SP - CEP: 13424-718",
-      "course_id": 6,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 36,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marceloguimaraes",
-      "first_name": "Marcelo",
-      "last_name": "Guimaraes",
-      "email": "marceloguimaraes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 27,
-    "fields": {
-      "admin": 36,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Hyundai, 693 - \u00c1gua Santa - Piracicaba, SP - CEP: 13413-500",
-      "course_id": 6,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 37,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcocyriaco",
-      "first_name": "Marco",
-      "last_name": "Cyriaco",
-      "email": "marcocyriaco@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 28,
-    "fields": {
-      "admin": 37,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Manoel SpasianoJardim Sol Nascente II, 466 - Pomp\u00e9ia - Piracicaba, SP - CEP: 13425-841",
-      "course_id": 3,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 38,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizfacanha",
-      "first_name": "Luiz",
-      "last_name": "Facanha",
-      "email": "luizfacanha@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 29,
-    "fields": {
-      "admin": 38,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Professor Joaquim do Marco, 591 - Terras do Engenho - Piracicaba, SP - CEP: 13405-266",
-      "course_id": 5,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 39,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianasantos",
-      "first_name": "Juliana",
-      "last_name": "Santos",
-      "email": "julianasantos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 30,
-    "fields": {
-      "admin": 39,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Jasbermando PicinatoJardim Sol Nascente II, 993 - Pomp\u00e9ia - Piracicaba, SP - CEP: 13425-840",
-      "course_id": 7,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 40,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lirifranbernardo",
-      "first_name": "Lirifran",
-      "last_name": "Bernardo",
-      "email": "lirifranbernardo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 31,
-    "fields": {
-      "admin": 40,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a Miguel Arcanjo Ben\u00edcio Dutra, 635 - Centro - Piracicaba, SP - CEP: 13400-540",
-      "course_id": 3,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 41,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcelomarinho",
-      "first_name": "Marcelo",
-      "last_name": "Marinho",
-      "email": "marcelomarinho@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 32,
-    "fields": {
-      "admin": 41,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Travessa S\u00e3o Marcos, 293 - Santa Terezinha - Piracicaba, SP - CEP: 13411-082",
-      "course_id": 9,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 42,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcossilva",
-      "first_name": "Marcos",
-      "last_name": "Silva",
-      "email": "marcossilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 33,
-    "fields": {
-      "admin": 42,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Cinyra de Almeida Canto Teixeira, 903 - Loteamento Kobayat L\u00edbano - Piracicaba, SP - CEP: 13402-234",
-      "course_id": 6,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 43,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "liviabarcelos",
-      "first_name": "Livia",
-      "last_name": "Barcelos",
-      "email": "liviabarcelos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 34,
-    "fields": {
-      "admin": 43,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua General Camis\u00e3oJardim Brasil, 219 - Jardim Calif\u00f3rnia - Piracicaba, SP - CEP: 13424-694",
-      "course_id": 4,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 44,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "karenpaulino",
-      "first_name": "Karen",
-      "last_name": "Paulino",
-      "email": "karenpaulino@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 35,
-    "fields": {
-      "admin": 44,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Pomp\u00e9ia, 656 - Piracicamirim - Piracicaba, SP - CEP: 13420-557",
-      "course_id": 3,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 45,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciosantos",
-      "first_name": "Marcio",
-      "last_name": "Santos",
-      "email": "marciosantos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 36,
-    "fields": {
-      "admin": 45,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Francisco de Almeida Alves, 384 - CECAP - Piracicaba, SP - CEP: 13421-525",
-      "course_id": 2,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 46,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciliamacedo",
-      "first_name": "Marcilia",
-      "last_name": "Macedo",
-      "email": "marciliamacedo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 37,
-    "fields": {
-      "admin": 46,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a do Imp\u00e9rio, 62 - Jardim Algodoal - Piracicaba, SP - CEP: 13405-435",
-      "course_id": 5,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 47,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luciograjauskas",
-      "first_name": "Lucio",
-      "last_name": "Grajauskas",
-      "email": "luciograjauskas@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 38,
-    "fields": {
-      "admin": 47,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Travessa Treze de Abril, 154 - Piracicamirim - Piracicaba, SP - CEP: 13420-534",
-      "course_id": 6,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 48,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "josivalsouza",
-      "first_name": "Josival",
-      "last_name": "Souza",
-      "email": "josivalsouza@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 39,
-    "fields": {
-      "admin": 48,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Luiz Gonzaga Barbosa de Lima, 563 - Vila Industrial - Piracicaba, SP - CEP: 13412-429",
-      "course_id": 8,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 49,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "karinaprazeres",
-      "first_name": "Karina",
-      "last_name": "Prazeres",
-      "email": "karinaprazeres@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 40,
-    "fields": {
-      "admin": 49,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Um, 697 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-000",
-      "course_id": 4,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 50,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lennebergmachado",
-      "first_name": "Lenneberg",
-      "last_name": "Machado",
-      "email": "lennebergmachado@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 41,
-    "fields": {
-      "admin": 50,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Luiz Lee HollandJardim Dona Lourdes, 354 - S\u00e3o Jorge - Piracicaba, SP - CEP: 13402-736",
-      "course_id": 9,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 51,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luciacunha",
-      "first_name": "Lucia",
-      "last_name": "Cunha",
-      "email": "luciacunha@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 42,
-    "fields": {
-      "admin": 51,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Professor Lauro Alves Cacule de Almeida, 354 - Higien\u00f3polis - Piracicaba, SP - CEP: 13417-150",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 52,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucianapassos",
-      "first_name": "Luciana",
-      "last_name": "Passos",
-      "email": "lucianapassos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 43,
-    "fields": {
-      "admin": 52,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida das Ondas, 269 - Ondas - Piracicaba, SP - CEP: 13403-799",
-      "course_id": 6,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 53,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizcunha",
-      "first_name": "Luiz",
-      "last_name": "Cunha",
-      "email": "luizcunha@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 44,
-    "fields": {
-      "admin": 53,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida das Ondas, 591 - Jardim S\u00e3o Francisco - Piracicaba, SP - CEP: 13403-600",
-      "course_id": 1,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 54,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianolucif",
-      "first_name": "Juliano",
-      "last_name": "Lucif",
-      "email": "julianolucif@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 45,
-    "fields": {
-      "admin": 54,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Ricardo Pinto de Almeida, 571 - Jardim Castor - Piracicaba, SP - CEP: 13411-103",
-      "course_id": 7,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 55,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "juordanschutz",
-      "first_name": "Juordan",
-      "last_name": "Schutz",
-      "email": "juordanschutz@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 46,
-    "fields": {
-      "admin": 55,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Um, 152 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-000",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 56,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "juliorobledo",
-      "first_name": "Julio",
-      "last_name": "Robledo",
-      "email": "juliorobledo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 47,
-    "fields": {
-      "admin": 56,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a Quinze de Novembro, 989 - Centro (Tupi) - Piracicaba, SP - CEP: 13428-408",
-      "course_id": 5,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 57,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcusandrade",
-      "first_name": "Marcus",
-      "last_name": "Andrade",
-      "email": "marcusandrade@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 48,
-    "fields": {
-      "admin": 57,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a Ant\u00f4nio Pavan, 819 - Terras de Piracicaba - Piracicaba, SP - CEP: 13403-839",
-      "course_id": 4,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 58,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucianajesus",
-      "first_name": "Luciana",
-      "last_name": "Jesus",
-      "email": "lucianajesus@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 49,
-    "fields": {
-      "admin": 58,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a do Imp\u00e9rio, 773 - Jardim Algodoal - Piracicaba, SP - CEP: 13405-435",
-      "course_id": 5,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 59,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marceloteixeira",
-      "first_name": "Marcelo",
-      "last_name": "Teixeira",
-      "email": "marceloteixeira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 50,
-    "fields": {
-      "admin": 59,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Francisca T. Barbosa, 684 - Conjunto Residencial M\u00e1rio Dedini - Piracicaba, SP - CEP: 13412-355",
-      "course_id": 9,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 60,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "liviazenobio",
-      "first_name": "Livia",
-      "last_name": "Zenobio",
-      "email": "liviazenobio@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 51,
-    "fields": {
-      "admin": 60,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Jos\u00e9 Pereira Barbosa, 311 - Campestre - Piracicaba, SP - CEP: 13401-605",
-      "course_id": 2,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 61,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luciantonio",
-      "first_name": "Luci",
-      "last_name": "Antonio",
-      "email": "luciantonio@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 52,
-    "fields": {
-      "admin": 61,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Joaquim Ferraz de Almeida, 451 - Gar\u00e7as - Piracicaba, SP - CEP: 13423-640",
-      "course_id": 9,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 62,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciateixeira",
-      "first_name": "Marcia",
-      "last_name": "Teixeira",
-      "email": "marciateixeira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 53,
-    "fields": {
-      "admin": 62,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Branca Leite Marcondes, 606 - Jardim Elite - Piracicaba, SP - CEP: 13417-420",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 63,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizalmeida",
-      "first_name": "Luiz",
-      "last_name": "Almeida",
-      "email": "luizalmeida@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 54,
-    "fields": {
-      "admin": 63,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida It\u00e1lia, 363 - Cidade Jardim - Piracicaba, SP - CEP: 13416-490",
-      "course_id": 2,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 64,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizteixeira",
-      "first_name": "Luiz",
-      "last_name": "Teixeira",
-      "email": "luizteixeira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 55,
-    "fields": {
-      "admin": 64,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Benedito Almeida Junior, 741 - Tanquinho (Guamium) - Piracicaba, SP - CEP: 13433-008",
-      "course_id": 5,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 65,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "keniacardozo",
-      "first_name": "Kenia",
-      "last_name": "Cardozo",
-      "email": "keniacardozo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 56,
-    "fields": {
-      "admin": 65,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Rui Barbosa, 253 - Vila Rezende - Piracicaba, SP - CEP: 13405-217",
-      "course_id": 7,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 66,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcelonapoli",
-      "first_name": "Marcelo",
-      "last_name": "Napoli",
-      "email": "marcelonapoli@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 57,
-    "fields": {
-      "admin": 66,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Mongagu\u00e1Jardim Potiguar, 997 - Jardim Abaet\u00e9 - Piracicaba, SP - CEP: 13420-258",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 67,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucianasantos",
-      "first_name": "Luciana",
-      "last_name": "Santos",
-      "email": "lucianasantos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 58,
-    "fields": {
-      "admin": 67,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Jos\u00e9 Boanerges BoniJardim dos Ip\u00eas, 719 - Jardim Calif\u00f3rnia - Piracicaba, SP - CEP: 13424-716",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 68,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucianasousa",
-      "first_name": "Luciana",
-      "last_name": "Sousa",
-      "email": "lucianasousa@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 59,
-    "fields": {
-      "admin": 68,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Rio de Janeiro, 51 - Piracicamirim - Piracicaba, SP - CEP: 13420-506",
-      "course_id": 6,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 69,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizduraes",
-      "first_name": "Luiz",
-      "last_name": "Duraes",
-      "email": "luizduraes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 60,
-    "fields": {
-      "admin": 69,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Santa Rosa, 155 - Arei\u00e3o - Piracicaba, SP - CEP: 13414-038",
-      "course_id": 3,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 70,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luziaguimaraes",
-      "first_name": "Luzia",
-      "last_name": "Guimaraes",
-      "email": "luziaguimaraes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 61,
-    "fields": {
-      "admin": 70,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Trinta e Um de Mar\u00e7o 789, 824 - Paulic\u00e9ia - Piracicaba, SP - CEP: 13424-972",
-      "course_id": 6,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 71,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "magdamattos",
-      "first_name": "Magda",
-      "last_name": "Mattos",
-      "email": "magdamattos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 62,
-    "fields": {
-      "admin": 71,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Trinta e Um de Mar\u00e7o, 557 - Paulic\u00e9ia - Piracicaba, SP - CEP: 13419-320",
-      "course_id": 9,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 72,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leonardobittencourt",
-      "first_name": "Leonardo",
-      "last_name": "Bittencourt",
-      "email": "leonardobittencourt@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 63,
-    "fields": {
-      "admin": 72,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Manoel SpasianoJardim Sol Nascente II, 236 - Pomp\u00e9ia - Piracicaba, SP - CEP: 13425-841",
-      "course_id": 3,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 73,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leciamatos",
-      "first_name": "Lecia",
-      "last_name": "Matos",
-      "email": "leciamatos@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 64,
-    "fields": {
-      "admin": 73,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Ricardo Pinto C\u00e9sar, 185 - Jardim Algodoal - Piracicaba, SP - CEP: 13405-432",
-      "course_id": 4,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 74,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luisoliveira",
-      "first_name": "Luis",
-      "last_name": "Oliveira",
-      "email": "luisoliveira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 65,
-    "fields": {
-      "admin": 74,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Sylvio OrianiJardim dos Ip\u00eas, 47 - Jardim Calif\u00f3rnia - Piracicaba, SP - CEP: 13424-722",
-      "course_id": 4,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 75,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leilamachado",
-      "first_name": "Leila",
-      "last_name": "Machado",
-      "email": "leilamachado@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 66,
-    "fields": {
-      "admin": 75,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Aldilei Augusto FurlanJardim S\u00e3o Gabriel, 198 - Santa Rosa Ip\u00eas - Piracicaba, SP - CEP: 13414-330",
-      "course_id": 4,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 76,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lenirsilva",
-      "first_name": "Lenir",
-      "last_name": "Silva",
-      "email": "lenirsilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 67,
-    "fields": {
-      "admin": 76,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Branca Leite Marcondes, 253 - Jardim Elite - Piracicaba, SP - CEP: 13417-420",
-      "course_id": 4,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 77,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luisamacedo",
-      "first_name": "Luisa",
-      "last_name": "Macedo",
-      "email": "luisamacedo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 68,
-    "fields": {
-      "admin": 77,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Marco William Claudino, 797 - Residencial Nova \u00c1gua Branca II - Piracicaba, SP - CEP: 13426-325",
-      "course_id": 8,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 78,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leonardopacheco",
-      "first_name": "Leonardo",
-      "last_name": "Pacheco",
-      "email": "leonardopacheco@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 69,
-    "fields": {
-      "admin": 78,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Travessa Vinte e Quatro de Abril, 104 - Piracicamirim - Piracicaba, SP - CEP: 13420-532",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 79,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luishayakawa",
-      "first_name": "Luis",
-      "last_name": "Hayakawa",
-      "email": "luishayakawa@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 70,
-    "fields": {
-      "admin": 79,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Nove de Julho, 320 - Castelinho - Piracicaba, SP - CEP: 13403-039",
-      "course_id": 3,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 80,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcelaraujo",
-      "first_name": "Marcel",
-      "last_name": "Araujo",
-      "email": "marcelaraujo@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 71,
-    "fields": {
-      "admin": 80,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Doutor Paulo Pinto, 621 - S\u00e3o Dimas - Piracicaba, SP - CEP: 13416-222",
-      "course_id": 3,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 81,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luissilva",
-      "first_name": "Luis",
-      "last_name": "Silva",
-      "email": "luissilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 72,
-    "fields": {
-      "admin": 81,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Coronel Barbosa, 796 - S\u00e3o Judas - Piracicaba, SP - CEP: 13416-381",
-      "course_id": 9,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 82,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luziaviana",
-      "first_name": "Luzia",
-      "last_name": "Viana",
-      "email": "luziaviana@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 73,
-    "fields": {
-      "admin": 82,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Luiz Lee HollandJardim Dona Lourdes, 238 - S\u00e3o Jorge - Piracicaba, SP - CEP: 13402-736",
-      "course_id": 7,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 83,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucivaniomagalhaes",
-      "first_name": "Lucivanio",
-      "last_name": "Magalhaes",
-      "email": "lucivaniomagalhaes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 74,
-    "fields": {
-      "admin": 83,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida das Ondas, 658 - Ondinhas - Piracicaba, SP - CEP: 13403-667",
-      "course_id": 1,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 84,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leandraviana",
-      "first_name": "Leandra",
-      "last_name": "Viana",
-      "email": "leandraviana@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 75,
-    "fields": {
-      "admin": 84,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Pomp\u00e9ia, 961 - Nova Pomp\u00e9ia - Piracicaba, SP - CEP: 13425-620",
-      "course_id": 5,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 85,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "ledadudeck",
-      "first_name": "Leda",
-      "last_name": "Dudeck",
-      "email": "ledadudeck@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 76,
-    "fields": {
-      "admin": 85,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Francisca T. Barbosa, 443 - Conjunto Residencial M\u00e1rio Dedini - Piracicaba, SP - CEP: 13412-355",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 86,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lilianemiranda",
-      "first_name": "Liliane",
-      "last_name": "Miranda",
-      "email": "lilianemiranda@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 77,
-    "fields": {
-      "admin": 86,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a Professor S\u00e9rgio Bonganhi, 786 - Terras de Piracicaba - Piracicaba, SP - CEP: 13403-846",
-      "course_id": 3,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 87,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizmaneschy",
-      "first_name": "Luiz",
-      "last_name": "Maneschy",
-      "email": "luizmaneschy@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 78,
-    "fields": {
-      "admin": 87,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida Paulista, 502 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-075",
-      "course_id": 3,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 88,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marceloleite",
-      "first_name": "Marcelo",
-      "last_name": "Leite",
-      "email": "marceloleite@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 79,
-    "fields": {
-      "admin": 88,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Jo\u00e3o Marcos Ometto, 169 - Loteamento Santa Rosa - Piracicaba, SP - CEP: 13414-227",
-      "course_id": 9,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 89,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leoniralima",
-      "first_name": "Leonira",
-      "last_name": "Lima",
-      "email": "leoniralima@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 80,
-    "fields": {
-      "admin": 89,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Ant\u00f4nio Bonif\u00e1cio de Almeida, 659 - Jardim Irapu\u00e3 - Piracicaba, SP - CEP: 13408-047",
-      "course_id": 5,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 90,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizoliveira",
-      "first_name": "Luiz",
-      "last_name": "Oliveira",
-      "email": "luizoliveira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 81,
-    "fields": {
-      "admin": 90,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Jos\u00e9 de Almeida L. Ribeiro, 108 - Jardim S\u00e3o Francisco - Piracicaba, SP - CEP: 13403-615",
-      "course_id": 6,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 91,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizasilva",
-      "first_name": "Luiza",
-      "last_name": "Silva",
-      "email": "luizasilva@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 82,
-    "fields": {
-      "admin": 91,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Fued Helou KraideJardim Morato, 750 - Castelinho - Piracicaba, SP - CEP: 13403-075",
-      "course_id": 1,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 92,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcosfaria",
-      "first_name": "Marcos",
-      "last_name": "Faria",
-      "email": "marcosfaria@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 83,
-    "fields": {
-      "admin": 92,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Avenida do Caf\u00e9, 813 - Paulista - Piracicaba, SP - CEP: 13401-090",
-      "course_id": 6,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 93,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcosterceiro",
-      "first_name": "Marcos",
-      "last_name": "Terceiro",
-      "email": "marcosterceiro@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 84,
-    "fields": {
-      "admin": 93,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Vinte e Um de Abril, 142 - Paulic\u00e9ia - Piracicaba, SP - CEP: 13424-105",
-      "course_id": 7,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 94,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianosimioni",
-      "first_name": "Juliano",
-      "last_name": "Simioni",
-      "email": "julianosimioni@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 85,
-    "fields": {
-      "admin": 94,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Jos\u00e9 Pinto de Lima, 89 - M\u00e1rio Dedini - Piracicaba, SP - CEP: 13412-632",
-      "course_id": 5,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 95,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucasschnorr",
-      "first_name": "Lucas",
-      "last_name": "Schnorr",
-      "email": "lucasschnorr@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 86,
-    "fields": {
-      "admin": 95,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Joaquim de Almeida Lima, 791 - Gar\u00e7as - Piracicaba, SP - CEP: 13423-628",
-      "course_id": 3,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 96,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizarocha",
-      "first_name": "Luiza",
-      "last_name": "Rocha",
-      "email": "luizarocha@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 87,
-    "fields": {
-      "admin": 96,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a da Saudade, 786 - Nova Am\u00e9rica - Piracicaba, SP - CEP: 13417-759",
-      "course_id": 1,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 97,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciasarges",
-      "first_name": "Marcia",
-      "last_name": "Sarges",
-      "email": "marciasarges@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 88,
-    "fields": {
-      "admin": 97,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Antonio Pinto Coelho, 722 - Jardim S\u00e3o Francisco - Piracicaba, SP - CEP: 13403-617",
-      "course_id": 7,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 98,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luisapessoa",
-      "first_name": "Luisa",
-      "last_name": "Pessoa",
-      "email": "luisapessoa@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 89,
-    "fields": {
-      "admin": 98,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Anna Am\u00e1lia de Toledo CamargoJardim Dona Lourdes, 759 - S\u00e3o Jorge - Piracicaba, SP - CEP: 13402-738",
-      "course_id": 6,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 99,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizaafonso",
-      "first_name": "Luiza",
-      "last_name": "Afonso",
-      "email": "luizaafonso@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 90,
-    "fields": {
-      "admin": 99,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua General Yvens Ely Monteiro Marcondes, 902 - Ondas - Piracicaba, SP - CEP: 13403-771",
-      "course_id": 9,
-      "session_year_id": 3
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 100,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "leonardomoura",
-      "first_name": "Leonardo",
-      "last_name": "Moura",
-      "email": "leonardomoura@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 91,
-    "fields": {
-      "admin": 100,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Alberto Pinto da Fonseca, 116 - Jardim Algodoal - Piracicaba, SP - CEP: 13405-415",
-      "course_id": 1,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 101,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "julianaoliveira",
-      "first_name": "Juliana",
-      "last_name": "Oliveira",
-      "email": "julianaoliveira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 92,
-    "fields": {
-      "admin": 101,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Rua Alfredo Marcondes, 974 - CECAP - Piracicaba, SP - CEP: 13421-634",
-      "course_id": 5,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 102,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizadami",
-      "first_name": "Luiz",
-      "last_name": "Adami",
-      "email": "luizadami@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 93,
-    "fields": {
-      "admin": 102,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Manoel de Souza Almeida, 877 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-003",
-      "course_id": 3,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 103,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcelofoster",
-      "first_name": "Marcelo",
-      "last_name": "Foster",
-      "email": "marcelofoster@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 94,
-    "fields": {
-      "admin": 103,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a Jos\u00e9 Bonif\u00e1cio, 859 - Centro - Piracicaba, SP - CEP: 13400-340",
-      "course_id": 1,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 104,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marcelorigotti",
-      "first_name": "Marcelo",
-      "last_name": "Rigotti",
-      "email": "marcelorigotti@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 95,
-    "fields": {
-      "admin": 104,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Pra\u00e7a No\u00eamia Godoy Leme, 348 - Nova Piracicaba - Piracicaba, SP - CEP: 13405-078",
-      "course_id": 4,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 105,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "keziafrutuoso",
-      "first_name": "Kezia",
-      "last_name": "Frutuoso",
-      "email": "keziafrutuoso@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 96,
-    "fields": {
-      "admin": 105,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Avenida Trinta e Um de Mar\u00e7o, 30 - Paulic\u00e9ia - Piracicaba, SP - CEP: 13419-320",
-      "course_id": 4,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 106,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "luizantunes",
-      "first_name": "Luiz",
-      "last_name": "Antunes",
-      "email": "luizantunes@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 97,
-    "fields": {
-      "admin": 106,
-      "gender": "Masculino",
-      "profile_pic": "/media/menino.jpg",
-      "address": "Rua Capit\u00e3o Jos\u00e9 Pinto Siqueira, 243 - Unileste - Piracicaba, SP - CEP: 13422-150",
-      "course_id": 8,
-      "session_year_id": 2
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 107,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "lucianaoliveira",
-      "first_name": "Luciana",
-      "last_name": "Oliveira",
-      "email": "lucianaoliveira@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 98,
-    "fields": {
-      "admin": 107,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Travessa Professor Newton de Almeida Mello, 229 - Centro - Piracicaba, SP - CEP: 13400-400",
-      "course_id": 6,
-      "session_year_id": 1
-    }
-  },
-  {
-    "model": "core.customuser",
-    "pk": 108,
-    "fields": {
-      "password": "pbkdf2_sha256$260000$Tkf0RF5rJ2MsCoaOBNGl8x$HX1MdI6HNFymYFr+MmISOLkzpmeDUlU5xTLeduRL+z8=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "marciafalcao",
-      "first_name": "Marcia",
-      "last_name": "Falcao",
-      "email": "marciafalcao@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "user_type": "3",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "core.students",
-    "pk": 99,
-    "fields": {
-      "admin": 108,
-      "gender": "Feminino",
-      "profile_pic": "/media/menina.jpg",
-      "address": "Pra\u00e7a Jos\u00e9 Bonif\u00e1cio, 923 - Centro - Piracicaba, SP - CEP: 13400-340",
-      "course_id": 4,
-      "session_year_id": 1
-    }
-  }
 ]

@@ -52,7 +52,7 @@ class Students(models.Model):
     admin = models.OneToOneField(CustomUser, on_delete=models.CASCADE)
     gender = models.CharField(max_length=255)
     profile_pic = models.FileField()
-    address = models.TextField()
+    # address = models.TextField()
 
     # API Abril 2022
     cep = models.TextField()

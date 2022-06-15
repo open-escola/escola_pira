@@ -92,7 +92,17 @@ def add_student_save(request):
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
-            address = form.cleaned_data['address']
+
+            # Endereço
+            # address = form.cleaned_data['address']
+            cep = form.cleaned_data['cep']
+            logradouro = form.cleaned_data['logradouro']
+            bairro = form.cleaned_data['bairro']
+            localidade = form.cleaned_data['localidade']
+            uf = form.cleaned_data['uf']
+            numero = form.cleaned_data['numero']
+            complemento = form.cleaned_data['complemento']
+
             session_year_id = form.cleaned_data['session_year_id']
             course_id = form.cleaned_data['course']
             gender = form.cleaned_data['gender']
@@ -110,7 +120,15 @@ def add_student_save(request):
                     last_name=last_name,
                     user_type=3,
                 )
-                user.students.address = address
+                # user.students.address = address
+                user.students.address = cep
+                user.students.address = logradouro
+                user.students.address = bairro
+                user.students.address = localidade
+                user.students.address = uf
+                user.students.address = numero
+                user.students.address = complemento
+
                 user.students.session_year_id = SessionYear.objects.get(id=session_year_id)
                 user.students.course_id = Courses.objects.get(id=course_id)
                 user.students.gender = gender
@@ -259,7 +277,16 @@ def edit_student(request, student_id):
     form.fields['last_name'].initial = student.admin.last_name
     form.fields['username'].initial = student.admin.username
     form.fields['email'].initial = student.admin.email
-    form.fields['address'].initial = student.address
+
+    # form.fields['address'].initial = student.address
+    form.fields['cep'].initial = student.cep
+    form.fields['logradouro'].initial = student.logradouro
+    form.fields['bairro'].initial = student.bairro
+    form.fields['localidade'].initial = student.localidade
+    form.fields['uf'].initial = student.uf
+    form.fields['numero'].initial = student.numero
+    form.fields['complemento'].initial = student.complemento
+
     form.fields['course'].initial = student.course_id.id
     form.fields['gender'].initial = student.gender
     form.fields['session_year_id'].initial = student.session_year_id
@@ -286,7 +313,17 @@ def edit_student_save(request):
             last_name = form.cleaned_data['last_name']
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
-            address = form.cleaned_data['address']
+
+            # Endereço
+            # address = form.cleaned_data['address']
+            cep = form.cleaned_data['cep']
+            logradouro = form.cleaned_data['logradouro']
+            bairro = form.cleaned_data['bairro']
+            localidade = form.cleaned_data['localidade']
+            uf = form.cleaned_data['uf']
+            numero = form.cleaned_data['numero']
+            complemento = form.cleaned_data['complemento']
+
             session_year_id = form.cleaned_data['session_year_id']
             course_id = form.cleaned_data['course']
             gender = form.cleaned_data['gender']
@@ -311,7 +348,16 @@ def edit_student_save(request):
                 user.save()
 
                 student = Students.objects.get(admin=student_id)
-                student.address = address
+
+                # student.address = address
+                student.cep = cep
+                student.logradouro = logradouro
+                student.bairro = bairro
+                student.localidade = localidade
+                student.uf = uf
+                student.numero = numero
+                student.complemento = complemento
+
                 student.gender = gender
                 student.session_year_id = SessionYear.objects.get(id=session_year_id)
                 if profile_pic_url is not None:

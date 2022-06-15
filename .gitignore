@@ -1,7 +1,8 @@
 # Django
 staticfiles*/
 
-#media/
+# Media
+media/Selection*
 #core/fixtures/*
 
 # IDE

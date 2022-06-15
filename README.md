@@ -158,5 +158,7 @@ heroku run python manage.py loaddata students.json --app openescola
 ### SuperUser
 
 ```
-heroku run python manage.py createsuperuser --email admin@gmail.com --username admin -a openescola-pi2
+
+python manage.py createsuperuser --email admin@gmail.com --username admin --app openescola-pi2
+heroku run python manage.py createsuperuser --email admin@gmail.com --username admin --app openescola-pi2
 ```

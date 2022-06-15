@@ -145,12 +145,48 @@ class EditStudentForm(forms.Form):
         max_length=50,
         widget=forms.EmailInput(attrs={'class': 'form-control'})
     )
-    address = forms.CharField(
-        label='Endereço',
+    # address = forms.CharField(
+    #     label='Endereço',
+    #     max_length=50,
+    #     widget=forms.TextInput(attrs={'class': 'form-control'})
+    # )
+
+    # Outros campos de Endereço
+    cep = forms.CharField(
+        label='cep',
         max_length=50,
         widget=forms.TextInput(attrs={'class': 'form-control'})
     )
-
+    logradouro = forms.CharField(
+        label='logradouro',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    bairro = forms.CharField(
+        label='bairro',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    localidade = forms.CharField(
+        label='localidade',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    uf = forms.CharField(
+        label='uf',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    numero = forms.CharField(
+        label='numero',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
+    complemento = forms.CharField(
+        label='complemento',
+        max_length=50,
+        widget=forms.TextInput(attrs={'class': 'form-control'})
+    )
     course_choices = []
     try:
         courses = Courses.objects.all()
