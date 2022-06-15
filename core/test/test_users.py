@@ -1,5 +1,8 @@
 from django.test import TestCase
+
 from core.models import CustomUser
+
+
 # Create your tests here.
 
 
@@ -13,9 +16,10 @@ class UserTestCase(TestCase):
             last_name='Seber',
             user_type=1,
         )
+
     def test_user_created_correctly(self):
         """Usuário contém informações corretas"""
-        user1 = CustomUser.objects.get(username="sseber")
+        user1 = CustomUser.objects.get(username='sseber')
         print(CustomUser.get_full_name(user1))
 
         self.assertEqual(CustomUser.get_full_name(user1), 'Samile Seber')

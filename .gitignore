@@ -1,6 +1,5 @@
 # Django
-staticfiles/
-staticfiles2/
+staticfiles*/
 
 #media/
 #core/fixtures/*
