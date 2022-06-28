@@ -98,6 +98,7 @@ Para testes, customizações etc.
 3) Rodar o comando ```python manage.py makemigrations``` para criar as querys que criarão as tabelas.
 4) Rodar o comando ```python manage.py migrate``` para alterar o banco de dados.
 5) Rodar o comando ```python manage.py runserver``` para iniciar o servidor *gunicorn*.
+6) Para executar testes unitários: ```python manage.py test core/test```.
 
 #### Em um site
 
