@@ -1,18 +1,15 @@
 # Escola Pira
 
-
-O projeto *Escola Pira* visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
+O projeto _Escola Pira_ visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
 e professores, bem como classes e disciplinas.
 
-O projeto foi desenvolvido com o *framework* Django.
+O projeto foi desenvolvido com o _framework_ Django.
 
 <br>
 
------
-
+---
 
 ### Como acessar?!
-
 
 [openescola.heroku.com](https://openescola.herokuapp.com/)
 
@@ -21,24 +18,22 @@ O projeto foi desenvolvido com o *framework* Django.
 
 <br>
 
------
-
+---
 
 ### Motivação
 
 
-O presente projeto é resultado do trabalho do **Grupo 5** do *Projeto Integrador*, uma disciplina da UNIVESP, do Eixo da
+O presente projeto é resultado do trabalho do **Grupo 5** do _Projeto Integrador_, uma disciplina da UNIVESP, do Eixo da
 Computação, Polo Piracicaba.
 
 <br>
 
------
-
+---
 
 ### Quem Somos
 
 
-*Em ordem alfabética*
+_Em ordem alfabética_
 
 - Ana Paula
 - Felipe Assalin
@@ -51,11 +46,9 @@ Computação, Polo Piracicaba.
 
 <br>
 
------
-
+---
 
 ### Tutorial
-
 
 Para realizar o trabalho, com adaptações para as necessidades para escolas brasileiras, bem como aperfeiçoamentos no
 código, foi seguido o
@@ -72,76 +65,59 @@ do canal [Programming with Singhateh](https://www.youtube.com/c/SinghatehAlagie)
 
 11. Funções em AJAX para Attendance no perfil Staff!
 
-*Em 03.10.2021 concluí parte 11*
-*Durante o primeiro semestre de 2022 fiz varias modificaçoes sem seguir tutorial*
+_Em 03.10.2021 concluí parte 11_
+_Durante o primeiro semestre de 2022 fiz varias modificaçoes sem seguir tutorial_
 
 <br>
 
 **Template HTML**
 
-Foi utilizado o *template* [**AdminLTE**](https://adminlte.io/themes/v3/). É distribuído por meio da Licença MIT, que
+Foi utilizado o _template_ [**AdminLTE**](https://adminlte.io/themes/v3/). É distribuído por meio da Licença MIT, que
 possibilita uso.
 
 Há um projeto que parece interessante e pode ser explorado, que é a adaptação desse template para
 Django: [django-adminlte3](https://github.com/d-demirci/django-adminlte3) by [d-demirci](https://github.com/d-demirci)
 
-----
+<br>
 
+---
 
 ### Como usar?
 
-
 #### Na Máquina Local
-
 
 Para testes, customizações etc.
 
-1. Criar um banco de dados conforme especificações contidas em *settings.py*.<br>
-   *Opcional*: ```docker-compose up```, é necessário ter o [docker](https://www.docker.com/get-started/) instalado
+1. Criar um banco de dados conforme especificações contidas em _settings.py_.<br>
+   _Opcional_: `docker-compose up`, é necessário ter o [docker](https://www.docker.com/get-started/) instalado
    localmente).
-2. Instalar as dependências do projeto ```pip install -r requirements.txt```.
-3. Rodar o comando ```python manage.py makemigrations``` para criar as querys que criarão as tabelas.
-4. Rodar o comando ```python manage.py migrate``` para alterar o banco de dados.
-5. Rodar o comando ```python manage.py runserver``` para iniciar o servidor *gunicorn*.
-6. Para executar testes unitários: ```python manage.py test core/test```.
-
-#### Em um site
-
-
-Explicar como fazer *deploy* no Heroku ou *Docker*
-
-1. Criar copia do repositorio
-2. Vincular a sua conta Heroku
-
-<br>
-
-----
-
-
-### Alterações do DB
-
-1. Deletar tudo da pasta ```core/migrations```, com exceção do arquivo *__init__.py*
-2. Rodar comando ```python manage.py makemigrations```
-3. Deletar tabelas do DB
-4. Rodar comando ```python manage.py migrate``` para recriar
-
-<br>
-
-**É possível *resetar* o DB do heroku!**
-
-```heroku pg:reset DATABASE --app openescola```
-
-----
-
-
-### Dados de Exemplo
+2. Instalar as dependências do projeto `pip install -r requirements.txt`.
+3. Rodar o comando `python manage.py makemigrations` para criar as querys que criarão as tabelas.
+4. Rodar o comando `python manage.py migrate` para alterar o banco de dados.
+5. Rodar o comando `python manage.py runserver` para iniciar o servidor _gunicorn_.
+6. Para executar testes unitários: `python manage.py test core/test`.
+7. Para adicionar dados:
 
 ```bash
 # Load Local
 python manage.py loaddata admin.json
 python manage.py loaddata initial_data.json
 python manage.py loaddata students.json
+```
 
+<br>
+
+
+#### Em um site
+
+
+Explicar como fazer _deploy_ no Heroku ou _Docker_
+
+1. Criar copia do repositorio
+2. Vincular a sua conta Heroku
+3. Para adicionar dados:
+
+```bash
 # Load Server
 heroku run python manage.py loaddata admin.json --app openescola
 heroku run python manage.py loaddata initial_data.json --app openescola
@@ -150,7 +126,25 @@ heroku run python manage.py loaddata students.json --app openescola
 
 <br>
 
------
+---
+
+
+### Alterações do DB
+
+1. Deletar tudo da pasta `core/migrations`, com exceção do arquivo _**init**.py_
+2. Rodar comando `python manage.py makemigrations`
+3. Deletar tabelas do DB
+4. Rodar comando `python manage.py migrate` para recriar
+
+<br>
+
+**É possível _resetar_ o DB do heroku!**
+
+`heroku pg:reset DATABASE --app openescola`
+
+<br>
+
+---
 
 
 ### API
@@ -160,7 +154,7 @@ heroku run python manage.py loaddata students.json --app openescola
 
 <br>
 
-----
+---
 
 
 ### SuperUser
@@ -172,11 +166,11 @@ heroku run python manage.py createsuperuser --email admin@gmail.com --username a
 
 <br>
 
-----
+---
 
 
-### *TODO*
+### _TODO_
 
-1. Corrigir *migrations* do *background-image: url("images/ui-icons_555555_256x240.png");*
-2. (Ok) Ajustar *dump* e *load*
-3. (Ok) Ajustar *load data*, devido a alterações no endereço (04.2022)
+1. Corrigir _migrations_ do _background-image: url("images/ui-icons_555555_256x240.png");_
+2. (Ok) Ajustar _dump_ e _load_
+3. (Ok) Ajustar _load data_, devido a alterações no endereço (04.2022)
