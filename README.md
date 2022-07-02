@@ -70,16 +70,6 @@ do canal [Programming with Singhateh](https://www.youtube.com/c/SinghatehAlagie)
 
 **Resumo**
 
-1. *descrever*
-2. *descrever*
-3. *descrever*
-4. *descrever*
-5. *descrever*
-6. *descrever*
-7. *descrever*
-8. *descrever*
-9. *descrever*
-10. *descrever*
 11. Funções em AJAX para Attendance no perfil Staff!
 
 *Em 03.10.2021 concluí parte 11*
@@ -87,11 +77,7 @@ do canal [Programming with Singhateh](https://www.youtube.com/c/SinghatehAlagie)
 
 <br>
 
------
-
-
-### Template HTML
-
+**Template HTML**
 
 Foi utilizado o *template* [**AdminLTE**](https://adminlte.io/themes/v3/). É distribuído por meio da Licença MIT, que
 possibilita uso.
@@ -150,7 +136,7 @@ Explicar como fazer *deploy* no Heroku ou *Docker*
 
 ### Dados de Exemplo
 
-```
+```bash
 # Load Local
 python manage.py loaddata admin.json
 python manage.py loaddata initial_data.json
