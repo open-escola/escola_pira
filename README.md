@@ -1,23 +1,14 @@
 # Escola Pira
 
+
+<br>
+
 O projeto _Escola Pira_ visa criar um sistema para auxiliar na gestão escolar. Possibilita cadastrar e editar os alunos
 e professores, bem como classes e disciplinas.
 
 O projeto foi desenvolvido com o _framework_ Django.
 
-<br>
-
----
-
-
-
-
-### SuperUser
-
-```
-python manage.py createsuperuser --email admin@gmail.com --username admin --app openescola
-heroku run python manage.py createsuperuser --email admin@gmail.com --username admin --app openescola
-```
+Para mais informações ver [Wiki](https://github.com/open-escola/escola_pira/wiki)
 
 <br>
 

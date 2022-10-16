@@ -1,12 +1,11 @@
 # Sumário
 
 1. [**Home**](Home)
-2. [**Objetivo**](Objetivo)
-3. [**Como Usar**](Como-Usar)
-4. [**Equipe**](Equipe)
-5. [**API**](API)
-6. [**_DataBase_**](DB)
+2. [**Equipe**](Equipe)
+3. [**Como-Acessar**](Como-Acessar)
+4. [**Como Usar**](Como-Usar)
+5. [**Desenvolvimento**](Desenvolvimento)
+6. [**Banco-de-Dados**](Banco-de-Dados)
 7. [**_Template_**](Template)
-8. [**Como-Acessar**](Como-Acessar)
-9. [Desenvolvimento](Desenvolvimento)
-
+8. [**API**](API)
+9. [**Superuser**](Superuser)
