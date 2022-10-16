@@ -1,6 +1,3 @@
-### Tutorial
-
-
 Para realizar o trabalho, com adaptações para as necessidades para escolas brasileiras, bem como aperfeiçoamentos no
 código, foi seguido o
 tutorial [Python Django Student Management System](https://www.youtube.com/watch?v=y3llbdTtam4&list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH)
@@ -12,12 +9,19 @@ do canal [Programming with Singhateh](https://www.youtube.com/c/SinghatehAlagie)
 
 <br>
 
-**Resumo**
+----
+
+
+### Resumo
 
 11. Funções em AJAX para Attendance no perfil Staff!
 
-_Em 03.10.2021 concluí parte 11_
-_Durante o primeiro semestre de 2022 fiz várias modificaçoes sem seguir tutorial_
-
 <br>
 
+----
+
+
+### Etapas
+
+- Em 03.10.2021 concluí parte 11
+- Durante o primeiro semestre de 2022 fiz várias modificações sem seguir tutorial
