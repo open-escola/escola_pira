@@ -11,4 +11,3 @@ _Em ordem alfabética_
 - Marcel Alessandro
 - [Michel Metran](https://github.com/michelmetran)
 - Michele Pertille
-- 

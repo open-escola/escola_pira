@@ -9,18 +9,6 @@ O projeto foi desenvolvido com o _framework_ Django.
 
 ---
 
-### Como acessar?!
-
-[openescola.heroku.com](https://openescola.herokuapp.com/)
-
-- login: admin@gmail.com
-- senha: 111
-
-<br>
-
----
-
-
 
 ### Tutorial
 
@@ -44,45 +32,7 @@ _Durante o primeiro semestre de 2022 fiz várias modificaçoes sem seguir tutori
 
 <br>
 
-**Template HTML**
 
-Foi utilizado o _template_ [**AdminLTE**](https://adminlte.io/themes/v3/). É distribuído por meio da Licença MIT, que
-possibilita uso.
-
-Há um projeto que parece interessante e pode ser explorado, que é a adaptação desse template para
-Django: [django-adminlte3](https://github.com/d-demirci/django-adminlte3) by [d-demirci](https://github.com/d-demirci)
-
-<br>
-
----
-
-
-### Alterações do DB
-
-1. Deletar tudo da pasta `core/migrations`, com exceção do arquivo _**init**.py_
-2. Rodar comando `python manage.py makemigrations`
-3. Deletar tabelas do DB
-4. Rodar comando `python manage.py migrate` para recriar
-
-<br>
-
-**É possível _resetar_ o DB do heroku!**
-
-`heroku pg:reset DATABASE --app openescola`
-
-<br>
-
----
-
-
-### API
-
-- [CEPs Automáticos](https://velhobit.com.br/programacao/carregando-cep-cidades-dinamicamente.html)
-- [Como consumir uma API no Frontend](https://www.youtube.com/watch?v=UDoCiC_e908)
-
-<br>
-
----
 
 
 ### SuperUser
