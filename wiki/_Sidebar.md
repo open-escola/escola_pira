@@ -5,7 +5,7 @@
 3. [**Como Usar**](Como-Usar)
 4. [**Equipe**](Equipe)
 5. [**API**](API)
-6. [**_DataBase_**](DB.md)
+6. [**_DataBase_**](DB)
 7. [**_Template_**](Template)
 8. [**Como-Acessar**](Como-Acessar)
 9. [Desenvolvimento](Desenvolvimento)
