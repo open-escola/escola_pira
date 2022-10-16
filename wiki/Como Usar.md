@@ -1,6 +1,3 @@
-### Como usar?
-
-
 #### Na Máquina Local
 
 
@@ -24,6 +21,8 @@ python manage.py loaddata students.json
 ```
 
 <br>
+
+----
 
 
 #### Em um site

@@ -20,15 +20,6 @@ O projeto foi desenvolvido com o _framework_ Django.
 
 ---
 
-### Motivação
-
-
-O presente projeto é resultado do trabalho do **Grupo 5** do _Projeto Integrador_, uma disciplina da UNIVESP, do Eixo da
-Computação, Polo Piracicaba.
-
-<br>
-
----
 
 
 ### Tutorial
@@ -109,5 +100,5 @@ heroku run python manage.py createsuperuser --email admin@gmail.com --username a
 ### _TODO_
 
 1. Corrigir _migrations_ do _background-image: url("images/ui-icons_555555_256x240.png");_
-2. (Ok) Ajustar _dump_ e _load_
-3. (Ok) Ajustar _load data_, devido a alterações no endereço (04.2022)
+2. ~(Ok) Ajustar _dump_ e _load_~
+3. ~(Ok) Ajustar _load data_, devido a alterações no endereço (04.2022)~
