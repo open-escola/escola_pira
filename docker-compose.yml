@@ -1,17 +1,45 @@
+# https://github.com/khezen/compose-postgres
+
 version: '3.5'
+
 services:
-    database:
-        image: mysql:5.7
-        ports:
-            - '3306:3306'
-        restart: always
-        environment:
-            MYSQL_ROOT_PASSWORD: password
-            MYSQL_HOST: localhost
-            MYSQL_DATABASE: db_escola
-            MYSQL_USER: michel
-            MYSQL_PASSWORD: minha_senha
-        volumes:
-            - db-volume:/var/lib/mysql
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: "db_escola"
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-compose-network
+    restart: unless-stopped
+
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres-compose-network
+    restart: unless-stopped
+
+
+networks:
+  postgres-compose-network:
+    driver: bridge
+
 volumes:
-    db-volume:
+  postgres:
+  pgadmin:

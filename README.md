@@ -30,23 +30,6 @@ Computação, Polo Piracicaba.
 
 ---
 
-### Quem Somos
-
-
-_Em ordem alfabética_
-
-- Ana Paula
-- Felipe Assalin
-- Gabrielle Lombardi
-- Isabelle Zein
-- [João Victor](https://github.com/JvPelai)
-- Marcel Alessandro
-- [Michel Metran](https://github.com/michelmetran)
-- Michele Pertille
-
-<br>
-
----
 
 ### Tutorial
 
@@ -66,7 +49,7 @@ do canal [Programming with Singhateh](https://www.youtube.com/c/SinghatehAlagie)
 11. Funções em AJAX para Attendance no perfil Staff!
 
 _Em 03.10.2021 concluí parte 11_
-_Durante o primeiro semestre de 2022 fiz varias modificaçoes sem seguir tutorial_
+_Durante o primeiro semestre de 2022 fiz várias modificaçoes sem seguir tutorial_
 
 <br>
 
@@ -77,52 +60,6 @@ possibilita uso.
 
 Há um projeto que parece interessante e pode ser explorado, que é a adaptação desse template para
 Django: [django-adminlte3](https://github.com/d-demirci/django-adminlte3) by [d-demirci](https://github.com/d-demirci)
-
-<br>
-
----
-
-### Como usar?
-
-#### Na Máquina Local
-
-Para testes, customizações etc.
-
-1. Criar um banco de dados conforme especificações contidas em _settings.py_.<br>
-   _Opcional_: `docker-compose up`, é necessário ter o [docker](https://www.docker.com/get-started/) instalado
-   localmente).
-2. Instalar as dependências do projeto `pip install -r requirements.txt`.
-3. Rodar o comando `python manage.py makemigrations` para criar as querys que criarão as tabelas.
-4. Rodar o comando `python manage.py migrate` para alterar o banco de dados.
-5. Rodar o comando `python manage.py runserver` para iniciar o servidor _gunicorn_.
-6. Para executar testes unitários: `python manage.py test core/test`.
-7. Para adicionar dados:
-
-```bash
-# Load Local
-python manage.py loaddata admin.json
-python manage.py loaddata initial_data.json
-python manage.py loaddata students.json
-```
-
-<br>
-
-
-#### Em um site
-
-
-Explicar como fazer _deploy_ no Heroku ou _Docker_
-
-1. Criar copia do repositorio
-2. Vincular a sua conta Heroku
-3. Para adicionar dados:
-
-```bash
-# Load Server
-heroku run python manage.py loaddata admin.json --app openescola
-heroku run python manage.py loaddata initial_data.json --app openescola
-heroku run python manage.py loaddata students.json --app openescola
-```
 
 <br>
 

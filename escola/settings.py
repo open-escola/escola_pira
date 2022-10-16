@@ -75,18 +75,29 @@ WSGI_APPLICATION = 'escola.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'db_escola',
+#         'USER': 'michel',
+#         'PASSWORD': 'minha_senha',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'TEST': {
+#             'NAME': 'test_db_escola',
+#         },
+#     },
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_escola',
-        'USER': 'michel',
-        'PASSWORD': 'minha_senha',
+        'USER': 'postgres',
+        'PASSWORD': 'changeme',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'TEST': {
-            'NAME': 'test_db_escola',
-        },
-    },
+        'PORT': '5432',
+    }
 }
 
 # Password validation
