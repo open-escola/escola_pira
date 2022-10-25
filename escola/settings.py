@@ -15,7 +15,6 @@ from pathlib import Path
 import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -122,14 +121,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
+# Media
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # The URL which will serve static files
 STATIC_URL = '/static/'
 
 # Name of dir that will be create
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -142,7 +142,3 @@ AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
-
-# Criando Usuários
-# echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@myproject.com', 'password')" | python manage.py shell
-# https://stackoverflow.com/questions/6244382/how-to-automate-createsuperuser-on-django
