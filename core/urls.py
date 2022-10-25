@@ -1,7 +1,24 @@
-from django.urls import path
+"""
 
-from . import views, views_admin, views_staff, views_student
 
+"""
+
+from django.urls import path, include
+from rest_framework import routers
+
+from core.api import viewsets as studentviewsets
+from . import views, views_admin, views_staff, views_student, views_api
+
+#
+route = routers.DefaultRouter()
+print(route.urls)
+route.register(
+    prefix=r'rest',
+    viewset=studentviewsets.StudentsViewSet,
+    basename='books'
+)
+
+#
 urlpatterns = [
     path('', views.go_login_page),
     path('index1/', views.go_index),
@@ -59,4 +76,11 @@ urlpatterns = [
     path('get_students', views_staff.get_students, name='get_students'),
     path('save_attendance_data', views_staff.save_attendance_data, name='save_attendance_data'),
 
+    # Teste API Tosca
+    path('api_students', views_api.go_api_model, name='go_api_modelo'),
+    path('api_students_dados', views_api.go_api_model_student, name='go_api_modelo_s'),
+    path('api_df', views_api.go_api_dataframe, name='go_api_pandas'),
+
+    path('api_rest2', views_api.APIRest.as_view(), name='go_api_rest'),
+    path('api/', include(route.urls))
 ]

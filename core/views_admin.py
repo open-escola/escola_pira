@@ -476,3 +476,4 @@ def add_session_save(request):
         except Exception as e:
             messages.error(request, f'Falha ao adicionar Data\n{e}')
             return HttpResponseRedirect(reverse('manage_session'))
+

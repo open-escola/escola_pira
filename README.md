@@ -14,16 +14,6 @@ Para mais informações ver [Wiki](https://github.com/open-escola/escola_pira/wi
 
 ---
 
-
-### ENV
-
-
-C
-
-```bash
-conda create --name webapp-py310 -c conda-forge python=3.10 django==4.1 django-heroku dj-database-url gunicorn pytz requests django-heroku whitenoise cryptography psycopg2 PyYAML
-```
-
 ### _TODO_
 
 1. Corrigir _migrations_ do _background-image: url("images/ui-icons_555555_256x240.png");_

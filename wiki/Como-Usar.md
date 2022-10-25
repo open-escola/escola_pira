@@ -3,6 +3,18 @@
 
 Para testes, customizações etc.
 
+<br>
+
+
+Estou usando o gerenciador de pacotes conda para desenvolvimento do projeto.
+Logo, a primeira etapa foi criar um *enviroment* com todas as dependências.
+
+```bash
+conda create --name webapp-py310 -c conda-forge python=3.10 django==4.1 django-heroku dj-database-url gunicorn pytz requests django-heroku whitenoise cryptography psycopg2 PyYAML numpy pandas djangorestframework
+```
+
+<br>
+
 1. Criar um banco de dados conforme especificações contidas em _settings.py_.<br>
 
 > **_Opcional_**<br>

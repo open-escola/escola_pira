@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -48,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'core.LoginCheckMiddleware.LoginCheckMiddleware'  # Middleware para confirmar se o usuário está logado! Aula 10
+    # 'core.LoginCheckMiddleware.LoginCheckMiddleware'  # Middleware para confirmar se o usuário está logado! Aula 10
 ]
 
 ROOT_URLCONF = 'escola.urls'
@@ -142,3 +143,22 @@ AUTHENTICATION_BACKENDS = ['core.email_backend.EmailBackend']
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+
+# SESSION_COOKIE_SECURE = False
+
+
+from rest_framework.settings import api_settings
+
+print(api_settings.DEFAULT_AUTHENTICATION_CLASSES)
+print(api_settings.DEFAULT_PERMISSION_CLASSES)
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # 'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    )
+}
