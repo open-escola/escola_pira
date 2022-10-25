@@ -2,6 +2,9 @@
 docker_old/
 static_old/
 
+# Data
+output-file.json
+
 # Django
 staticfiles*/
 
