@@ -1,10 +1,10 @@
 /*!
  * Bootstrap Colorpicker - Bootstrap Colorpicker is a modular color picker plugin for Bootstrap 4.
  * @package bootstrap-colorpicker
- * @version v3.4.0
+ * @version v3.1.2
  * @license MIT
- * @link https://itsjavi.com/bootstrap-colorpicker/
- * @link https://github.com/itsjavi/bootstrap-colorpicker.git
+ * @link https://farbelous.github.io/bootstrap-colorpicker/
+ * @link https://github.com/farbelous/bootstrap-colorpicker.git
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -15,7 +15,7 @@
 		exports["bootstrap-colorpicker"] = factory(require("jquery"));
 	else
 		root["bootstrap-colorpicker"] = factory(root["jQuery"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE__0__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_0__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -54,32 +54,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
 /******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
@@ -97,7 +77,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
-/******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
@@ -106,7 +85,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_0__;
 
 /***/ }),
 /* 1 */
@@ -310,7 +289,6 @@ var Extension = function () {
 }();
 
 exports.default = Extension;
-module.exports = exports.default;
 
 /***/ }),
 /* 2 */
@@ -426,7 +404,6 @@ var ColorItem = function () {
     /**
      * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data
      * @param {String|null} format Color model to convert to by default. Supported: 'rgb', 'hsl', 'hex'.
-     * @param {boolean} disableHexInputFallback Disable fixing hex3 format
      */
 
   }], [{
@@ -448,11 +425,10 @@ var ColorItem = function () {
   function ColorItem() {
     var color = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    var disableHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
     _classCallCheck(this, ColorItem);
 
-    this.replace(color, format, disableHexInputFallback);
+    this.replace(color, format);
   }
 
   /**
@@ -461,7 +437,6 @@ var ColorItem = function () {
    *
    * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data to be parsed (if needed)
    * @param {String|null} format Color model to convert to by default. Supported: 'rgb', 'hsl', 'hex'.
-   * @param {boolean} disableHexInputFallback Disable fixing hex3 format
    * @example color.replace('rgb(255,0,0)', 'hsl');
    * @example color.replace(hsvaColorData);
    */
@@ -471,7 +446,6 @@ var ColorItem = function () {
     key: 'replace',
     value: function replace(color) {
       var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-      var disableHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
       format = ColorItem.sanitizeFormat(format);
 
@@ -488,7 +462,7 @@ var ColorItem = function () {
        * @type {QixColor}
        * @private
        */
-      this._color = ColorItem.parse(color, disableHexInputFallback);
+      this._color = ColorItem.parse(color);
 
       if (this._color === null) {
         this._color = (0, _color2.default)();
@@ -508,7 +482,6 @@ var ColorItem = function () {
      * parsed.
      *
      * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data
-     * @param {boolean} disableHexInputFallback Disable fixing hex3 format
      * @example let qColor = ColorItem.parse('rgb(255,0,0)');
      * @static
      * @returns {QixColor|null}
@@ -978,8 +951,6 @@ var ColorItem = function () {
   }], [{
     key: 'parse',
     value: function parse(color) {
-      var disableHexInputFallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
       if (color instanceof _color2.default) {
         return color;
       }
@@ -1002,10 +973,6 @@ var ColorItem = function () {
 
       if (Array.isArray(color)) {
         format = 'hsv';
-      }
-
-      if (ColorItem.isHex(color) && color.length !== 6 && color.length !== 7 && disableHexInputFallback) {
-        return null;
       }
 
       try {
@@ -1260,18 +1227,6 @@ exports.default = {
    */
   autoInputFallback: true,
   /**
-   * If true, valid HEX3 colors will be converted to HEX6, even with
-   *    autoInputFallback set to false
-   * if false, HEX3 colors will not be converted to HEX6, when autoInputFallback is false
-   *    (this has been an issue, when using HEX6 colors with
-   *    autoInputFallback set to false, HEX3 colors were
-   *    automatically converting to HEX6)
-   *
-   * @type {boolean}
-   * @default false
-   */
-  autoHexInputFallback: true,
-  /**
    * If true a hash will be prepended to hexadecimal colors.
    * If false, the hash will be removed.
    * This only affects the input values in hexadecimal format.
@@ -1394,7 +1349,6 @@ exports.default = {
     }
   }
 };
-module.exports = exports.default;
 
 /***/ }),
 /* 4 */
@@ -1604,7 +1558,6 @@ var Palette = function (_Extension) {
 }(_Extension3.default);
 
 exports.default = Palette;
-module.exports = exports.default;
 
 /***/ }),
 /* 5 */
@@ -2766,7 +2719,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var colorPickerIdCounter = 0;
-
 var root = typeof self !== 'undefined' ? self : undefined; // window
 
 /**
@@ -3036,7 +2988,7 @@ var Colorpicker = function () {
       this.addonHandler.unbind();
       this.pickerHandler.unbind();
 
-      this.element.removeClass('colorpicker-element').removeData('colorpicker').removeData('color').off('.colorpicker');
+      this.element.removeClass('colorpicker-element').removeData('colorpicker', 'color').off('.colorpicker');
 
       /**
        * (Colorpicker) When the instance is destroyed with all events unbound.
@@ -3130,7 +3082,7 @@ var Colorpicker = function () {
         return;
       }
 
-      ch.color = val ? ch.createColor(val, this.options.autoInputFallback, this.options.autoHexInputFallback) : null;
+      ch.color = val ? ch.createColor(val, this.options.autoInputFallback) : null;
 
       /**
        * (Colorpicker) When the color is set programmatically with setValue().
@@ -3274,7 +3226,6 @@ var Colorpicker = function () {
 Colorpicker.extensions = _extensions2.default;
 
 exports.default = Colorpicker;
-module.exports = exports.default;
 
 /***/ }),
 /* 9 */
@@ -3497,7 +3448,6 @@ var Debugger = function (_Extension) {
 }(_Extension3.default);
 
 exports.default = Debugger;
-module.exports = exports.default;
 
 /***/ }),
 /* 11 */
@@ -3587,7 +3537,6 @@ var Preview = function (_Extension) {
 }(_Extension3.default);
 
 exports.default = Preview;
-module.exports = exports.default;
 
 /***/ }),
 /* 12 */
@@ -3695,7 +3644,6 @@ var Swatches = function (_Palette) {
 }(_Palette3.default);
 
 exports.default = Swatches;
-module.exports = exports.default;
 
 /***/ }),
 /* 13 */
@@ -3801,7 +3749,6 @@ var SliderHandler = function () {
     key: 'bind',
     value: function bind() {
       var sliders = this.colorpicker.options.horizontal ? this.colorpicker.options.slidersHorz : this.colorpicker.options.sliders;
-
       var sliderClasses = [];
 
       for (var sliderName in sliders) {
@@ -3858,7 +3805,6 @@ var SliderHandler = function () {
 
       // detect the slider and set the limits and callbacks
       var zone = target.closest('div');
-
       var sliders = this.colorpicker.options.horizontal ? this.colorpicker.options.slidersHorz : this.colorpicker.options.sliders;
 
       if (zone.is('.colorpicker')) {
@@ -3973,7 +3919,6 @@ var SliderHandler = function () {
 }();
 
 exports.default = SliderHandler;
-module.exports = exports.default;
 
 /***/ }),
 /* 14 */
@@ -4187,12 +4132,7 @@ var PopupHandler = function () {
 
       this.popoverTarget.popover(_jquery2.default.extend(true, {}, _options2.default.popover, cp.options.popover, { trigger: 'manual', content: cp.picker, html: true }));
 
-      /* Bootstrap 5 added an official method to get the popover instance */
-      /* global bootstrap */
-      var useGetInstance = window.bootstrap && window.bootstrap.Popover && window.bootstrap.Popover.getInstance;
-
-      this.popoverTip = useGetInstance ? (0, _jquery2.default)(bootstrap.Popover.getInstance(this.popoverTarget[0]).getTipElement()) : (0, _jquery2.default)(this.popoverTarget.popover('getTipElement').data('bs.popover').tip);
-
+      this.popoverTip = (0, _jquery2.default)(this.popoverTarget.popover('getTipElement').data('bs.popover').tip);
       this.popoverTip.addClass('colorpicker-bs-popover');
 
       this.popoverTarget.on('shown.bs.popover', _jquery2.default.proxy(this.fireShow, this));
@@ -4449,7 +4389,6 @@ var PopupHandler = function () {
 }();
 
 exports.default = PopupHandler;
-module.exports = exports.default;
 
 /***/ }),
 /* 15 */
@@ -4767,7 +4706,6 @@ var InputHandler = function () {
 }();
 
 exports.default = InputHandler;
-module.exports = exports.default;
 
 /***/ }),
 /* 16 */
@@ -4815,7 +4753,7 @@ function Color(obj, model) {
 	var i;
 	var channels;
 
-	if (obj == null) { // eslint-disable-line no-eq-null,eqeqeq
+	if (typeof obj === 'undefined') {
 		this.model = 'rgb';
 		this.color = [0, 0, 0];
 		this.valpha = 1;
@@ -5842,7 +5780,6 @@ var ColorHandler = function () {
      * @fires Colorpicker#colorpickerInvalid
      * @param {*} val
      * @param {boolean} fallbackOnInvalid
-     * @param {boolean} autoHexInputFallback
      * @returns {ColorItem}
      */
 
@@ -5850,11 +5787,8 @@ var ColorHandler = function () {
     key: 'createColor',
     value: function createColor(val) {
       var fallbackOnInvalid = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-      var autoHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
-      var disableHexInputFallback = !fallbackOnInvalid && !autoHexInputFallback;
-
-      var color = new _ColorItem2.default(this.resolveColorDelegate(val), this.format, disableHexInputFallback);
+      var color = new _ColorItem2.default(this.resolveColorDelegate(val), this.format);
 
       if (!color.isValid()) {
         if (fallbackOnInvalid) {
@@ -5884,7 +5818,6 @@ var ColorHandler = function () {
       }
 
       var fallback = this.resolveColorDelegate(this.fallback);
-
       var color = new _ColorItem2.default(fallback, this.format);
 
       if (!color.isValid()) {
@@ -6028,7 +5961,6 @@ var ColorHandler = function () {
 }();
 
 exports.default = ColorHandler;
-module.exports = exports.default;
 
 /***/ }),
 /* 23 */
@@ -6155,7 +6087,6 @@ var PickerHandler = function () {
 
       // Set alpha color gradient
       var hexColor = this.color.toHexString();
-
       var alphaBg = '';
 
       if (this.options.horizontal) {
@@ -6182,7 +6113,6 @@ var PickerHandler = function () {
 }();
 
 exports.default = PickerHandler;
-module.exports = exports.default;
 
 /***/ }),
 /* 24 */
@@ -6259,7 +6189,6 @@ var AddonHandler = function () {
       }
 
       var colorStr = this.colorpicker.colorHandler.getColorString();
-
       var styles = { 'background': colorStr };
 
       var icn = this.addon.find('i').eq(0);
@@ -6276,7 +6205,6 @@ var AddonHandler = function () {
 }();
 
 exports.default = AddonHandler;
-module.exports = exports.default;
 
 /***/ })
 /******/ ]);

@@ -1,28 +1,4 @@
-/*!
- * 
- * Super simple WYSIWYG editor v0.8.20
- * https://summernote.org
- *
- *
- * Copyright 2013- Alan Hong and contributors
- * Summernote may be freely distributed under the MIT license.
- *
- * Date: 2021-10-14T21:15Z
- *
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'cs-CZ': {
       font: {
@@ -32,7 +8,7 @@ var __webpack_exports__ = {};
         clear: 'Odstranit styl písma',
         height: 'Výška řádku',
         strikethrough: 'Přeškrtnuté',
-        size: 'Velikost písma'
+        size: 'Velikost písma',
       },
       image: {
         image: 'Obrázek',
@@ -43,23 +19,23 @@ var __webpack_exports__ = {};
         floatLeft: 'Umístit doleva',
         floatRight: 'Umístit doprava',
         floatNone: 'Neobtékat textem',
-        shapeRounded: 'Tvar: zaoblený',
-        shapeCircle: 'Tvar: kruh',
-        shapeThumbnail: 'Tvar: náhled',
-        shapeNone: 'Tvar: žádný',
+        shapeRounded: 'Shape: Rounded',
+        shapeCircle: 'Shape: Circle',
+        shapeThumbnail: 'Shape: Thumbnail',
+        shapeNone: 'Shape: None',
         dragImageHere: 'Přetáhnout sem obrázek',
-        dropImage: 'Přetáhnout obrázek nebo text',
+        dropImage: 'Drop image or Text',
         selectFromFiles: 'Vybrat soubor',
         url: 'URL obrázku',
-        remove: 'Odebrat obrázek',
-        original: 'Originál'
+        remove: 'Remove Image',
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Odkaz videa',
         insert: 'Vložit video',
         url: 'URL videa?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion nebo Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion nebo Youku)',
       },
       link: {
         link: 'Odkaz',
@@ -68,20 +44,20 @@ var __webpack_exports__ = {};
         edit: 'Upravit',
         textToDisplay: 'Zobrazovaný text',
         url: 'Na jaké URL má tento odkaz vést?',
-        openInNewWindow: 'Otevřít v novém okně'
+        openInNewWindow: 'Otevřít v novém okně',
       },
       table: {
         table: 'Tabulka',
-        addRowAbove: 'Přidat řádek nad',
-        addRowBelow: 'Přidat řádek pod',
-        addColLeft: 'Přidat sloupec vlevo',
-        addColRight: 'Přidat sloupec vpravo',
-        delRow: 'Smazat řádek',
-        delCol: 'Smazat sloupec',
-        delTable: 'Smazat tabulku'
+        addRowAbove: 'Add row above',
+        addRowBelow: 'Add row below',
+        addColLeft: 'Add column left',
+        addColRight: 'Add column right',
+        delRow: 'Delete row',
+        delCol: 'Delete column',
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Vložit vodorovnou čáru'
+        insert: 'Vložit vodorovnou čáru',
       },
       style: {
         style: 'Styl',
@@ -93,16 +69,16 @@ var __webpack_exports__ = {};
         h3: 'Nadpis 3',
         h4: 'Nadpis 4',
         h5: 'Nadpis 5',
-        h6: 'Nadpis 6'
+        h6: 'Nadpis 6',
       },
       lists: {
         unordered: 'Odrážkový seznam',
-        ordered: 'Číselný seznam'
+        ordered: 'Číselný seznam',
       },
       options: {
         help: 'Nápověda',
         fullscreen: 'Celá obrazovka',
-        codeview: 'HTML kód'
+        codeview: 'HTML kód',
       },
       paragraph: {
         paragraph: 'Odstavec',
@@ -111,7 +87,7 @@ var __webpack_exports__ = {};
         left: 'Zarovnat doleva',
         center: 'Zarovnat na střed',
         right: 'Zarovnat doprava',
-        justify: 'Zarovnat oboustranně'
+        justify: 'Zarovnat oboustranně',
       },
       color: {
         recent: 'Aktuální barva',
@@ -122,7 +98,7 @@ var __webpack_exports__ = {};
         setTransparent: 'Nastavit průhlednost',
         reset: 'Obnovit',
         resetToDefault: 'Obnovit výchozí',
-        cpSelect: 'Vybrat'
+        cpSelect: 'Vybrat',
       },
       shortcut: {
         shortcuts: 'Klávesové zkratky',
@@ -130,50 +106,45 @@ var __webpack_exports__ = {};
         textFormatting: 'Formátování textu',
         action: 'Akce',
         paragraphFormatting: 'Formátování odstavce',
-        documentStyle: 'Styl dokumentu'
+        documentStyle: 'Styl dokumentu',
       },
       help: {
-        'insertParagraph': 'Vložit odstavec',
-        'undo': 'Vrátit poslední příkaz',
-        'redo': 'Opakovat poslední příkaz',
+        'insertParagraph': 'Insert Paragraph',
+        'undo': 'Undoes the last command',
+        'redo': 'Redoes the last command',
         'tab': 'Tab',
         'untab': 'Untab',
-        'bold': 'Nastavit tučně',
-        'italic': 'Nastavit kurzívu',
-        'underline': 'Nastavit podtrhnutí',
-        'strikethrough': 'Nastavit přeškrtnutí',
-        'removeFormat': 'Ostranit nastavený styl',
-        'justifyLeft': 'Nastavit zarovnání vlevo',
-        'justifyCenter': 'Nastavit zarovnání na střed',
-        'justifyRight': 'Nastavit zarovnání vpravo',
-        'justifyFull': 'Nastavit zarovnání do bloku',
-        'insertUnorderedList': 'Aplikovat odrážkový seznam',
-        'insertOrderedList': 'Aplikovat číselný seznam',
-        'outdent': 'Zmenšit odsazení aktuálního odstavec',
-        'indent': 'Odsadit aktuální odstavec',
-        'formatPara': 'Změnit formátování aktuálního bloku na odstavec (P tag)',
-        'formatH1': 'Změnit formátování aktuálního bloku na Nadpis 1',
-        'formatH2': 'Změnit formátování aktuálního bloku na Nadpis 2',
-        'formatH3': 'Změnit formátování aktuálního bloku na Nadpis 3',
-        'formatH4': 'Změnit formátování aktuálního bloku na Nadpis 4',
-        'formatH5': 'Změnit formátování aktuálního bloku na Nadpis 5',
-        'formatH6': 'Změnit formátování aktuálního bloku na Nadpis 6',
-        'insertHorizontalRule': 'Vložit horizontální čáru',
-        'linkDialog.show': 'Zobrazit dialog pro odkaz'
+        'bold': 'Set a bold style',
+        'italic': 'Set a italic style',
+        'underline': 'Set a underline style',
+        'strikethrough': 'Set a strikethrough style',
+        'removeFormat': 'Clean a style',
+        'justifyLeft': 'Set left align',
+        'justifyCenter': 'Set center align',
+        'justifyRight': 'Set right align',
+        'justifyFull': 'Set full align',
+        'insertUnorderedList': 'Toggle unordered list',
+        'insertOrderedList': 'Toggle ordered list',
+        'outdent': 'Outdent on current paragraph',
+        'indent': 'Indent on current paragraph',
+        'formatPara': 'Change current block\'s format as a paragraph(P tag)',
+        'formatH1': 'Change current block\'s format as H1',
+        'formatH2': 'Change current block\'s format as H2',
+        'formatH3': 'Change current block\'s format as H3',
+        'formatH4': 'Change current block\'s format as H4',
+        'formatH5': 'Change current block\'s format as H5',
+        'formatH6': 'Change current block\'s format as H6',
+        'insertHorizontalRule': 'Insert horizontal rule',
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Krok vzad',
-        redo: 'Krok vpřed'
+        redo: 'Krok vpřed',
       },
       specialChar: {
-        specialChar: 'SPECIÁLNÍ ZNAKY',
-        select: 'Vyberte speciální znaky'
-      }
-    }
+        specialChar: 'SPECIAL CHARACTERS',
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
-//# sourceMappingURL=summernote-cs-CZ.js.map

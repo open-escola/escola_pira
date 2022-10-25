@@ -1,28 +1,4 @@
-/*!
- * 
- * Super simple WYSIWYG editor v0.8.20
- * https://summernote.org
- *
- *
- * Copyright 2013- Alan Hong and contributors
- * Summernote may be freely distributed under the MIT license.
- *
- * Date: 2021-10-14T21:15Z
- *
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'ja-JP': {
       font: {
@@ -35,7 +11,7 @@ var __webpack_exports__ = {};
         strikethrough: '取り消し線',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: '大きさ'
+        size: '大きさ',
       },
       image: {
         image: '画像',
@@ -57,14 +33,14 @@ var __webpack_exports__ = {};
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URLから画像を挿入する',
         remove: '画像を削除する',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: '動画',
         videoLink: '動画リンク',
         insert: '動画挿入',
         url: '動画のURL',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion, Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion, Youku)',
       },
       link: {
         link: 'リンク',
@@ -73,7 +49,7 @@ var __webpack_exports__ = {};
         edit: '編集',
         textToDisplay: 'リンク文字列',
         url: 'URLを入力してください',
-        openInNewWindow: '新しいウィンドウで開く'
+        openInNewWindow: '新しいウィンドウで開く',
       },
       table: {
         table: 'テーブル',
@@ -83,10 +59,10 @@ var __webpack_exports__ = {};
         addColRight: '列を右に追加',
         delRow: '行を削除',
         delCol: '列を削除',
-        delTable: 'テーブルを削除'
+        delTable: 'テーブルを削除',
       },
       hr: {
-        insert: '水平線の挿入'
+        insert: '水平線の挿入',
       },
       style: {
         style: 'スタイル',
@@ -98,16 +74,16 @@ var __webpack_exports__ = {};
         h3: '見出し3',
         h4: '見出し4',
         h5: '見出し5',
-        h6: '見出し6'
+        h6: '見出し6',
       },
       lists: {
         unordered: '通常リスト',
-        ordered: '番号リスト'
+        ordered: '番号リスト',
       },
       options: {
         help: 'ヘルプ',
         fullscreen: 'フルスクリーン',
-        codeview: 'コード表示'
+        codeview: 'コード表示',
       },
       paragraph: {
         paragraph: '文章',
@@ -116,7 +92,7 @@ var __webpack_exports__ = {};
         left: '左寄せ',
         center: '中央寄せ',
         right: '右寄せ',
-        justify: '均等割付'
+        justify: '均等割付',
       },
       color: {
         recent: '現在の色',
@@ -126,7 +102,7 @@ var __webpack_exports__ = {};
         transparent: '透明',
         setTransparent: '透明にする',
         reset: '標準',
-        resetToDefault: '標準に戻す'
+        resetToDefault: '標準に戻す',
       },
       shortcut: {
         shortcuts: 'ショートカット',
@@ -135,7 +111,7 @@ var __webpack_exports__ = {};
         action: 'アクション',
         paragraphFormatting: '文章フォーマット',
         documentStyle: 'ドキュメント形式',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': '改行挿入',
@@ -164,21 +140,16 @@ var __webpack_exports__ = {};
         'formatH5': 'H5指定',
         'formatH6': 'H6指定',
         'insertHorizontalRule': '&lt;hr /&gt;を挿入',
-        'linkDialog.show': 'リンク挿入'
+        'linkDialog.show': 'リンク挿入',
       },
       history: {
         undo: '元に戻す',
-        redo: 'やり直す'
+        redo: 'やり直す',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
-//# sourceMappingURL=summernote-ja-JP.js.map

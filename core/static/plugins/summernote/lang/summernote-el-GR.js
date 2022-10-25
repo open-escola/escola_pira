@@ -1,28 +1,4 @@
-/*!
- * 
- * Super simple WYSIWYG editor v0.8.20
- * https://summernote.org
- *
- *
- * Copyright 2013- Alan Hong and contributors
- * Summernote may be freely distributed under the MIT license.
- *
- * Date: 2021-10-14T21:15Z
- *
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'el-GR': {
       font: {
@@ -36,21 +12,19 @@ var __webpack_exports__ = {};
         subscript: 'Δείκτης',
         superscript: 'Εκθέτης',
         size: 'Μέγεθος',
-        sizeunit: 'Μονάδα μεγέθους'
       },
       image: {
-        image: 'Εικόνα',
+        image: 'εικόνα',
         insert: 'Εισαγωγή',
         resizeFull: 'Πλήρες μέγεθος',
         resizeHalf: 'Μισό μέγεθος',
         resizeQuarter: '1/4 μέγεθος',
-        resizeNone: 'Αρχικό μέγεθος',
         floatLeft: 'Μετατόπιση αριστερά',
         floatRight: 'Μετατόπιση δεξιά',
         floatNone: 'Χωρίς μετατόπιση',
         shapeRounded: 'Σχήμα: Στρογγυλεμένο',
         shapeCircle: 'Σχήμα: Κύκλος',
-        shapeThumbnail: 'Σχήμα: Μικρογραφία',
+        shapeThumbnail: 'Σχήμα: Thumbnail',
         shapeNone: 'Σχήμα: Κανένα',
         dragImageHere: 'Σύρτε την εικόνα εδώ',
         dropImage: 'Αφήστε την εικόνα',
@@ -59,7 +33,7 @@ var __webpack_exports__ = {};
         maximumFileSizeError: 'Το μέγεθος είναι μεγαλύτερο από το μέγιστο επιτρεπτό.',
         url: 'URL',
         remove: 'Αφαίρεση',
-        original: 'Αρχικό'
+        original: 'Original',
       },
       link: {
         link: 'Σύνδεσμος',
@@ -67,29 +41,28 @@ var __webpack_exports__ = {};
         unlink: 'Αφαίρεση συνδέσμου',
         edit: 'Επεξεργασία συνδέσμου',
         textToDisplay: 'Κείμενο συνδέσμου',
-        url: 'Σε ποιo URL πρέπει να πηγαίνει αυτός ο σύνδεσμος;',
+        url: 'URL',
         openInNewWindow: 'Άνοιγμα σε νέο παράθυρο',
-        useProtocol: 'Χρήση προεπιλεγμένου πρωτοκόλλου'
       },
       video: {
         video: 'Βίντεο',
         videoLink: 'Σύνδεσμος Βίντεο',
         insert: 'Εισαγωγή',
         url: 'URL',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ή Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)',
       },
       table: {
         table: 'Πίνακας',
-        addRowAbove: 'Προσθήκη γραμμής πάνω',
-        addRowBelow: 'Προσθήκη γραμμής κάτω',
-        addColLeft: 'Προσθήκη στήλης αριστερά',
-        addColRight: 'Προσθήκη στήλης δεξία',
-        delRow: 'Διαγραφή γραμμής',
-        delCol: 'Διαγραφή στήλης',
-        delTable: 'Διαγραφή πίνακα'
+        addRowAbove: 'Add row above',
+        addRowBelow: 'Add row below',
+        addColLeft: 'Add column left',
+        addColRight: 'Add column right',
+        delRow: 'Delete row',
+        delCol: 'Delete column',
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Εισαγωγή οριζόντιας γραμμής'
+        insert: 'Εισαγωγή οριζόντιας γραμμής',
       },
       style: {
         style: 'Στυλ',
@@ -97,20 +70,20 @@ var __webpack_exports__ = {};
         blockquote: 'Παράθεση',
         pre: 'Ως έχει',
         h1: 'Κεφαλίδα 1',
-        h2: 'Κεφαλίδα 2',
-        h3: 'Κεφαλίδα 3',
-        h4: 'Κεφαλίδα 4',
-        h5: 'Κεφαλίδα 5',
-        h6: 'Κεφαλίδα 6'
+        h2: 'συνδέσμου 2',
+        h3: 'συνδέσμου 3',
+        h4: 'συνδέσμου 4',
+        h5: 'συνδέσμου 5',
+        h6: 'συνδέσμου 6',
       },
       lists: {
         unordered: 'Αταξινόμητη λίστα',
-        ordered: 'Ταξινομημένη λίστα'
+        ordered: 'Ταξινομημένη λίστα',
       },
       options: {
         help: 'Βοήθεια',
         fullscreen: 'Πλήρης οθόνη',
-        codeview: 'Προβολή HTML'
+        codeview: 'Προβολή HTML',
       },
       paragraph: {
         paragraph: 'Παράγραφος',
@@ -119,7 +92,7 @@ var __webpack_exports__ = {};
         left: 'Αριστερή στοίχιση',
         center: 'Στοίχιση στο κέντρο',
         right: 'Δεξιά στοίχιση',
-        justify: 'Πλήρης στοίχιση'
+        justify: 'Πλήρης στοίχιση',
       },
       color: {
         recent: 'Πρόσφατη επιλογή',
@@ -130,7 +103,6 @@ var __webpack_exports__ = {};
         setTransparent: 'Επιλογή διαφάνειας',
         reset: 'Επαναφορά',
         resetToDefault: 'Επαναφορά στις προκαθορισμένες τιμές',
-        cpSelect: 'Επιλογή'
       },
       shortcut: {
         shortcuts: 'Συντομεύσεις',
@@ -139,10 +111,9 @@ var __webpack_exports__ = {};
         action: 'Ενέργεια',
         paragraphFormatting: 'Διαμόρφωση παραγράφου',
         documentStyle: 'Στυλ κειμένου',
-        extraKeys: 'Επιπλέον συντομεύσεις'
+        extraKeys: 'Επιπλέον συντομεύσεις',
       },
       help: {
-        'escape': 'Έξοδος',
         'insertParagraph': 'Εισαγωγή παραγράφου',
         'undo': 'Αναιρεί την προηγούμενη εντολή',
         'redo': 'Επαναλαμβάνει την προηγούμενη εντολή',
@@ -169,24 +140,16 @@ var __webpack_exports__ = {};
         'formatH5': 'Αλλαγή της μορφής του τρέχοντος μπλοκ σε H5',
         'formatH6': 'Αλλαγή της μορφής του τρέχοντος μπλοκ σε H6',
         'insertHorizontalRule': 'Εισαγωγή οριζόντιας γραμμής',
-        'linkDialog.show': 'Εμφάνιση διαλόγου συνδέσμου'
+        'linkDialog.show': 'Εμφάνιση διαλόγου συνδέσμου',
       },
       history: {
         undo: 'Αναίρεση',
-        redo: 'Επαναληψη'
+        redo: 'Επαναληψη',
       },
       specialChar: {
-        specialChar: 'ΕΙΔΙΚΟΙ ΧΑΡΑΚΤΗΡΕΣ',
-        select: 'Επιλέξτε ειδικούς χαρακτήρες'
+        specialChar: 'SPECIAL CHARACTERS',
+        select: 'Επιλέξτε ειδικούς χαρακτήρες',
       },
-      output: {
-        noSelection: 'Δεν έγινε επιλογή!'
-      }
-    }
+    },
   });
 })(jQuery);
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
-//# sourceMappingURL=summernote-el-GR.js.map

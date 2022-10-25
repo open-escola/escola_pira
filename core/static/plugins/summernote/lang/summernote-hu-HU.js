@@ -1,28 +1,4 @@
-/*!
- * 
- * Super simple WYSIWYG editor v0.8.20
- * https://summernote.org
- *
- *
- * Copyright 2013- Alan Hong and contributors
- * Summernote may be freely distributed under the MIT license.
- *
- * Date: 2021-10-14T21:15Z
- *
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'hu-HU': {
       font: {
@@ -35,7 +11,7 @@ var __webpack_exports__ = {};
         strikethrough: 'Áthúzott',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: 'Betűméret'
+        size: 'Betűméret',
       },
       image: {
         image: 'Kép',
@@ -57,14 +33,14 @@ var __webpack_exports__ = {};
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'Kép URL címe',
         remove: 'Kép törlése',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Videó',
         videoLink: 'Videó hivatkozás',
         insert: 'Videó beszúrása',
         url: 'Videó URL címe',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion vagy Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion vagy Youku)',
       },
       link: {
         link: 'Hivatkozás',
@@ -73,7 +49,7 @@ var __webpack_exports__ = {};
         edit: 'Szerkesztés',
         textToDisplay: 'Megjelenítendő szöveg',
         url: 'Milyen URL címre hivatkozzon?',
-        openInNewWindow: 'Megnyitás új ablakban'
+        openInNewWindow: 'Megnyitás új ablakban',
       },
       table: {
         table: 'Táblázat',
@@ -83,10 +59,10 @@ var __webpack_exports__ = {};
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Elválasztó vonal beszúrása'
+        insert: 'Elválasztó vonal beszúrása',
       },
       style: {
         style: 'Stílus',
@@ -98,16 +74,16 @@ var __webpack_exports__ = {};
         h3: 'Fejléc 3',
         h4: 'Fejléc 4',
         h5: 'Fejléc 5',
-        h6: 'Fejléc 6'
+        h6: 'Fejléc 6',
       },
       lists: {
         unordered: 'Listajeles lista',
-        ordered: 'Számozott lista'
+        ordered: 'Számozott lista',
       },
       options: {
         help: 'Súgó',
         fullscreen: 'Teljes képernyő',
-        codeview: 'Kód nézet'
+        codeview: 'Kód nézet',
       },
       paragraph: {
         paragraph: 'Bekezdés',
@@ -116,7 +92,7 @@ var __webpack_exports__ = {};
         left: 'Igazítás balra',
         center: 'Igazítás középre',
         right: 'Igazítás jobbra',
-        justify: 'Sorkizárt'
+        justify: 'Sorkizárt',
       },
       color: {
         recent: 'Jelenlegi szín',
@@ -126,7 +102,7 @@ var __webpack_exports__ = {};
         transparent: 'Átlátszó',
         setTransparent: 'Átlászóság beállítása',
         reset: 'Visszaállítás',
-        resetToDefault: 'Alaphelyzetbe állítás'
+        resetToDefault: 'Alaphelyzetbe állítás',
       },
       shortcut: {
         shortcuts: 'Gyorsbillentyű',
@@ -135,7 +111,7 @@ var __webpack_exports__ = {};
         action: 'Művelet',
         paragraphFormatting: 'Bekezdés formázása',
         documentStyle: 'Dokumentumstílus',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Új bekezdés',
@@ -164,21 +140,16 @@ var __webpack_exports__ = {};
         'formatH5': 'Blokk formázása, mint Fejléc 5',
         'formatH6': 'Blokk formázása, mint Fejléc 6',
         'insertHorizontalRule': 'Vízszintes vonal beszúrása',
-        'linkDialog.show': 'Link párbeszédablak megjelenítése'
+        'linkDialog.show': 'Link párbeszédablak megjelenítése',
       },
       history: {
         undo: 'Visszavonás',
-        redo: 'Újra'
+        redo: 'Újra',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
-//# sourceMappingURL=summernote-hu-HU.js.map

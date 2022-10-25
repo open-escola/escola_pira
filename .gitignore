@@ -1,5 +1,6 @@
 # Docker
 docker_old/
+static_old/
 
 # Django
 staticfiles*/

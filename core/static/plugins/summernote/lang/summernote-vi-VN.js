@@ -1,28 +1,4 @@
-/*!
- * 
- * Super simple WYSIWYG editor v0.8.20
- * https://summernote.org
- *
- *
- * Copyright 2013- Alan Hong and contributors
- * Summernote may be freely distributed under the MIT license.
- *
- * Date: 2021-10-14T21:15Z
- *
- */
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-var __webpack_exports__ = {};
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'vi-VN': {
       font: {
@@ -35,7 +11,7 @@ var __webpack_exports__ = {};
         strikethrough: 'Gạch ngang',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: 'Cỡ chữ'
+        size: 'Cỡ chữ',
       },
       image: {
         image: 'Hình ảnh',
@@ -57,14 +33,14 @@ var __webpack_exports__ = {};
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URL',
         remove: 'Xóa',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Link đến Video',
         insert: 'Chèn Video',
         url: 'URL',
-        providers: '(Hỗ trợ YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)',
       },
       link: {
         link: 'Link',
@@ -73,20 +49,20 @@ var __webpack_exports__ = {};
         edit: 'Sửa',
         textToDisplay: 'Văn bản hiển thị',
         url: 'URL',
-        openInNewWindow: 'Mở ở Cửa sổ mới'
+        openInNewWindow: 'Mở ở Cửa sổ mới',
       },
       table: {
         table: 'Bảng',
-        addRowAbove: 'Chèn dòng phía trên',
-        addRowBelow: 'Chèn dòng phía dưới',
-        addColLeft: 'Chèn cột bên trái',
-        addColRight: 'Chèn cột bên phải',
-        delRow: 'Xóa dòng',
-        delCol: 'Xóa cột',
-        delTable: 'Xóa bảng'
+        addRowAbove: 'Add row above',
+        addRowBelow: 'Add row below',
+        addColLeft: 'Add column left',
+        addColRight: 'Add column right',
+        delRow: 'Delete row',
+        delCol: 'Delete column',
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Chèn'
+        insert: 'Chèn',
       },
       style: {
         style: 'Kiểu chữ',
@@ -98,16 +74,16 @@ var __webpack_exports__ = {};
         h3: 'H3',
         h4: 'H4',
         h5: 'H5',
-        h6: 'H6'
+        h6: 'H6',
       },
       lists: {
         unordered: 'Liệt kê danh sách',
-        ordered: 'Liệt kê theo thứ tự'
+        ordered: 'Liệt kê theo thứ tự',
       },
       options: {
         help: 'Trợ giúp',
         fullscreen: 'Toàn Màn hình',
-        codeview: 'Xem Code'
+        codeview: 'Xem Code',
       },
       paragraph: {
         paragraph: 'Canh lề',
@@ -116,7 +92,7 @@ var __webpack_exports__ = {};
         left: 'Canh trái',
         center: 'Canh giữa',
         right: 'Canh phải',
-        justify: 'Canh đều'
+        justify: 'Canh đều',
       },
       color: {
         recent: 'Màu chữ',
@@ -126,7 +102,7 @@ var __webpack_exports__ = {};
         transparent: 'trong suốt',
         setTransparent: 'Nền trong suốt',
         reset: 'Thiết lập lại',
-        resetToDefault: 'Trở lại ban đầu'
+        resetToDefault: 'Trở lại ban đầu',
       },
       shortcut: {
         shortcuts: 'Phím tắt',
@@ -135,10 +111,10 @@ var __webpack_exports__ = {};
         action: 'Hành động',
         paragraphFormatting: 'Định dạng',
         documentStyle: 'Kiểu văn bản',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
-        'insertParagraph': 'Chèn đo văn',
+        'insertParagraph': 'Insert Paragraph',
         'undo': 'Undoes the last command',
         'redo': 'Redoes the last command',
         'tab': 'Tab',
@@ -164,21 +140,16 @@ var __webpack_exports__ = {};
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Lùi lại',
-        redo: 'Làm lại'
+        redo: 'Làm lại',
       },
       specialChar: {
-        specialChar: 'KÝ TỰ ĐẶC BIỆT',
-        select: 'Chọn ký tự đặc biệt'
-      }
-    }
+        specialChar: 'SPECIAL CHARACTERS',
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
-/******/ 	return __webpack_exports__;
-/******/ })()
-;
-});
-//# sourceMappingURL=summernote-vi-VN.js.map
