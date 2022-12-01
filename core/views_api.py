@@ -7,7 +7,6 @@
 import json
 
 import pandas as pd
-from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from rest_framework import authentication, permissions
 from rest_framework.response import Response
@@ -16,7 +15,7 @@ from rest_framework.views import APIView
 from core.models import CustomUser, Students
 
 
-@login_required
+# @login_required
 def go_api_model(request):
     # Using Model
     return JsonResponse(
@@ -26,7 +25,7 @@ def go_api_model(request):
     )
 
 
-@login_required
+#@login_required
 def go_api_model_student(request):
     # Using Model
     return JsonResponse(
@@ -36,7 +35,7 @@ def go_api_model_student(request):
     )
 
 
-@login_required
+#@login_required
 def go_api_dataframe(request):
     # Using Pandas
     details = {
@@ -72,5 +71,5 @@ class APIRest(APIView):
         """
         Return a list of all users.
         """
-        usernames = [user.cep for user in Students.objects.all()]
+        usernames = {user.cep for user in Students.objects.all()}
         return Response(usernames)

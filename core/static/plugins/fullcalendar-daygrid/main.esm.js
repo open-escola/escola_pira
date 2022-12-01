@@ -4,7 +4,50 @@ Docs & License: https://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
-import { addWeeks, diffWeeks, DateProfileGenerator, createElement, listenBySelector, removeElement, computeRect, computeClippingRect, applyStyle, cssToStr, htmlEscape, FgEventRenderer, appendToElement, prependToElement, htmlToElement, FillRenderer, memoizeRendering, createFormatter, addDays, DateComponent, rangeContainsMarker, getDayClasses, findElements, PositionCache, buildGotoAnchorHtml, findChildren, insertAfterElement, intersectRanges, ScrollComponent, matchCellWidths, uncompensateScroll, compensateScroll, subtractInnerElHeight, distributeHeight, undistributeHeight, View, Slicer, memoize, DayHeader, DaySeries, DayTable, createPlugin } from '@fullcalendar/core';
+import {
+    addDays,
+    addWeeks,
+    appendToElement,
+    applyStyle,
+    buildGotoAnchorHtml,
+    compensateScroll,
+    computeClippingRect,
+    computeRect,
+    createElement,
+    createFormatter,
+    createPlugin,
+    cssToStr,
+    DateComponent,
+    DateProfileGenerator,
+    DayHeader,
+    DaySeries,
+    DayTable,
+    diffWeeks,
+    distributeHeight,
+    FgEventRenderer,
+    FillRenderer,
+    findChildren,
+    findElements,
+    getDayClasses,
+    htmlEscape,
+    htmlToElement,
+    insertAfterElement,
+    intersectRanges,
+    listenBySelector,
+    matchCellWidths,
+    memoize,
+    memoizeRendering,
+    PositionCache,
+    prependToElement,
+    rangeContainsMarker,
+    removeElement,
+    ScrollComponent,
+    Slicer,
+    subtractInnerElHeight,
+    uncompensateScroll,
+    undistributeHeight,
+    View
+} from '@fullcalendar/core';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.

@@ -4,7 +4,7 @@ Docs & License: https://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
-import { createPlugin, Theme } from '@fullcalendar/core';
+import {createPlugin, Theme} from '@fullcalendar/core';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.

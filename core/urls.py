@@ -17,6 +17,11 @@ route.register(
     viewset=studentviewsets.StudentsViewSet,
     basename='books'
 )
+route.register(
+    prefix=r'some',
+    viewset=studentviewsets.SomeViewSet,
+    basename='books2'
+)
 
 #
 urlpatterns = [

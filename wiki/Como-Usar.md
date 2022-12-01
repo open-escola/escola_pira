@@ -46,7 +46,7 @@ python manage.py loaddata students.json
 
 Explicar como fazer _deploy_ no Heroku ou _Docker_
 
-1. Criar copia do repositorio
+1. Criar copia do repositório
 2. Vincular a sua conta Heroku
 3. Para adicionar dados:
 

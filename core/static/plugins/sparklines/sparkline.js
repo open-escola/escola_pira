@@ -24,7 +24,7 @@
     this.element = element;
     this.options = extend(options || {}, Sparkline.options);
 
-    init: {
+    {
       this.element.innerHTML = "<canvas></canvas>";
       this.canvas = this.element.firstChild;
       this.context = this.canvas.getContext("2d");

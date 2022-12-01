@@ -20,3 +20,16 @@ class StudentsViewSet(viewsets.ModelViewSet):
 
     serializer_class = serializers.StudentSerializers
     queryset = models.Students.objects.all()
+
+
+# ReadOnlyModelViewSet
+class SomeViewSet(viewsets.ModelViewSet):
+    authentication_classes = [
+        authentication.SessionAuthentication
+    ]
+    permission_classes = [
+        # permissions.AllowAny
+    ]
+
+    serializer_class = serializers.SomeSerializer
+    queryset = models.Students.objects.all()

@@ -4,7 +4,55 @@ Docs & License: https://fullcalendar.io/
 (c) 2019 Adam Shaw
 */
 
-import { config, elementClosest, EmitterMixin, applyStyle, whenTransitionDone, removeElement, ScrollController, ElementScrollController, computeInnerRect, WindowScrollController, preventSelection, preventContextMenu, allowSelection, allowContextMenu, ElementDragging, computeRect, getClippingParents, pointInsideRect, isDateSpansEqual, constrainPoint, intersectRects, getRectCenter, diffPoints, mapHash, rangeContainsRange, interactionSettingsToStore, Interaction, enableCursor, disableCursor, compareNumbers, getElSeg, getRelevantEvents, EventApi, createEmptyEventStore, applyMutationToEventStore, interactionSettingsStore, startOfDay, diffDates, createDuration, eventTupleToStore, isInteractionValid, parseDragMeta, elementMatches, parseEventDef, createEventInstance, globalDefaults, createPlugin } from '@fullcalendar/core';
+import {
+    allowContextMenu,
+    allowSelection,
+    applyMutationToEventStore,
+    applyStyle,
+    compareNumbers,
+    computeInnerRect,
+    computeRect,
+    config,
+    constrainPoint,
+    createDuration,
+    createEmptyEventStore,
+    createEventInstance,
+    createPlugin,
+    diffDates,
+    diffPoints,
+    disableCursor,
+    elementClosest,
+    ElementDragging,
+    elementMatches,
+    ElementScrollController,
+    EmitterMixin,
+    enableCursor,
+    EventApi,
+    eventTupleToStore,
+    getClippingParents,
+    getElSeg,
+    getRectCenter,
+    getRelevantEvents,
+    globalDefaults,
+    Interaction,
+    interactionSettingsStore,
+    interactionSettingsToStore,
+    intersectRects,
+    isDateSpansEqual,
+    isInteractionValid,
+    mapHash,
+    parseDragMeta,
+    parseEventDef,
+    pointInsideRect,
+    preventContextMenu,
+    preventSelection,
+    rangeContainsRange,
+    removeElement,
+    ScrollController,
+    startOfDay,
+    whenTransitionDone,
+    WindowScrollController
+} from '@fullcalendar/core';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
